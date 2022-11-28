@@ -1,0 +1,300 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+html::-webkit-scrollbar {display: none;}
+/* ----------헤더시작------------ */
+header {position: fixed; z-index: 10;}
+.logo {
+    float: left;
+    width: 300px;
+    height: 50px;
+    margin: 30px ;
+    filter: invert(100%);
+}
+nav {
+    margin: 30px;
+    position: fixed;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+nav a ,nav i{
+    display: block;
+    float: left;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 15px;
+    height: 20px;
+}
+nav a:hover ,nav i:hover {
+    font-size: 18px;
+}
+.shopIn , .historyIn,.laIn{
+    margin: 0 30px;
+    font-size: 16px;
+    display: none;
+}
+.shopIn a ,.historyIn a ,.laIn a{
+    margin: 0 10px;
+    width: 50px;
+}
+.menu1:hover .shopIn {
+    display: inline-block;
+}
+.menu2:hover .historyIn {
+    display: inline-block;
+}
+.menu3:hover .laIn {
+    display: inline-block;
+}
+nav .icon i {margin:20px 20px 0 0 ;}
+.search {display: none;}
+.on {display: block;}
+.search input{padding: 5px;}
+.search input:focus{outline:none;}
+.search button{
+    width: 0;
+    height: 0;
+    background-color:transparent;
+    border: 0;
+    position: relative;
+    right: 32px;
+    top: 10px;
+}
+button i {
+    color: black;
+    font-size: 20px;
+    margin: 3px;
+}
+/* ----------헤더 끝------------- */
+/* --------로그인 창----------------- */
+.black{
+    filter: brightness(30%);
+    pointer-events: none;
+}
+.join {
+    width: 500px;
+    height: 100vh;
+    background-color:#eee;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+.hidden {
+    display: none;
+}
+.fa-xmark {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 50px;
+}
+.join form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.join form input {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.join form .old {
+    padding: 10px;
+    margin-top: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    outline: none;
+    border: 0;
+}
+.join a {
+    font-size: 14px;
+    position: relative;
+    top: 40px;
+    text-decoration: none;
+    color: black;
+}
+.social {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.kakao {
+    width: 300px;
+    height:50px;
+    background-color: yellow;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.google {
+    width: 300px;
+    height:50px;
+    background-color: rgb(196, 196, 196);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* --------로그인 끝----------------- */
+.swiper {width: 100%; height: 100vh;}
+.swiper-button-prev,.swiper-button-next{color: rgb(255, 255, 255,0.5);}
+.aa{
+    background: url(https://saint-laurent.dam.kering.com/m/2ee9541ab44f4c71/original/Fall_22_Homepage_Desktop_Fur.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.bb{
+    pointer-events: none;
+}
+.cc {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:url(https://content.api.news/v3/images/bin/9bac395c8f577ea9f0860cbef485f19b);
+    background-size: cover;
+    background-position: center;
+}
+.cc div {
+    z-index: 1;
+    font-size: 100px;
+}
+.cc a {
+    color: white;
+    text-decoration: none;
+}
+.cc::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.dd {
+    background:url(https://pbs.twimg.com/media/DWJYkz_VoAYb8C2?format=jpg&name=large) no-repeat;
+    background-size: contain;
+    background-position: top;
+    background-color: #ccc;
+}
+
+.ccc{
+    padding: 0 8%;
+    display: grid;
+    grid-template-columns: 1fr 7fr 0.5fr 7fr 1fr;
+    align-items: center;
+    height: 100vh;
+    background-color: #ccc
+}
+.fw {
+    width: 100%;
+    height: 100vh;
+    background: url(https://assets.vogue.com/photos/62a35c778c4848a352103b00/master/w_1920,c_limit/00084-saint-laurent-menswear-fw-2022-credit-brand.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.fwInfo {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    background-color:#eee;
+}
+.infoP {
+    margin: 20px;
+}
+.fwInfo a {
+    text-decoration: none;
+    color: black;
+}
+.title {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.detail{
+    padding: 10px 30px;
+    text-align: justify;
+    margin-bottom: 50px;
+}
+
+.swiper-pagination-bullet {
+    width: 13px; height: 13px;
+    background: transparent;
+    border: 1px solid white;
+    opacity: 1;
+}
+.swiper-pagination-bullet-active {
+    width: 30px; transition: width .5s;
+    border-radius: 5px;
+    background: white;
+    border: 1px solid transparent; }
+
+.animate__slideInDown {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 10px;
+    right: 50px;
+    color: rgb(255, 255, 255,0.5);
+    font-size: 20px;
+}
+.animate__slideInDown i {
+    font-size: 50px;
+}
+.ddd {
+    width: 100%;
+    height: 100vh;
+    background-color: brown;
+}
+
+/*  ------------------푸터 시작--------------------*/
+footer {
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    color: rgb(255, 255, 255,0.8);
+    padding-left: 200px;
+}
+footer div {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px ;
+}
+.big{
+    width: 500px;
+    margin: 20px;
+}
+footer div p {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+.mini {
+    font-size: 12px;
+}
+/*  ---------------푸터 끝--------------------------*/
+@media screen 
+and (max-width: 767px) {
+    .ccc{padding: 0;}
+}
