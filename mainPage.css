@@ -3,16 +3,32 @@
     margin: 0;
     list-style: none;
     box-sizing: border-box;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: "Noto Sans KR", sans-serif;
 }
-html::-webkit-scrollbar {display: none;}
+html::-webkit-scrollbar {
+    display: none;
+}
 /* ----------헤더시작------------ */
-header {position: fixed; z-index: 10;}
+header {
+    position: fixed;
+    z-index: 10;
+}
+/* .box::after {
+    content: "aaaaa";
+    color: white;
+    position: fixed;
+    top: 48%;
+    left: 48%;
+    font-size: 40px;
+    z-index: 200;
+    border: 3px solid white;
+    border-radius: 50px;
+} */
 .logo {
     float: left;
     width: 300px;
     height: 50px;
-    margin: 30px ;
+    margin: 30px;
     filter: invert(100%);
 }
 nav {
@@ -22,7 +38,8 @@ nav {
     display: flex;
     flex-direction: column;
 }
-nav a ,nav i{
+nav a,
+nav i {
     display: block;
     float: left;
     color: white;
@@ -30,15 +47,20 @@ nav a ,nav i{
     margin-bottom: 15px;
     height: 20px;
 }
-nav a:hover ,nav i:hover {
+nav a:hover,
+nav i:hover {
     font-size: 18px;
 }
-.shopIn , .historyIn,.laIn{
+.shopIn,
+.historyIn,
+.laIn {
     margin: 0 30px;
     font-size: 16px;
     display: none;
 }
-.shopIn a ,.historyIn a ,.laIn a{
+.shopIn a,
+.historyIn a,
+.laIn a {
     margin: 0 10px;
     width: 50px;
 }
@@ -51,15 +73,25 @@ nav a:hover ,nav i:hover {
 .menu3:hover .laIn {
     display: inline-block;
 }
-nav .icon i {margin:20px 20px 0 0 ;}
-.search {display: none;}
-.on {display: block;}
-.search input{padding: 5px;}
-.search input:focus{outline:none;}
-.search button{
+nav .icon i {
+    margin: 20px 20px 0 0;
+}
+.search {
+    display: none;
+}
+.on {
+    display: block;
+}
+.search input {
+    padding: 5px;
+}
+.search input:focus {
+    outline: none;
+}
+.search button {
     width: 0;
     height: 0;
-    background-color:transparent;
+    background-color: transparent;
     border: 0;
     position: relative;
     right: 32px;
@@ -72,14 +104,14 @@ button i {
 }
 /* ----------헤더 끝------------- */
 /* --------로그인 창----------------- */
-.black{
+.black {
     filter: brightness(30%);
     pointer-events: none;
 }
 .join {
     width: 500px;
     height: 100vh;
-    background-color:#eee;
+    background-color: #eee;
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -134,7 +166,7 @@ button i {
 }
 .kakao {
     width: 300px;
-    height:50px;
+    height: 50px;
     background-color: yellow;
     margin-bottom: 20px;
     display: flex;
@@ -143,21 +175,27 @@ button i {
 }
 .google {
     width: 300px;
-    height:50px;
+    height: 50px;
     background-color: rgb(196, 196, 196);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 /* --------로그인 끝----------------- */
-.swiper {width: 100%; height: 100vh;}
-.swiper-button-prev,.swiper-button-next{color: rgb(255, 255, 255,0.5);}
-.aa{
+.swiper {
+    width: 100%;
+    height: 100vh;
+}
+.swiper-button-prev,
+.swiper-button-next {
+    color: rgb(255, 255, 255, 0.5);
+}
+.aa {
     background: url(https://saint-laurent.dam.kering.com/m/2ee9541ab44f4c71/original/Fall_22_Homepage_Desktop_Fur.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
-.bb{
+.bb {
     pointer-events: none;
 }
 .cc {
@@ -165,7 +203,7 @@ button i {
     display: flex;
     justify-content: center;
     align-items: center;
-    background:url(https://content.api.news/v3/images/bin/9bac395c8f577ea9f0860cbef485f19b);
+    background: url(https://content.api.news/v3/images/bin/9bac395c8f577ea9f0860cbef485f19b);
     background-size: cover;
     background-position: center;
 }
@@ -187,19 +225,19 @@ button i {
     background-color: rgba(0, 0, 0, 0.4);
 }
 .dd {
-    background:url(https://pbs.twimg.com/media/DWJYkz_VoAYb8C2?format=jpg&name=large) no-repeat;
+    background: url(https://pbs.twimg.com/media/DWJYkz_VoAYb8C2?format=jpg&name=large) no-repeat;
     background-size: contain;
     background-position: top;
     background-color: #ccc;
 }
 
-.ccc{
+.ccc {
     padding: 0 8%;
     display: grid;
     grid-template-columns: 1fr 7fr 0.5fr 7fr 1fr;
     align-items: center;
     height: 100vh;
-    background-color: #ccc
+    background-color: #ccc;
 }
 .fw {
     width: 100%;
@@ -213,8 +251,8 @@ button i {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:center;
-    background-color:#eee;
+    align-items: center;
+    background-color: #eee;
 }
 .infoP {
     margin: 20px;
@@ -228,23 +266,26 @@ button i {
     text-align: center;
     margin-bottom: 50px;
 }
-.detail{
+.detail {
     padding: 10px 30px;
     text-align: justify;
     margin-bottom: 50px;
 }
 
 .swiper-pagination-bullet {
-    width: 13px; height: 13px;
+    width: 13px;
+    height: 13px;
     background: transparent;
     border: 1px solid white;
     opacity: 1;
 }
 .swiper-pagination-bullet-active {
-    width: 30px; transition: width .5s;
+    width: 30px;
+    transition: width 0.5s;
     border-radius: 5px;
     background: white;
-    border: 1px solid transparent; }
+    border: 1px solid transparent;
+}
 
 .animate__slideInDown {
     display: flex;
@@ -254,7 +295,7 @@ button i {
     position: absolute;
     bottom: 10px;
     right: 50px;
-    color: rgb(255, 255, 255,0.5);
+    color: rgb(255, 255, 255, 0.5);
     font-size: 20px;
 }
 .animate__slideInDown i {
@@ -273,16 +314,16 @@ footer {
     background-color: black;
     display: flex;
     flex-direction: row;
-    color: rgb(255, 255, 255,0.8);
+    color: rgb(255, 255, 255, 0.8);
     padding-left: 200px;
 }
 footer div {
     width: 300px;
     display: flex;
     flex-direction: column;
-    margin: 20px ;
+    margin: 20px;
 }
-.big{
+.big {
     width: 500px;
     margin: 20px;
 }
@@ -294,7 +335,8 @@ footer div p {
     font-size: 12px;
 }
 /*  ---------------푸터 끝--------------------------*/
-@media screen 
-and (max-width: 767px) {
-    .ccc{padding: 0;}
+@media screen and (max-width: 767px) {
+    .ccc {
+        padding: 0;
+    }
 }

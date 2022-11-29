@@ -3,14 +3,15 @@
     margin: 0;
     list-style: none;
     box-sizing: border-box;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: "Noto Sans KR", sans-serif;
 }
 /* ---------상단헤더------------ */
 header {
     position: fixed;
     top: 0;
     z-index: 10;
-    width: 100%; height: 80px;
+    width: 100%;
+    height: 80px;
     background-color: white;
     display: flex;
     flex-direction: row;
@@ -44,7 +45,8 @@ header {
 .menuList:hover {
     padding-top: 140px;
 }
-.menuList:hover > a ,.menuListMap:hover > a{
+.menuList:hover > a,
+.menuListMap:hover > a {
     font-weight: bold;
 }
 .menuList:hover .hm {
@@ -54,7 +56,7 @@ header {
     background-color: white;
     display: flex;
     flex-direction: column;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     align-items: center;
     margin-top: 20px;
     height: 120px;
@@ -79,15 +81,19 @@ header a {
     align-items: center;
     z-index: 10;
 }
-.icon i{
+.icon i {
     margin-right: 30px;
 }
 .icon .fa-bars {
     font-size: 32px;
     display: none;
 }
-.search {display: none;}
-.on {display: block;}
+.search {
+    display: none;
+}
+.on {
+    display: block;
+}
 .search form {
     float: right;
     position: absolute;
@@ -95,12 +101,16 @@ header a {
     right: 95px;
     font-size: 50px;
 }
-.search input{padding: 5px;}
-.search input:focus{outline:none;}
-.search button{
+.search input {
+    padding: 5px;
+}
+.search input:focus {
+    outline: none;
+}
+.search button {
     width: 0;
     height: 0;
-    background-color:transparent;
+    background-color: transparent;
     border: 0;
     position: relative;
     right: 45px;
@@ -113,7 +123,7 @@ button i {
 }
 /* --------------헤더 끝--------------- */
 /* --------로그인 창----------------- */
-.black{
+.black {
     width: 100%;
     height: 100%;
     filter: brightness(30%);
@@ -122,7 +132,7 @@ button i {
 .join {
     width: 500px;
     height: 100vh;
-    background-color:#eee;
+    background-color: #eee;
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -175,7 +185,7 @@ button i {
 }
 .kakao {
     width: 300px;
-    height:50px;
+    height: 50px;
     background-color: yellow;
     margin-bottom: 20px;
     display: flex;
@@ -184,7 +194,7 @@ button i {
 }
 .google {
     width: 300px;
-    height:50px;
+    height: 50px;
     background-color: rgb(196, 196, 196);
     display: flex;
     justify-content: center;
@@ -210,13 +220,17 @@ button i {
 .hamMenu {
     display: flex;
     flex-direction: column;
-    
 }
-.hamMenuIn{
+.hamMenuIn {
     margin: 10px;
 }
-.hamMenuIn a:hover {font-weight: bold;}
-.hamMenuIn a:first-child {font-size: 18px; font-weight: bold;}
+.hamMenuIn a:hover {
+    font-weight: bold;
+}
+.hamMenuIn a:first-child {
+    font-size: 18px;
+    font-weight: bold;
+}
 .hamMenu a {
     text-decoration: none;
     color: black;
@@ -235,16 +249,16 @@ footer {
     background-color: black;
     display: flex;
     flex-direction: row;
-    color: rgb(255, 255, 255,0.8);
+    color: rgb(255, 255, 255, 0.8);
     padding-left: 200px;
 }
 footer div {
     width: 300px;
     display: flex;
     flex-direction: column;
-    margin: 20px ;
+    margin: 20px;
 }
-.big{
+.big {
     width: 500px;
     margin: 20px;
 }
@@ -256,20 +270,43 @@ footer div p {
     font-size: 12px;
 }
 /*  ---------------푸터 끝--------------------------*/
-@media screen 
-and (max-width: 767px) {
-    
-    .logo{flex-shrink: 1; padding: 10px;}
-    .menu{display: none;}
-    .logo{margin-left:20px;}
-    .icon .fa-bars{ display: block;}
-    .icon {width: 200px;font-size: 25px; position: absolute;right: 0px;}
-    .icon i {margin: 0 20px;}
-    .search form {right: 180px;}
-    .content {margin: 30px 0;}
-    footer{height: 200px; padding: 0 20px;}
-    .dummy {display: none;}
-    
+@media screen and (max-width: 767px) {
+    .logo {
+        flex-shrink: 1;
+        padding: 10px;
+    }
+    .menu {
+        display: none;
+    }
+    .logo {
+        margin-left: 20px;
+    }
+    .icon .fa-bars {
+        display: block;
+    }
+    .icon {
+        width: 200px;
+        font-size: 25px;
+        position: absolute;
+        right: 0px;
+    }
+    .icon i {
+        margin: 0 20px;
+    }
+    .search form {
+        right: 180px;
+    }
+    .content {
+        margin: 30px 0;
+    }
+    footer {
+        height: 200px;
+        padding: 0 20px;
+    }
+    .dummy {
+        display: none;
+    }
+
     /* 
     .ham {display:flex}
     */

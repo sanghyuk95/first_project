@@ -30,7 +30,6 @@ const $rp = document.querySelector('.rp')
 $link.forEach(e => {
     const recent = getComputedStyle(e.firstElementChild).backgroundImage;
     e.addEventListener('click', () => {
-        localStorage.clear()
         const json = JSON.stringify(recent);
         const json2 = JSON.stringify(e.href)
         localStorage.setItem('url', json)
