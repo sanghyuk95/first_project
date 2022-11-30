@@ -270,6 +270,7 @@ footer div p {
     font-size: 12px;
 }
 /*  ---------------푸터 끝--------------------------*/
+
 @media screen and (max-width: 767px) {
     .logo {
         flex-shrink: 1;
