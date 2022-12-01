@@ -2,8 +2,8 @@ html {
     background-color: #eee;
 }
 .main {
-    width: 1280px;
-    margin: 120px auto 0 auto;
+    width: 80%;
+    margin: 120px auto 50px auto;
     height: 100vh;
     display: flex;
 }
@@ -97,7 +97,7 @@ html {
     flex-direction: column;
 }
 .title {
-    margin:100px 0 50px 0;
+    margin: 100px 0 50px 0;
     text-align: center;
 }
 .price {
@@ -109,7 +109,6 @@ html {
 }
 .infoDt > p {
     margin: 20px 0;
-    
 }
 .colorInfo {
     margin-top: 20px;
@@ -125,31 +124,14 @@ html {
     flex-direction: row;
     justify-content: space-between;
 }
-.colInfo {
-    display: flex;
-    flex-direction: column;
-}
-.open {
-    cursor: pointer;
-    color:darkblue;
-    margin: 20px 0;
-    display: inline;
-    width: 200px;
-}
-.hideInfo {
-    display: none;
-}
-.open .fa-angle-up,.open .fa-angle-down{
-    display: none;
-}
-.infoDt .discover {
-    display: inline-block;
-}
-.hideInfo li{
-    margin-bottom: 5px;
+.hideInfo li {
+    margin-bottom: 7px;
     margin-left: 20px;
     list-style: circle;
     font-size: 14px;
+}
+.hideInfo {
+    margin-top: 20px;
 }
 .size {
     margin-right: 30px;
@@ -158,19 +140,20 @@ html {
     margin-top: 20px;
 }
 .size > select {
-    width: 200px;
+    width: 100%;
     border: 0;
     border-bottom: 1px solid black;
     outline: none;
     margin-top: 10px;
     display: block;
 }
-.size > button {
-    color:white;
+.buy {
+    color: white;
     width: 200px;
     margin-top: 15px;
     background-color: black;
     padding: 5px;
+    cursor: pointer;
 }
 .delivery {
     font-size: 14px;

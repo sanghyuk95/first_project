@@ -24,23 +24,30 @@
         $ham.classList.toggle("hidden");
     });
 
-    const $bigImg = document.querySelector(".bigImg");
     const $img = document.querySelectorAll(".img");
     const $myImg = document.querySelector("#myimage");
-
+    magnify("myimage", 3);
     function magnify(imgID, zoom) {
         var img, glass, w, h, bw;
         img = document.getElementById(imgID);
-
         /* Create magnifier glass: */
         glass = document.createElement("DIV");
         glass.setAttribute("class", "img-magnifier-glass");
         /* Insert magnifier glass: */
         img.parentElement.insertBefore(glass, img);
         /* Set background properties for the magnifier glass: */
+
         glass.style.backgroundImage = "url('" + img.src + "')";
         glass.style.backgroundRepeat = "no-repeat";
         glass.style.backgroundSize = img.width * zoom + "px " + img.height * zoom + "px";
+        // glass.style.display = "none";
+        img.addEventListener("mouseover", (e) => {
+            glass.style.display = "inline";
+        });
+        // img.addEventListener("mouseout", (e) => {
+        //     glass.style.display = "none";
+        // });
+
         bw = 3;
         w = glass.offsetWidth / 2;
         h = glass.offsetHeight / 2;
@@ -93,8 +100,8 @@
                 y = h / zoom;
             }
             /* Set the position of the magnifier glass: */
-            glass.style.left = x - w + "px";
-            glass.style.top = y - h + "px";
+            glass.style.left = x - w  + "px";
+            glass.style.top = y - h  + "px";
             /* Display what the magnifier glass "sees": */
             glass.style.backgroundPosition = "-" + (x * zoom - w + bw) + "px -" + (y * zoom - h + bw) + "px";
         }
@@ -115,19 +122,8 @@
             return { x: x, y: y };
         }
     }
-    
-    magnify("myimage", 3);
-    
 
-    const $open = document.querySelector(".open");
-    const $hideInfo = document.querySelector(".hideInfo");
-    const $up = document.querySelector(".fa-angle-up");
-    const $down = document.querySelector(".fa-angle-down");
-    $open.addEventListener("click", (e) => {
-        $hideInfo.classList.toggle("discover");
-        $up.classList.toggle("discover");
-        $down.classList.toggle("discover");
-    });
+    
 
     const $buy = document.querySelector(".buy");
     const $sizeSelect = document.querySelector(".sizeSelect");
