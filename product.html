@@ -17,34 +17,52 @@
     <title>Yves Saint Laurent</title>
 </head>
 
-<body>
-    <div class="circle"></div>
-    <!-- 로그인창 -->
-    <div class="join hidden">
-        <i class="fa-solid fa-xmark"></i>
-        <form action="">
-            <input type="text" name="" id="" placeholder="ID">
-            <input type="password" name="" id="" placeholder="Password">
-            <input type="button" value="로그인" class="old">
-        </form>
-        <a href="#">
-            <p>회원가입</p>
-        </a>
-        <a href="#">
-            <p>아이디/비밀번호 찾기</p>
-        </a>
-        <hr>
-        <div class="social">
-            <div class="kakao">카카오 계정 로그인</div>
-            <div class="google">구글 계정 로그인</div>
+<!-- 로그인창 -->
+<div class="join hidden">
+    <i class="fa-solid fa-xmark"></i>
+    <form action="">
+        <p>Login</p>
+        <input type="text" name="" id="" placeholder="Email ID">
+        <input type="password" name="" id="" placeholder="Password">
+        <input type="button" value="로그인" class="old">
+    </form>
+    <div class="remember">
+        <div>
+            <input type="checkbox" name="" id="">
+            remember
+        </div>
+        <div class="new">
+            <a href="">아이디/비밀번호 찾기</a>
+            <a href="">회원가입</a>
         </div>
     </div>
+    <div class="social">
+        <div class="kakao">카카오 계정 로그인</div>
+        <div class="google">구글 계정 로그인</div>
+    </div>
+</div>
+
+<body>
     <!-- 반응형 햄버거 클릭시 -->
     <div class="ham hidden">
         <nav class="hamMenu">
-            <p><a href="allProduct.html">Shop</a></p>
-            <p><a href="#">Histoire</a></p>
-            <p><a href="#">La Maison</a></p>
+            <div class="hamMenuIn">
+                <a href="allProduct.html">Shop</a>
+                <a href="#">aaa</a>
+                <a href="#">aaa</a>
+            </div>
+            <div class="hamMenuIn">
+                <a href="#">Histoire</a>
+                <a href="#">aaa</a>
+                <a href="#">aaa</a>
+                <a href="#">aaa</a>
+            </div>
+            <div class="hamMenuIn">
+                <a href="#">La Maison</a>
+                <a href="#">aaa</a>
+                <a href="#">aaa</a>
+                <a href="#">aaa</a>
+            </div>
             <p><a href="map.html">Store Locator</a></p>
         </nav>
     </div>
@@ -103,7 +121,7 @@
                         id="myimage">
                 </div>
                 <div class="miniImg">
-                    <div class="aa img"></div>
+                    <div class="aa img border"></div>
                     <div class="bb img"></div>
                     <div class="cc img"></div>
                     <div class="dd img"></div>
@@ -163,6 +181,9 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="topBtn">
+            <i class="fa-solid fa-arrow-up"></i>
         </div>
         <!-- 푸터 -->
         <footer>

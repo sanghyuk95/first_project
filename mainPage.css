@@ -13,17 +13,6 @@ header {
     position: fixed;
     z-index: 10;
 }
-/* .box::after {
-    content: "aaaaa";
-    color: white;
-    position: fixed;
-    top: 48%;
-    left: 48%;
-    font-size: 40px;
-    z-index: 200;
-    border: 3px solid white;
-    border-radius: 50px;
-} */
 .logo {
     float: left;
     width: 300px;
@@ -105,27 +94,32 @@ button i {
 /* ----------헤더 끝------------- */
 /* --------로그인 창----------------- */
 .black {
+    width: 100%;
+    height: 100%;
     filter: brightness(30%);
     pointer-events: none;
 }
 .join {
+    padding-top: 60px;
     width: 500px;
-    height: 100vh;
+    height: 600px;
     background-color: #eee;
     position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    left: 0;
+    right: 0;
+    top: 20%;
+    margin: 0 auto;
     z-index: 100;
-}
-.hidden {
-    display: none;
+    border-radius: 25px;
 }
 .fa-xmark {
     position: absolute;
     top: 10px;
-    right: 20px;
+    right: 15px;
     font-size: 50px;
 }
 .join form {
@@ -134,14 +128,25 @@ button i {
     justify-content: center;
     align-items: center;
 }
+.join form p {
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
 .join form input {
     width: 300px;
     padding: 10px;
     margin-bottom: 20px;
+    border-radius: 20px;
+    border: 0;
+    text-indent: 10px;
+}
+.join form input:last-child {
+    margin-bottom: 10px;
 }
 .join form .old {
     padding: 10px;
-    margin-top: 30px;
+    margin-top: 20px;
     font-size: 1rem;
     font-weight: bold;
     color: white;
@@ -151,10 +156,23 @@ button i {
 }
 .join a {
     font-size: 14px;
-    position: relative;
-    top: 40px;
     text-decoration: none;
     color: black;
+}
+.remember {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+.remember a {
+    text-align: right;
+}
+.new {
+    display: flex;
+    flex-direction: column;
 }
 .social {
     width: 100%;
@@ -172,6 +190,7 @@ button i {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 25px;
 }
 .google {
     width: 300px;
@@ -180,6 +199,10 @@ button i {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 25px;
+}
+.hidden {
+    display: none;
 }
 /* --------로그인 끝----------------- */
 .swiper {
@@ -246,6 +269,13 @@ button i {
     background-size: cover;
     background-position: center;
 }
+.fw2 {
+    width: 100%;
+    height: 100vh;
+    background: url(https://saint-laurent.dam.kering.com/m/6719347266e3bcd0/original/027.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 .fwInfo {
     height: 100vh;
     display: flex;
@@ -255,11 +285,20 @@ button i {
     background-color: #eee;
 }
 .infoP {
-    margin: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
 }
-.fwInfo a {
+.infoP a {
     text-decoration: none;
     color: black;
+    margin-right: 50px;
+    font-size: 26px;
+}
+.infoP i {
+    margin-left: 10px;
+    transform: rotate(45deg);
 }
 .title {
     font-size: 30px;
@@ -267,7 +306,7 @@ button i {
     margin-bottom: 50px;
 }
 .detail {
-    padding: 10px 30px;
+    padding: 10px 50px;
     text-align: justify;
     margin-bottom: 50px;
 }
@@ -322,16 +361,71 @@ button i {
 .ilnkBanner {
     width: 400px;
     height: 200px;
-    background-color: tomato;
     margin: 10px;
-    transition:all 0.6s;
+    transition: all 0.6s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.ilnkBanner > a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    z-index: 1;
+    transition: all 0.6s;
 }
 .ilnkBanner:hover {
     width: 600px;
 }
+.ilnkBanner:hover > a {
+    font-size: 40px;
+}
+.ilnkBanner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.linkHs {
+    background:url(https://content.api.news/v3/images/bin/9bac395c8f577ea9f0860cbef485f19b) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.linkRc {
+    background: url(https://saint-laurent.dam.kering.com/m/1564874163a91c3a/original/YSL-com-section-de-veloppement-durable_images_I-77.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.linkCo {
+    background: url(https://cdn.eyesmag.com/content/uploads/posts/2021/07/20/doug-aitken-green-lens-saint-laurent-main-5bb4e840-d31f-422b-adc5-b7bc5c78e93c.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
-
-
+/* ------탑버튼 시작--------------- */
+.topBtn {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.topBtn i{
+    font-size: 30px;
+    color: white;
+}
+/* ------탑버튼 끝--------------- */
 
 /*  ------------------푸터 시작--------------------*/
 footer {

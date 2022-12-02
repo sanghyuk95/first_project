@@ -50,3 +50,7 @@ $rp.style.backgroundRepeat = 'no-repeat'
 $rp.addEventListener('click', e => {
     location = parseLink
 })
+const $topBtn = document.querySelector(".topBtn");
+$topBtn.addEventListener("click", (e) => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+});

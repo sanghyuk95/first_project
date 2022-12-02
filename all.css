@@ -130,21 +130,26 @@ button i {
     pointer-events: none;
 }
 .join {
+    padding-top: 60px;
     width: 500px;
-    height: 100vh;
+    height: 600px;
     background-color: #eee;
     position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    left: 0;
     right: 0;
+    top: 20%;
+    margin: 0 auto;
     z-index: 100;
+    border-radius: 25px;
 }
 .fa-xmark {
     position: absolute;
     top: 10px;
-    right: 10px;
+    right: 15px;
     font-size: 50px;
 }
 .join form {
@@ -153,14 +158,25 @@ button i {
     justify-content: center;
     align-items: center;
 }
+.join form p {
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
 .join form input {
     width: 300px;
     padding: 10px;
     margin-bottom: 20px;
+    border-radius: 20px;
+    border: 0;
+    text-indent: 10px;
+}
+.join form input:last-child {
+    margin-bottom: 10px;
 }
 .join form .old {
     padding: 10px;
-    margin-top: 30px;
+    margin-top: 20px;
     font-size: 1rem;
     font-weight: bold;
     color: white;
@@ -170,10 +186,23 @@ button i {
 }
 .join a {
     font-size: 14px;
-    position: relative;
-    top: 40px;
     text-decoration: none;
     color: black;
+}
+.remember {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+.remember a {
+    text-align: right;
+}
+.new {
+    display: flex;
+    flex-direction: column;
 }
 .social {
     width: 100%;
@@ -191,6 +220,7 @@ button i {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 25px;
 }
 .google {
     width: 300px;
@@ -199,6 +229,7 @@ button i {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 25px;
 }
 /* --------로그인 끝----------------- */
 
@@ -237,11 +268,28 @@ button i {
     display: block;
     margin-bottom: 7px;
 }
-
 /* -----------반응형 햄버거 메뉴 끝------------- */
-.hidden {
-    display: none;
+
+/* ------탑버튼 시작------------- */
+.topBtn {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
 }
+.topBtn i {
+    font-size: 30px;
+    color: white;
+}
+/* ------탑버튼 끝------------- */
+
 /*  ------------------푸터 시작--------------------*/
 footer {
     width: 100%;
@@ -270,6 +318,9 @@ footer div p {
     font-size: 12px;
 }
 /*  ---------------푸터 끝--------------------------*/
+.hidden {
+    display: none;
+}
 
 @media screen and (max-width: 767px) {
     .logo {

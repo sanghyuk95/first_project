@@ -1,11 +1,12 @@
-html {
+.container {
     background-color: #eee;
 }
 .main {
     width: 80%;
-    margin: 120px auto 50px auto;
-    height: 100vh;
+    margin: 0 auto 50px auto;
+    height: 1100px;
     display: flex;
+    padding-top: 120px;
 }
 .mainImg {
     width: 50%;
@@ -101,7 +102,7 @@ html {
     text-align: center;
 }
 .price {
-    margin-right: 50px;
+    margin-right: 60px;
     text-align: right;
 }
 .infoDt {
@@ -117,6 +118,9 @@ html {
     pointer-events: none;
     background-color: white;
     margin-left: 10px;
+    border: 0;
+    position: relative;
+    top: 4px;
 }
 .flexInfo {
     margin-top: 10px;
@@ -135,9 +139,12 @@ html {
 }
 .size {
     margin-right: 30px;
+    width: 230px;
 }
 .size > p {
     margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
 }
 .size > select {
     width: 100%;
@@ -149,11 +156,12 @@ html {
 }
 .buy {
     color: white;
-    width: 200px;
+    width: 230px;
     margin-top: 15px;
     background-color: black;
-    padding: 5px;
+    padding: 8px;
     cursor: pointer;
+    font-size: 14px;
 }
 .delivery {
     font-size: 14px;

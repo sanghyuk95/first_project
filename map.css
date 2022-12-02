@@ -72,6 +72,7 @@ option {
 }
 .yes:hover .findLoad{
     background-color: white;
+    color: black;
 }
 .yes h3,.findLoad{
     margin: 8px 0;
@@ -82,7 +83,8 @@ option {
 }
 .findLoad {
     padding: 5px 10px ;
-    background-color: #eee;
+    background-color: black;
+    color: white;
     outline: none;
     border: 1px solid rgba(204, 204, 204, 0.2);
     border-radius: 5px;
