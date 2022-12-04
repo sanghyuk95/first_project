@@ -1,0 +1,174 @@
+.container {
+    background-color: #eee;
+}
+.main {
+    width: 80%;
+    margin: 0 auto 50px auto;
+    height: 1100px;
+    display: flex;
+    padding-top: 120px;
+}
+.mainImg {
+    width: 50%;
+    height: 100vh;
+    background-color: white;
+    border: 1px solid #ccc;
+}
+.bigImg {
+    width: 400px;
+    height: 70vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+}
+.bigImg img {
+    height: 600px;
+    margin: 0 auto;
+}
+.miniImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img {
+    width: 65px;
+    height: 100px;
+    margin: 5px;
+    cursor: pointer;
+    filter: brightness(0.7);
+}
+.aa {
+    background: url(https://saint-laurent.dam.kering.com/m/18587c77c0d9de1f/Medium2-710431Y2F621000_A.jpg?v=1) no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.bb {
+    background: url(https://saint-laurent.dam.kering.com/m/35b72d5dcab50171/Medium2-710431Y2F621000_Y.jpg?v=1) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.cc {
+    background: url(https://saint-laurent.dam.kering.com/m/bde8f7c7d93a180/Medium2-710431Y2F621000_B.jpg?v=2) no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.dd {
+    background: url(https://saint-laurent.dam.kering.com/m/2be1a605ac171a51/Medium2-710431Y2F621000_C.jpg?v=2) no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.ee {
+    background: url(https://saint-laurent.dam.kering.com/m/71ee0bef2b3f843f/Medium2-710431Y2F621000_H.jpg?v=2) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.ff {
+    background: url(https://saint-laurent.dam.kering.com/m/55bbeb901cb032f0/Medium2-710431Y2F621000_D.jpg?v=2) no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.border {
+    border: 2px solid black;
+    filter: brightness(1);
+}
+
+.bigImg {
+    position: relative;
+}
+
+.img-magnifier-glass {
+    position: absolute;
+    border: 3px solid #000;
+    border-radius: 50%;
+    cursor: none;
+    /*Set the size of the magnifier glass:*/
+    width: 180px;
+    height: 180px;
+}
+
+.info {
+    width: 50%;
+    height: 100vh;
+    border: 1px solid #ccc;
+    border-left-width: 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+.title {
+    margin: 100px 0 50px 0;
+    text-align: center;
+}
+.price {
+    margin-right: 60px;
+    text-align: right;
+}
+.infoDt {
+    margin: 50px;
+}
+.infoDt > p {
+    margin: 20px 0;
+}
+.colorInfo {
+    margin-top: 20px;
+}
+.colorInfo > input {
+    pointer-events: none;
+    background-color: white;
+    margin-left: 10px;
+    border: 0;
+    position: relative;
+    top: 4px;
+}
+.flexInfo {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.hideInfo li {
+    margin-bottom: 7px;
+    margin-left: 20px;
+    list-style: circle;
+    font-size: 14px;
+}
+.hideInfo {
+    margin-top: 20px;
+}
+.size {
+    margin-right: 30px;
+    width: 230px;
+}
+.size > p {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.size > select {
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid black;
+    outline: none;
+    margin-top: 10px;
+    display: block;
+}
+.buy {
+    color: white;
+    width: 230px;
+    margin-top: 15px;
+    background-color: black;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.delivery {
+    font-size: 14px;
+    text-align: right;
+    margin: 50px 30px 0 0;
+}
+.delivery p:last-child {
+    font-size: 12px;
+    margin-top: 20px;
+}

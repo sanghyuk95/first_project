@@ -1,0 +1,379 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "Noto Sans KR", sans-serif;
+}
+html::-webkit-scrollbar {
+    width: 10px;
+}
+html::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 10px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+}
+html::-webkit-scrollbar-track {
+    background-color: #eee;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 5px white;
+}
+/* ---------상단헤더------------ */
+header {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.dummy {
+    width: 500px;
+    flex-shrink: 2;
+}
+.logo {
+    width: 300px;
+    flex-shrink: 0;
+}
+.menu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+.menuList {
+    width: 120px;
+    margin: 0 2%;
+    text-align: center;
+}
+.menuListMap {
+    width: 120px;
+    margin: 0 2%;
+    text-align: center;
+}
+.menuList:hover {
+    padding-top: 140px;
+}
+.menuList:hover > a,
+.menuListMap:hover > a {
+    font-weight: bold;
+}
+.menuList:hover .hm {
+    display: flex;
+}
+.hm {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+    height: 120px;
+    display: none;
+    padding-top: 20px;
+}
+.hm > a {
+    display: block;
+    margin-bottom: 10px;
+}
+.hm > a:hover {
+    font-weight: bold;
+}
+header a {
+    text-decoration: none;
+    color: black;
+}
+.icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 10;
+}
+.icon i {
+    margin-right: 30px;
+}
+.icon .fa-bars {
+    font-size: 32px;
+    display: none;
+}
+.search {
+    display: none;
+}
+.on {
+    display: block;
+}
+.search form {
+    float: right;
+    position: absolute;
+    top: -8px;
+    right: 95px;
+    font-size: 50px;
+}
+.search input {
+    padding: 5px;
+}
+.search input:focus {
+    outline: none;
+}
+.search button {
+    width: 0;
+    height: 0;
+    background-color: transparent;
+    border: 0;
+    position: relative;
+    right: 45px;
+    top: 4px;
+}
+button i {
+    color: black;
+    font-size: 20px;
+    margin: 3px;
+}
+/* --------------헤더 끝--------------- */
+/* --------로그인 창----------------- */
+.black {
+    width: 100%;
+    height: 100%;
+    filter: brightness(30%);
+    pointer-events: none;
+}
+.join {
+    padding-top: 60px;
+    width: 500px;
+    height: 600px;
+    background-color: #eee;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    right: 0;
+    top: 20%;
+    margin: 0 auto;
+    z-index: 100;
+    border-radius: 25px;
+}
+.fa-xmark {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 50px;
+}
+.join form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.join form p {
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.join form input {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: 0;
+    text-indent: 10px;
+}
+.join form input:last-child {
+    margin-bottom: 10px;
+}
+.join form .old {
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    outline: none;
+    border: 0;
+}
+.join a {
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+}
+.remember {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+.remember a {
+    text-align: right;
+}
+.new {
+    display: flex;
+    flex-direction: column;
+}
+.social {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.kakao {
+    width: 300px;
+    height: 50px;
+    background-color: yellow;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+.google {
+    width: 300px;
+    height: 50px;
+    background-color: rgb(196, 196, 196);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+/* --------로그인 끝----------------- */
+
+/* -----------반응형 햄버거 메뉴------------- */
+.ham {
+    position: fixed;
+    right: 0;
+    width: 30%;
+    height: 50vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 80px;
+    font-size: 1rem;
+    z-index: 100;
+}
+.hamMenu {
+    display: flex;
+    flex-direction: column;
+}
+.hamMenuIn {
+    margin: 10px;
+}
+.hamMenuIn a:hover {
+    font-weight: bold;
+}
+.hamMenuIn a:first-child {
+    font-size: 18px;
+    font-weight: bold;
+}
+.hamMenu a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    margin-bottom: 7px;
+}
+/* -----------반응형 햄버거 메뉴 끝------------- */
+
+/* ------탑버튼 시작------------- */
+.topBtn {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.topBtn i {
+    font-size: 30px;
+    color: white;
+}
+/* ------탑버튼 끝------------- */
+
+/*  ------------------푸터 시작--------------------*/
+footer {
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    color: rgb(255, 255, 255, 0.8);
+    padding-left: 200px;
+}
+footer div {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.big {
+    width: 500px;
+    margin: 20px;
+}
+footer div p {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+.mini {
+    font-size: 12px;
+}
+/*  ---------------푸터 끝--------------------------*/
+.hidden {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    .logo {
+        flex-shrink: 1;
+        padding: 10px;
+    }
+    .menu {
+        display: none;
+    }
+    .logo {
+        margin-left: 20px;
+    }
+    .icon .fa-bars {
+        display: block;
+    }
+    .icon {
+        width: 200px;
+        font-size: 25px;
+        position: absolute;
+        right: 0px;
+    }
+    .icon i {
+        margin: 0 20px;
+    }
+    .search form {
+        right: 180px;
+    }
+    .content {
+        margin: 30px 0;
+    }
+    footer {
+        height: 200px;
+        padding: 0 20px;
+    }
+    .dummy {
+        display: none;
+    }
+
+    /* 
+    .ham {display:flex}
+    */
+}

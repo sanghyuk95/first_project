@@ -1,0 +1,113 @@
+.container {background-color: #eee;}
+
+
+.mainBanner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.banner {
+    width: 1500px;
+    height:50vh;
+    margin-top: 80px;
+    background: url(https://saint-laurent.dam.kering.com/m/2ee9541ab44f4c71/original/Fall_22_Homepage_Desktop_Fur.jpg) no-repeat;
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+    grid-template-rows: repeat(auto-fill,450px);
+    margin: 100px 10%;
+    gap: 12px;
+}
+.content div {
+    background-position: center;
+    background-size: contain;
+    height: 450px;
+}
+.box a {text-decoration: none; color: white;}
+.img {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.img p {
+    color: white;
+    z-index: 1;
+    visibility: hidden;
+}
+.title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.img::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    visibility: hidden;
+}
+.box:hover .img::after ,.box:hover p{
+    visibility: visible;
+}
+
+
+.aa {background: url(https://saint-laurent.dam.kering.com/m/c5f2a1c20a711de/Medium2-714268YF8991220_A.jpg?v=1) no-repeat;}
+.bb {background: url(https://saint-laurent.dam.kering.com/m/791acc37c1e36c28/Medium2-709379YC2SW1000_A.jpg?v=2) no-repeat;}
+.cc {background: url(https://saint-laurent.dam.kering.com/m/7bf90b211673a849/Medium2-709468AAA4U1000_A.jpg?v=2) no-repeat;}
+.dd {background: url(https://saint-laurent.dam.kering.com/m/164b3461244096cc/Medium2-713468YCLH22243_A.jpg?v=1) no-repeat;}
+.ee {background: url(https://saint-laurent.dam.kering.com/m/75daabf937d4870/Medium2-706788Y4F802365_A.jpg?v=2) no-repeat;}
+.ff {background: url(https://saint-laurent.dam.kering.com/m/220ef4216bcaa61e/Small-70947925N001000_A.jpg?v=1) no-repeat;}
+.gg {background: url(https://saint-laurent.dam.kering.com/m/113fb2e51136a77e/Small-708196Y4F981000_A.jpg?v=1) no-repeat;}
+.hh {background: url(https://saint-laurent.dam.kering.com/m/126b2b3f01d0132b/Small-701986Y2F696031_A.jpg?v=1) no-repeat;}
+.ii {background: url(https://saint-laurent.dam.kering.com/m/46d1f65c3281fba8/Medium2-702700Y4F991000_A.jpg?v=1) no-repeat;}
+.jj {background: url(https://saint-laurent.dam.kering.com/m/1b45b38a8f8d9915/Medium2-712371Y75RJ1081_A.jpg?v=1) no-repeat;}
+.kk {background: url(https://saint-laurent.dam.kering.com/m/6400b202df2bebbd/Medium2-706471Y2F401095_A.jpg?v=1) no-repeat;}
+.ll {background: url(https://saint-laurent.dam.kering.com/m/3396a8fa6fd7b6a9/Medium2-7065453YL031000_A.jpg?v=1) no-repeat;}
+.mm {background: url(https://saint-laurent.dam.kering.com/m/8399f6a57cec51c/Medium2-71103825N001000_A.jpg?v=2) no-repeat;}
+.nn {background: url(https://saint-laurent.dam.kering.com/m/18587c77c0d9de1f/Medium2-710431Y2F621000_A.jpg?v=1) no-repeat;}
+.oo {background: url(https://saint-laurent.dam.kering.com/m/6b91712db0175d90/Medium2-713263Y75SA1095_A.jpg?v=2) no-repeat;}
+.pp {background: url(https://saint-laurent.dam.kering.com/m/7041d928fb508264/Medium2-712176Y75SQ1095_A.jpg?v=3) no-repeat;}
+
+.sideFix {
+    width: 100px;
+    height: 230px;
+    background-color: aqua;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.sideFix p {
+    margin: 15px 0;
+}
+.rp {
+    width: 100px;
+    height: 163px;
+}
+
+@media screen 
+and (max-width: 767px) {
+    .sideFix {display: none;}
+    .banner {font-size: 20px; height: 30vh;}
+}
+
+
+
+

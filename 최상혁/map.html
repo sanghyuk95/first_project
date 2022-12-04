@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="map.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="all.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+            rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<!-- 로그인창 -->
+<div class="join hidden">
+    <i class="fa-solid fa-xmark"></i>
+    <form action="">
+        <p>Login</p>
+        <input type="text" name="" id="" placeholder="Email ID">
+        <input type="password" name="" id="" placeholder="Password">
+        <input type="button" value="로그인" class="old">
+    </form>
+    <div class="remember">
+        <div>
+            <input type="checkbox" name="" id="">
+            remember
+        </div>
+        <div class="new">
+            <a href="">아이디/비밀번호 찾기</a>
+            <a href="">회원가입</a>
+        </div>
+    </div>
+    <div class="social">
+        <div class="kakao">카카오 계정 로그인</div>
+        <div class="google">구글 계정 로그인</div>
+    </div>
+</div>
+<body>
+    <div class="container">
+        <!-- 헤더 -->
+        <header>
+            <div class="dummy"></div>
+            <div class="logo">
+                <a href="mainPage.html">
+                    <img src="https://www.ysl.com/on/demandware.static/-/Library-Sites-Library-SLP/default/dw4961ba3f/images/logo.svg"
+                        alt="">
+                </a>
+            </div>
+            <nav class="menu">
+                <div class="menuList"><a href="allProduct.html">Shop</a>
+                    <div class="hm">
+                        <a href="">aaa</a>
+                        <a href="">bbb</a>
+                    </div>
+                </div>
+                <div class="menuList"><a href="#">Histoire</a>
+                    <div class="hm">
+                        <a href="">aaa</a>
+                        <a href="">bbb</a>
+                        <a href="">ccc</a>
+                    </div>
+                </div>
+                <div class="menuList"><a href="#">La Maison</a>
+                    <div class="hm">
+                        <a href="">aaa</a>
+                        <a href="">bbb</a>
+                        <a href="">ccc</a>
+                    </div>
+                </div>
+                <div class="menuListMap"><a href="map.html">Store Locator</a>
+                </div>
+            </nav>
+            <div class="icon">
+                <p><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></p>
+                <p><a href="#"><i class="fa-solid fa-user"></i></a></p>
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="search">
+                <form action="">
+                    <input type="text" name="search" placeholder="내용을 입력하세요">
+                    <button type="reset"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+        </header>
+        <!-- 반응형 햄버거 클릭시 -->
+        <div class="ham hidden">
+            <nav class="hamMenu">
+                <div class="hamMenuIn">
+                    <a href="allProduct.html">Shop</a>
+                    <a href="#">aaa</a>
+                    <a href="#">aaa</a>
+                </div>
+                <div class="hamMenuIn">
+                    <a href="#">Histoire</a>
+                    <a href="#">aaa</a>
+                    <a href="#">aaa</a>
+                    <a href="#">aaa</a>
+                </div>
+                <div class="hamMenuIn">
+                    <a href="#">La Maison</a>
+                    <a href="#">aaa</a>
+                    <a href="#">aaa</a>
+                    <a href="#">aaa</a>
+                </div>
+                <p><a href="map.html">Store Locator</a></p>
+            </nav>
+        </div>
+        <!-- 메인섹션 -->
+        <div class="main">
+            <div class="storeList">
+                <div class="loca">
+                    <div>지역을 선택해 주세요</div>
+                    <div>
+                        <select name="" id="">
+                            <option value="">전체</option>
+                            <option>서울특별시</option>
+                            <option>부산광역시</option>
+                            <option>경기도</option>
+                            <option>대구광역시</option>
+                            <option>대전광역시</option>
+                            <option>광주광역시</option>
+                        </select>
+                        <button class="btn">검색</button>
+                    </div>
+                </div>  
+
+                <ul>
+                    <li class="no yes">
+                        <h3>부산점</h3>
+                        <p class="addr">부산광역시 가야대로 772 </p>
+                        <p class="phone">051 810 4171</p>
+                        <button class="findLoad">길찾기</button>
+                    </li>
+                    <li class="no yes">
+                        <h3>신세계 센텀점</h3>
+                        <p class="addr">부산광역시 해운대구 센텀남대로 35</p>
+                        <p class="phone">051 745 1222</p>
+                        <button class="findLoad">길찾기</button>
+                    </li>
+                    <li class="no yes">
+                        <h3>롯데 대구점</h3>
+                        <p class="addr">대구광역시 북구 태평로 161</p>
+                        <p class="phone">053 660 3180</p>
+                        <button class="findLoad">길찾기</button>
+                    </li>
+                    <li class="no yes">
+                        <h3>신세계 대구점</h3>
+                        <p class="addr">대구광역시 동부로 149</p>
+                        <p class="phone">053 661 6455</p>
+                        <button class="findLoad">길찾기</button>
+                    </li>
+                    <li class="no yes">
+                        <h3>갤러리아 타임월드점</h3>
+                        <p class="addr">대전광역시 서구 대덕대로 211</p>
+                        <p class="phone">042 720 6290</p>
+                        <button class="findLoad">길찾기</button>
+                    </li>
+                    <li class="no yes">
+                        <h3>신세계 대전점</h3>
+                        <p class="addr">대전광역시 유성구 엑스포로 1</p>
+                        <p class="phone">042 607 8751</p>
+                        <button class="findLoad">길찾기</button>
+                    </li>
+                    <li class="no yes">
+                        <h3>스타필드 하남점</h3>
+                        <p class="addr">경기도 하남시 미사대로 750 </p>
+                        <p class="phone">031 8072 8349</p>
+                        <button class="findLoad">길찾기</button>
+                    </li>
+                    <li class="no yes">
+                        <h3>신세계 광주점</h3>
+                        <p class="addr">광주광역시 서구 무진대로 932</p>
+                        <p class="phone">062 360 1627</p>
+                        <button class="findLoad">길찾기</button>
+                    </li>
+                    <li class="no yes">
+                        <h3>현대 판교점</h3>
+                        <p class="addr">경기도 성남시 분당구 판교역로 146번길 20</p>
+                        <p class="phone">031 5170 1147</p>
+                        <button class="findLoad">길찾기</button>
+                    </li>
+                    <li class="no yes">
+                        <h3>서울 플래그십</h3>
+                        <p class="addr">서울특별시 강남구 압구정로 436</p>
+                        <p class="phone">02 545 2250</p>
+                        <button class="findLoad">길찾기</button>
+                    </li>
+                    <!--  -->
+                    <li class="no yes">
+                        <h3>신세계 경기점</h3>
+                        <p class="addr">경기도 용인시 수지구 포은대로 536</p>
+                        <p class="phone">031 695 1741</p>
+                        <button class="findLoad">길찾기</button>
+                    </li>
+                    <li class="no yes">
+                        <h3>여주 아울렛점</h3>
+                        <p class="addr">경기도 여주군 명품로 360</p>
+                        <p class="phone">031 8087 2553</p>
+                        <button class="findLoad">길찾기</button>
+                    </li>
+                    <li class="no yes">
+                        <h3>갤러리아 광교점</h3>
+                        <p class="addr">경기도 수원시 영통구 광교중앙로 124</p>
+                        <p class="phone">031 5174 7227</p>
+                        <button class="findLoad">길찾기</button>
+                    </li>
+                    <li class="no yes">
+                        <h3>더현대 서울점</h3>
+                        <p class="addr">서울특별시 영등포구 여의대로 108</p>
+                        <p class="phone">02 3277 0131</p>
+                        <button class="findLoad">길찾기</button>
+                    </li>
+                    <li class="no yes">
+                        <h3>신세계 영등포점</h3>
+                        <p class="addr">서울특별시 영등포구 영중로 9</p>
+                        <p class="phone">02 545 2250</p>
+                        <button class="findLoad">길찾기</button>
+                    </li>
+                    <li class="no yes">
+                        <h3>신세계 강남점</h3>
+                        <p class="addr">서울특별시 서초구 신반포로 176</p>
+                        <p class="phone">02 3479 6069</p>
+                        <button class="findLoad">길찾기</button>
+                    </li>
+                    <li class="no yes">
+                        <h3>롯데 본점</h3>
+                        <p class="addr">서울특별시 중구 남대문로 81</p>
+                        <p class="phone">02 726 4198</p>
+                        <button class="findLoad">길찾기</button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="mapSection">
+                <div id="contents"></div>
+                <div id="map"></div>
+                
+            </div>
+
+        </div>
+        
+    </div>
+
+    <script type="text/javascript"
+        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=b3cb04e03d26a5db05130d79e561c3b2&libraries=services,clusterer,drawing"></script>
+    <script src="map.js"></script>
+</body>
+
+</html>
