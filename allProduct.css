@@ -1,18 +1,5 @@
 .container {background-color: #eee;}
-html::-webkit-scrollbar {
-    width: 10px;
-}
-html::-webkit-scrollbar-thumb {
-    background-color: #ccc;
-    border-radius: 10px;
-    background-clip: padding-box;
-    border: 2px solid transparent;
-}
-html::-webkit-scrollbar-track {
-    background-color: #eee;
-    border-radius: 10px;
-    box-shadow: inset 0px 0px 5px white;
-}
+
 
 .mainBanner {
     display: flex;
@@ -118,6 +105,7 @@ html::-webkit-scrollbar-track {
 @media screen 
 and (max-width: 767px) {
     .sideFix {display: none;}
+    .banner {font-size: 20px; height: 30vh;}
 }
 
 

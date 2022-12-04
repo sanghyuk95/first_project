@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+}
+
+.herder {
+  width: 100%;
+  height: 100px;
+  background: greenyellow;
+  color: #fff;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+}
+
+.footer {
+  width: 100%;
+  height: 100px;
+  background: black;
+  color: #fff;
+}
+
+.sustainability {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.image {
+  width: 60%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.img1 {
+  background-image: url(https://saint-laurent.dam.kering.com/m/470c6ba4b634a292/original/YSL-com-_-section-developpement-durable_images_A.jpg);
+}
+.img2 {
+  background-image: url(https://saint-laurent.dam.kering.com/m/1fd546fa32dd6aea/original/YSL-com-_-section-developpement-durable_images_B.jpg);
+}
+.img3 {
+  background-image: url(https://saint-laurent.dam.kering.com/m/259a02ea3c683706/original/YSL-com-_-section-developpement-durable_images_C.jpg);
+}
+.img4 {
+  background-image: url(https://saint-laurent.dam.kering.com/m/1564874163a91c3a/original/YSL-com-section-de-veloppement-durable_images_I-77.jpg);
+}
+.img5 {
+  background-image: url(https://saint-laurent.dam.kering.com/m/6ae815b49017f889/original/YSL-com-_-section-developpement-durable_images_D.jpg);
+}
+.img6 {
+  background-image: url(https://saint-laurent.dam.kering.com/m/78f6bb1b2480e6fb/original/YSL-com-_-section-developpement-durable_images_E.jpg);
+}
+.img7 {
+  background-image: url(https://saint-laurent.dam.kering.com/m/5f350ecab50e6039/original/YSL-com-_-section-developpement-durable_images_F.jpg);
+}
+.img8 {
+  background-image: url(https://saint-laurent.dam.kering.com/m/1c695a029a63f07c/original/YSL-com-section-de-veloppement-durable_images_G_V2.jpg);
+}
+.img9 {
+  background-image: url(https://saint-laurent.dam.kering.com/m/72a27b2fcb3d0f7a/original/YSL-com-_-section-developpement-durable_images_H.jpg);
+}
+
+
+.text {
+  width: 40%;
+  height: 100%;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.link {
+  color: black;
+}
+
+@media screen and (max-width: 1300px) {
+  .title {
+    font-size: 30px;
+  }
+
+  .title2 {
+    font-size: 22px;
+  }
+
+  .content {
+    font-size: 14px
+  }
+
+  .link {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .title {
+    font-size: 28px;
+  }
+
+  .title2 {
+    font-size: 20px;
+  }
+
+  .content {
+    font-size: 12px
+  }
+
+  .link {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .title {
+    font-size: 28px;
+  }
+
+  .title2 {
+    font-size: 20px;
+  }
+
+  .content {
+    font-size: 12px
+  }
+
+  .link {
+    font-size: 12px;
+  }
+
+  .sustainability {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .image {
+    width: 100%;
+  }
+
+  .text {
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
