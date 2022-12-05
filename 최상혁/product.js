@@ -137,9 +137,4 @@
             $buy.textContent = "구매하기";
         }
     });
-
-    const $topBtn = document.querySelector(".topBtn");
-    $topBtn.addEventListener("click", (e) => {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-    });
 })();

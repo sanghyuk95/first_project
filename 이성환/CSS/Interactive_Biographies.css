@@ -8,15 +8,8 @@ header{
   font-size: 16px;
 }
 .container {
-  display: grid;
-  grid-gap: 10px;
   height: 3000px;
-  margin: 0px 5%;
-  padding: 0 2%;
-  grid-template-rows: 80px 1fr 100px;
-  grid-template-areas: 'header header header'
-                       'main main main'
-                       'footer footer footer';
+  background-color: white;
 }
 .container > div {
   background-color: gainsboro;
@@ -28,6 +21,7 @@ header{
   grid-area: main;
   display: grid;
   height: 300vh;
+  margin: 0 7%;
   grid-gap: 10px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 400px 50px 1fr 50px 1fr 1fr;

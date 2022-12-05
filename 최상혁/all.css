@@ -184,6 +184,7 @@ button i {
     border-radius: 20px;
     border: 0;
     text-indent: 10px;
+    outline: 0;
 }
 .join form input:last-child {
     margin-bottom: 10px;
@@ -338,14 +339,12 @@ footer div p {
 
 @media screen and (max-width: 767px) {
     .logo {
-        flex-shrink: 1;
+        flex-shrink: 2;
         padding: 10px;
+        margin-left: 20px;
     }
     .menu {
         display: none;
-    }
-    .logo {
-        margin-left: 20px;
     }
     .icon .fa-bars {
         display: block;

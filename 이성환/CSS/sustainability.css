@@ -73,10 +73,11 @@
 .text {
   width: 40%;
   height: 100%;
-  margin: 20px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: white;
 }
 
 .link {

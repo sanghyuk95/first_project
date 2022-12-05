@@ -51,7 +51,6 @@ nav i:hover {
 .historyIn a,
 .laIn a {
     margin: 0 10px;
-    width: 50px;
 }
 .menu1:hover .shopIn {
     display: inline-block;
@@ -288,7 +287,6 @@ button i {
     width: 100%;
     display: flex;
     justify-content: flex-end;
-
 }
 .infoP a {
     text-decoration: none;
@@ -304,6 +302,9 @@ button i {
     font-size: 30px;
     text-align: center;
     margin-bottom: 50px;
+}
+.title > h1 {
+    margin: 0 10px;
 }
 .detail {
     padding: 10px 50px;
@@ -392,7 +393,7 @@ button i {
     background-color: rgba(0, 0, 0, 0.3);
 }
 .linkHs {
-    background:url(https://content.api.news/v3/images/bin/9bac395c8f577ea9f0860cbef485f19b) no-repeat;
+    background: url(https://content.api.news/v3/images/bin/9bac395c8f577ea9f0860cbef485f19b) no-repeat;
     background-position: center;
     background-size: cover;
 }
@@ -421,7 +422,7 @@ button i {
     align-items: center;
     border-radius: 50%;
 }
-.topBtn i{
+.topBtn i {
     font-size: 30px;
     color: white;
 }
@@ -459,5 +460,22 @@ footer div p {
 @media screen and (max-width: 767px) {
     .ccc {
         padding: 0;
+    }
+    .ddd {
+        height: 100vh;
+    }
+    .teamLink {
+        flex-direction: column;
+    }
+    .detail {
+        padding: 10px 10px;
+        text-align: left;
+    }
+    .title {
+        margin-bottom: 10px;
+    }
+    footer {
+        height: 200px;
+        padding: 0 20px;
     }
 }
