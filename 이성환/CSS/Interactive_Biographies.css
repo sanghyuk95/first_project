@@ -4,13 +4,16 @@
     box-sizing: border-box;
 }
 html {font-size: 10px;}
+header{
+  font-size: 16px;
+}
 .container {
   display: grid;
   grid-gap: 10px;
-  height: 2000px;
+  height: 3000px;
   margin: 0px 5%;
   padding: 0 2%;
-  grid-template-rows: 100px 1fr 100px;
+  grid-template-rows: 80px 1fr 100px;
   grid-template-areas: 'header header header'
                        'main main main'
                        'footer footer footer';
