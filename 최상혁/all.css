@@ -313,7 +313,7 @@ footer {
     display: flex;
     flex-direction: row;
     color: rgb(255, 255, 255, 0.8);
-    padding-left: 200px;
+    padding-left: 10%;
 }
 footer div {
     width: 300px;

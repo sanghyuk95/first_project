@@ -16,6 +16,10 @@ $x.addEventListener("click", (e) => {
     $join.classList.toggle("hidden");
     $container.classList.toggle("black");
 });
+const $topBtn = document.querySelector(".topBtn");
+$topBtn.addEventListener("click", (e) => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+});
 
 const $ham = document.querySelector(".ham");
 const $bar = document.querySelector(".fa-bars");

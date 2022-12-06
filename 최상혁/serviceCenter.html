@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Product.css">
+    <link rel="stylesheet" href="serviceCenter.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -14,7 +14,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <title>Yves Saint Laurent</title>
 </head>
 
@@ -110,94 +109,31 @@
             </div>
             <div class="search">
                 <form action="">
-                    <input type="text" name="search" placeholder="내용을 입력하세요">
-                    <button type="reset"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <input type="text" placeholder="내용을 입력하세요" class="SE">
+                    <button type="button" class="SEBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
             </div>
         </header>
         <!-- 메인섹션 -->
         <div class="main">
-            <div class="mainImg">
-                <div class="bigImg">
-                    <div class="swiper">
-                        <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper">
-                            <!-- Slides -->
-                            <div class="swiper-slide aa"></div>
-                            <div class="swiper-slide bb"></div>
-                            <div class="swiper-slide cc"></div>
-                            <div class="swiper-slide dd"></div>
-                            <div class="swiper-slide ee"></div>
-                            <div class="swiper-slide ff"></div>
-                        </div>
-                        <!-- If we need pagination -->
-                        <div class="swiper-pagination"></div>
-                    </div>
+            <div class="banner">
+                <h1>Saint Laurent</h1>
+                <p>고객센터</p>
+            </div>
+            <div class="categori">
+                <div class="cateDt now">쇼핑</div>
+                <div class="cateDt">서비스</div>
+                <div class="cateDt">제품</div>
+                <div class="cateDt">기프트</div>
+                <div class="cateDt">결제</div>
+                <div class="cateDt">배송</div>
+                <div class="cateDt">반품</div>
+            </div>
+            <div class="result"></div>
 
-                    <img src="https://saint-laurent.dam.kering.com/m/18587c77c0d9de1f/Medium2-710431Y2F621000_A.jpg?v=1"
-                        id="myimage">
-                </div>
-                <div class="miniImg">
-                    <div class="aa img border"></div>
-                    <div class="bb img"></div>
-                    <div class="cc img"></div>
-                    <div class="dd img"></div>
-                    <div class="ee img"></div>
-                    <div class="ff img"></div>
-                </div>
-            </div>
-            <div class="info">
-                <div class="title">
-                    <h1>울 펠트 소재의 밀리터리 재킷</h1>
-                </div>
-                <div class="price">
-                    <h2>₩ 5,945,000</h2>
-                </div>
-                <div class="infoDt">
-                    <p>숏 밀리터리 재킷.<br>스탠드 칼라, 비대칭 버튼 여밈 디테일, 허리에 조절 가능한 벨트.
-                    </p>
-                    <div class="colorInfo">
-                        컬러 : NOIR
-                        <input type="color" value="#000">
-                    </div>
-                    <div class="flexInfo">
-                        <ul class="hideInfo">
-                            <li>100% 울</li>
-                            <li>쿠프로와 코튼 안감</li>
-                            <li>비대칭 버튼 여밈 디테일</li>
-                            <li>허리에 웰트 포켓 2개</li>
-                            <li>내부에 웰트 포켓 2개</li>
-                            <li>두 개의 버튼이 달린 스탠드 칼라</li>
-                            <li>허리에 조절 가능한 벨트</li>
-                            <li>버튼이 달린 어깨 견장</li>
-                            <li>제품 번호 : 710431Y2F621000</li>
-                            <li>원산지 이탈리아</li>
-                        </ul>
-                        <div class="size">
-                            <p>YSL 사이즈</p>
-                            <select class="sizeSelect">
-                                <option value="size">사이즈 선택</option>
-                                <option value="soldOut">YSL 42 - KR 85 - 알림받기</option>
-                                <option value="soldOut">YSL 44 - KR 90 - 알림받기</option>
-                                <option value="46">YSL 46 - KR 95</option>
-                                <option value="48">YSL 48 - KR 100</option>
-                                <option value="50">YSL 50 - KR 105</option>
-                                <option value="soldOut">YSL 52 - KR 110 - 알림받기</option>
-                            </select>
-                            <button class="buy">사이즈를 선택하세요</button>
-                        </div>
-                    </div>
-                    <div class="delivery">
-                        <p>
-                            문의전화 : 02 6105 2228<br>
-                            월요일~토요일<br>오전 10시분~오후 9시
-                        </p>
-                        <p>
-                            고객 서비스에 문의하는 것으로 고객님은 개인정보가 국외로 전송되는 것에 동의합니다.
-                        </p>
-                    </div>
-                </div>
-            </div>
+        </div>
+        <div class="topBtn">
+            <i class="fa-solid fa-arrow-up"></i>
         </div>
         <!-- 푸터 -->
         <footer>
@@ -227,10 +163,13 @@
             </div>
         </footer>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
-        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-    <script src="product.js"></script>
+    <div class="modal hidden">
+        <i class="fa-solid fa-xmark x2"></i>
+        <div class="title">타이틀</div>
+        <div class="modalC">내용</div>
+    </div>
+    <script src="FAQ.json" type="text/javascript"></script>
+    <script src="serviceCenter.js"></script>
 </body>
 
 </html>
