@@ -45,7 +45,7 @@ for (let i = 0; i < 쇼핑.length; i++) {
     makeList(쇼핑, i);
 }
 makeModal();
-
+//---------------------------
 $cateDt.forEach((e) => {
     e.addEventListener("click", (item) => {
         $result.innerHTML = "";
@@ -53,7 +53,6 @@ $cateDt.forEach((e) => {
             makeList(eval(e.textContent), i);
         }
         makeModal();
-
         $cateDt.forEach((e) => {
             e.classList.toggle("now", e.textContent === item.target.textContent);
         });
@@ -61,17 +60,30 @@ $cateDt.forEach((e) => {
 });
 
 function makeList(name, i) {
-    const div = document.createElement("div");
-    div.className = "answer";
-    div.innerHTML = `${name[i].title}`;
-    $result.appendChild(div);
+    const $div = document.createElement("div");
+    const $hidden = document.createElement('div')
+    $div.className = "answer";
+    $div.innerText = name[i].title;
+    $hidden.className = 'hidden'
+    $hidden.innerText = name[i].detail;
+    $result.appendChild($div);
+    $result.appendChild($hidden);
 }
 
 function makeModal() {
     const $answer = document.querySelectorAll(".answer");
+    const $insert = document.querySelector('.insert')
+    const $title = document.createElement('div')
+    const $modalC = document.createElement('div')
     $answer.forEach((e) => {
         e.addEventListener("click", (item) => {
-            console.log(item.target);
+            $insert.innerHTML = null
+            $title.className = 'title'
+            $title.innerHTML = item.target.textContent
+            $modalC.className = 'modalC'
+            $modalC.innerHTML = item.target.nextElementSibling.innerHTML
+            $insert.appendChild($title)
+            $insert.appendChild($modalC)
             $container.classList.toggle("black");
             $modal.classList.toggle('hidden')
         });

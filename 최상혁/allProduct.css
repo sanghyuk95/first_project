@@ -47,6 +47,10 @@
     font-size: 1rem;
     font-weight: bold;
     margin-bottom: 10px;
+    pointer-events: none;
+}
+.price {
+    pointer-events: none;
 }
 .subTitle {
     font-size: 0.8rem;
@@ -86,7 +90,8 @@
 .sideFix {
     width: 100px;
     height: 230px;
-    background-color: aqua;
+    background-color: black;
+    color: white;
     position: fixed;
     bottom: 0;
     display: flex;
@@ -100,6 +105,34 @@
 .rp {
     width: 100px;
     height: 163px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rp p {
+    color: white;
+    z-index: 2;
+    display: none;
+    text-align: center;
+    font-size: 12px;
+}
+.rp::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    visibility: hidden;
+}
+.sideFix:hover .rp::after {
+    visibility: visible;
+}
+.sideFix:hover .rp p {
+    display: block;
 }
 .hideList {
     display: none;

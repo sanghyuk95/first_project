@@ -30,24 +30,31 @@ $bar.addEventListener("click", (e) => {
 const $img = document.querySelectorAll(".img");
 const $link = document.querySelectorAll(".proLink");
 const $rp = document.querySelector(".rp");
-const arr = [...$link]
 
-arr.forEach((e) => {
+$link.forEach((e) => {
     e.addEventListener("click", (item) => {
         const recent = getComputedStyle(e.firstElementChild).backgroundImage;
-        console.log(arr.indexOf(e))
+        const $title = item.target.firstElementChild.textContent;
         const json = JSON.stringify(recent);
         const json2 = JSON.stringify(e.href);
+        const json3 = JSON.stringify($title)
         localStorage.setItem("url", json);
         localStorage.setItem("link", json2);
+        localStorage.setItem('title',json3)
     });
 });
 
 const url = localStorage.getItem("url");
 const link = localStorage.getItem("link");
+const $title = localStorage.getItem("title");
+
 const parseUrl = JSON.parse(url);
 const parseLink = JSON.parse(link);
+const parseTitle = JSON.parse($title);
 
+const $p = document.createElement('p')
+$p.innerHTML = parseTitle
+$rp.appendChild($p)
 $rp.style.backgroundImage = parseUrl;
 $rp.style.backgroundSize = "contain";
 $rp.style.backgroundRepeat = "no-repeat";

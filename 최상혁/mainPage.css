@@ -353,6 +353,7 @@ button i {
 .linkTitle {
     margin-bottom: 100px;
     font-size: 50px;
+    font-weight: bold;
 }
 .teamLink {
     display: flex;
@@ -454,6 +455,12 @@ footer div p {
 }
 .mini {
     font-size: 12px;
+}
+footer a {
+    text-decoration: none;
+    color: rgb(255, 255, 255, 0.8);
+    font-size: 14px;
+    margin-bottom: 8px;
 }
 /*  ---------------푸터 끝--------------------------*/
 
