@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,12 +11,113 @@
   <link rel="stylesheet" href="CSS/media_1280.css">
   <link rel="stylesheet" href="CSS/media_1024.css">
   <link rel="stylesheet" href="CSS/media_767.css">
+  <link rel="stylesheet" href="../최상혁/all2.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <title>Saint Laurent</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap" rel="stylesheet">
   <title>Document</title>
 </head>
+<!-- 로그인창 -->
+<div class="join hidden">
+  <i class="fa-solid fa-xmark"></i>
+  <form action="">
+    <p>Login</p>
+    <input type="text" name="" id="" placeholder="Email ID">
+    <input type="password" name="" id="" placeholder="Password">
+    <input type="button" value="로그인" class="old">
+  </form>
+  <div class="remember">
+    <div>
+      <input type="checkbox" name="" id="">
+      remember
+    </div>
+    <div class="new">
+      <a href="">아이디/비밀번호 찾기</a>
+      <a href="">회원가입</a>
+    </div>
+  </div>
+  <div class="social">
+    <div class="kakao">카카오 계정 로그인</div>
+    <div class="google">구글 계정 로그인</div>
+  </div>
+</div>
+
 <body>
+  <!-- 반응형 햄버거 클릭시 -->
+  <div class="ham hidden">
+    <nav class="hamMenu">
+      <div class="hamMenuIn">
+        <a href="allProduct.html">Shop</a>
+        <a href="#">aaa</a>
+        <a href="#">aaa</a>
+      </div>
+      <div class="hamMenuIn">
+        <a href="#">Histoire</a>
+        <a href="#">aaa</a>
+        <a href="#">aaa</a>
+        <a href="#">aaa</a>
+      </div>
+      <div class="hamMenuIn">
+        <a href="#">La Maison</a>
+        <a href="#">aaa</a>
+        <a href="#">aaa</a>
+        <a href="#">aaa</a>
+      </div>
+      <p><a href="map.html">Store Locator</a></p>
+    </nav>
+  </div>
   <div class="container">
-    <div class="herder">herder</div>
+    <!-- 헤더 -->
+    <header class="header">
+      <div class="dummy"></div>
+      <div class="logo">
+        <a href="mainPage.html">
+          <img
+            src="https://www.ysl.com/on/demandware.static/-/Library-Sites-Library-SLP/default/dw4961ba3f/images/logo.svg"
+            alt="">
+        </a>
+      </div>
+      <nav class="menu">
+        <div class="menuList"><a href="allProduct.html">Shop</a>
+          <div class="hm">
+            <a href="">aaa</a>
+            <a href="">bbb</a>
+          </div>
+        </div>
+        <div class="menuList">
+          <a href="../이성환/Chronicles.html">Histoire</a>
+          <div class="hm">
+            <a href="../이성환/Interactive_Biographies.html">Biographies</a>
+            <a href="">bbb</a>
+            <a href="">ccc</a>
+          </div>
+        </div>
+        <div class="menuList"><a href="#">La Maison</a>
+          <div class="hm">
+            <a href="../이성환/sustainability.html">sustainability</a>
+            <a href="">bbb</a>
+            <a href="">ccc</a>
+          </div>
+        </div>
+        <div class="menuListMap"><a href="map.html">Store Locator</a>
+        </div>
+      </nav>
+      <div class="icon">
+        <p><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></p>
+        <p><a href="#"><i class="fa-solid fa-user"></i></a></p>
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="search">
+        <form action="">
+          <input type="text" placeholder="내용을 입력하세요" class="SE">
+          <button type="button" class="SEBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+      </div>
+    </header>
     <div class="main">
       <div class="content1">
         <h1 class="title">Interactive Biographies</h1>
@@ -38,7 +140,8 @@
             <h2 class="c3h2">1930-1948</h2>
             <h1 class="c3h1">Birth and Early Years on the Île d’Oléron</h1>
             <p class="c3p">
-              Pierre Bergé was born on the Île d'Oléron on November 14, 1930. His mother was a schoolteacher, and his father was a
+              Pierre Bergé was born on the Île d'Oléron on November 14, 1930. His mother was a schoolteacher, and his
+              father was a
               civil servant...
             </p>
           </div>
@@ -48,7 +151,8 @@
             <h2 class="c3h2">1936-1954</h2>
             <h1 class="c3h1">Childhood in Oran</h1>
             <p class="c3p">
-              Yves Mathieu-Saint-Laurent was born in Oran, Algeria, on August 1, 1936. He was the son of Lucienne and Charles
+              Yves Mathieu-Saint-Laurent was born in Oran, Algeria, on August 1, 1936. He was the son of Lucienne and
+              Charles
               Mathieu-Saint-Laurent, manager of an insurance company and owner of a chain of cinemas...
             </p>
           </div>
@@ -67,7 +171,8 @@
             <h2 class="c3h2">1950</h2>
             <h1 class="c3h1">A Nascent Passion for the Theater</h1>
             <p class="c3p">
-              Yves Saint Laurent, 2005. “Chez Pierre Bergé et Yves Saint Laurent,” republication of a 2005 interview in La collection
+              Yves Saint Laurent, 2005. “Chez Pierre Bergé et Yves Saint Laurent,” republication of a 2005 interview in
+              La collection
               Yves Saint Laurent Pierre Bergé, special edition, Connaissance des arts, 2009...
             </p>
           </div>
@@ -77,7 +182,8 @@
             <h2 class="c3h2">1950-1958</h2>
             <h1 class="c3h1">The Bernard Buffet Years</h1>
             <p class="c3p">
-              At the age of 20, Pierre Bergé met the painter Bernard Buffet. They became companions, and Bergé would go on to guide
+              At the age of 20, Pierre Bergé met the painter Bernard Buffet. They became companions, and Bergé would go
+              on to guide
               Buffet’s career over the next eight years...
             </p>
           </div>
@@ -87,7 +193,8 @@
             <h2 class="c3h2">June, 1950</h2>
             <h1 class="c3h1">Summer in Manosque</h1>
             <p class="c3p">
-              In 1950, Pierre Bergé formed a special bond with Jean Giono, with whom he and Bernard Buffet were staying at the time...
+              In 1950, Pierre Bergé formed a special bond with Jean Giono, with whom he and Bernard Buffet were staying
+              at the time...
             </p>
           </div>
         </div>
@@ -105,7 +212,8 @@
             <h2 class="c3h2">1953-1954</h2>
             <h1 class="c3h1">Paper Dolls</h1>
             <p class="c3p">
-              Between 1953 and 1954, Yves Saint Laurent created the haute couture house of his dreams, which he called “Yves Mathieu
+              Between 1953 and 1954, Yves Saint Laurent created the haute couture house of his dreams, which he called
+              “Yves Mathieu
               Saint Laurent Haute Couture Place Vendôme...
             </p>
           </div>
@@ -115,7 +223,8 @@
             <h2 class="c3h2">1953</h2>
             <h1 class="c3h1">First Visit to Paris</h1>
             <p class="c3p">
-              Barely 17 years old, Yves Saint Laurent participated in the annual Secrétariat international de la laine competition...
+              Barely 17 years old, Yves Saint Laurent participated in the annual Secrétariat international de la laine
+              competition...
             </p>
           </div>
         </div>
@@ -124,7 +233,8 @@
             <h2 class="c3h2">1954</h2>
             <h1 class="c3h1">To Move to Paris</h1>
             <p class="c3p">
-              In September 1954, Yves Saint Laurent moved to a small room at 209 boulevard Pereire in Paris and began studying at the
+              In September 1954, Yves Saint Laurent moved to a small room at 209 boulevard Pereire in Paris and began
+              studying at the
               Chambre syndicale de la couture...
             </p>
           </div>
@@ -134,7 +244,8 @@
             <h2 class="c3h2">June, 1955</h2>
             <h1 class="c3h1">Debut at Dior</h1>
             <p class="c3p">
-              Since their first meeting, Yves Saint Laurent had continued to correspond with Michel de Brunhoff, editor-in-chief of
+              Since their first meeting, Yves Saint Laurent had continued to correspond with Michel de Brunhoff,
+              editor-in-chief of
               Vogue (Paris)...
             </p>
           </div>
@@ -144,7 +255,8 @@
             <h2 class="c3h2">1956</h2>
             <h1 class="c3h1">La Vilaine Lulu</h1>
             <p class="c3p">
-              That was how Yves Saint Laurent created La Vilaine Lulu, a comic strip depicting a malicious little girl who flouts
+              That was how Yves Saint Laurent created La Vilaine Lulu, a comic strip depicting a malicious little girl
+              who flouts
               convention...
             </p>
           </div>
@@ -154,7 +266,8 @@
             <h2 class="c3h2">1956</h2>
             <h1 class="c3h1">From Costume Balls to the Stage</h1>
             <p class="c3p">
-              Baron Alexis de Redé, a vital fixture in high society at the time, was looking for an artist to design the set and
+              Baron Alexis de Redé, a vital fixture in high society at the time, was looking for an artist to design the
+              set and
               costumes for the Bal des Têtes he was holding at the Hôtel Lambert on the Île Saint-Louis in 1956...
             </p>
           </div>
@@ -164,7 +277,8 @@
             <h2 class="c3h2">October 24, 1957</h2>
             <h1 class="c3h1">Death of Christian Dior</h1>
             <p class="c3p">
-              Christian Dior died of a heart attack in Montecatini, Italy. His friend Pierre Bergé attended the funeral...
+              Christian Dior died of a heart attack in Montecatini, Italy. His friend Pierre Bergé attended the
+              funeral...
             </p>
           </div>
         </div>
@@ -173,7 +287,8 @@
             <h2 class="c3h2">November 15, 1957</h2>
             <h1 class="c3h1">The Youngest Couturier in the World</h1>
             <p class="c3p">
-              According to the couturier’s wishes, Yves Saint Laurent was officially designated as Christian Dior’s successor...
+              According to the couturier’s wishes, Yves Saint Laurent was officially designated as Christian Dior’s
+              successor...
             </p>
           </div>
         </div>
@@ -209,7 +324,8 @@
             <h2 class="c3h2">1958</h2>
             <h1 class="c3h1">The Neiman Marcus Award</h1>
             <p class="c3p">
-              Yves Saint Laurent received the Neiman Marcus Award, a prestigious annual prize given to important figures in fashion by
+              Yves Saint Laurent received the Neiman Marcus Award, a prestigious annual prize given to important figures
+              in fashion by
               the American luxury department store...
             </p>
           </div>
@@ -219,7 +335,8 @@
             <h2 class="c3h2">1959</h2>
             <h1 class="c3h1">Cyrano de Bergerac and the Beginning of a Collaboration</h1>
             <p class="c3p">
-              While buying a book for his daughter Valentine in 1958, the choreographer Roland Petit happened upon a comic book
+              While buying a book for his daughter Valentine in 1958, the choreographer Roland Petit happened upon a
+              comic book
               version of Cyrano de Bergerac at the bookstore...
             </p>
           </div>
@@ -240,8 +357,10 @@
             <h2>1961</h2>
             <h1>Relocation to the Place Vauban</h1>
             <p>
-              In 1961, Pierre Bergé and Yves Saint Laurent moved to an apartment at 3 place Vauban, which reflected the tastes of two
-              men of their time. Their home was decorated with a Knoll table, Mies Van der Rohe’s Barcelona chairs, works by Bernard
+              In 1961, Pierre Bergé and Yves Saint Laurent moved to an apartment at 3 place Vauban, which reflected the
+              tastes of two
+              men of their time. Their home was decorated with a Knoll table, Mies Van der Rohe’s Barcelona chairs,
+              works by Bernard
               Buffet, and, of course, the Senufo bird.
             </p>
           </div>
@@ -253,15 +372,19 @@
             <h2>1961</h2>
             <h1>A Logo Designed by Cassandre</h1>
             <p>
-              In 1961, Yves Saint Laurent and Pierre Bergé asked the graphic designer Cassandre to design the house’s logo.
+              In 1961, Yves Saint Laurent and Pierre Bergé asked the graphic designer Cassandre to design the house’s
+              logo.
             </p>
             <p>
-              Born to French parents in Ukraine, Adolphe Jean Marie Mouron, who adopted the pseudonym Cassandre, was one of the
-              world’s greatest graphic designers during the interwar period. He was appreciated for his synthetic, geometrical style
+              Born to French parents in Ukraine, Adolphe Jean Marie Mouron, who adopted the pseudonym Cassandre, was one
+              of the
+              world’s greatest graphic designers during the interwar period. He was appreciated for his synthetic,
+              geometrical style
               and was sought after by major names, such as Christian Dior.
             </p>
             <p>
-              For Yves Saint Laurent, he created a monogram of three simple intertwined initials, which was elegant and modern just
+              For Yves Saint Laurent, he created a monogram of three simple intertwined initials, which was elegant and
+              modern just
               like the young man.
             </p>
           </div>
@@ -273,8 +396,10 @@
             <h2>1963</h2>
             <h1>Anne-Marie Muñoz Begins Working in the Studio</h1>
             <p>
-              Yves Saint Laurent met Anne-Marie Muñoz at Christian Dior, where she was working when he was hired. They briefly lost
-              contact after Saint Laurent left Dior. Muñoz spent a year working at Guy Laroche before joining Saint Laurent in 1963 to
+              Yves Saint Laurent met Anne-Marie Muñoz at Christian Dior, where she was working when he was hired. They
+              briefly lost
+              contact after Saint Laurent left Dior. Muñoz spent a year working at Guy Laroche before joining Saint
+              Laurent in 1963 to
               manage the studio. She would maintain this position until the haute couture house closed.
             </p>
           </div>
@@ -311,7 +436,8 @@
               Costumes and set design: Yves Saint Laurent
             </p>
             <p>
-              Zizi Jeanmaire’s 1963 review included many acts, including the renowned Champagne Rosé for which Yves Saint Laurent
+              Zizi Jeanmaire’s 1963 review included many acts, including the renowned Champagne Rosé for which Yves
+              Saint Laurent
               created a spectacular ensemble made of pheasant, ostrich, and rooster feathers.
             </p>
           </div>
@@ -323,9 +449,12 @@
             <h2>1965</h2>
             <h1>Charles of the Ritz</h1>
             <p>
-              Four years after investing in the haute couture house, J. Mack Robinson decided to sell his shares to another American :
-              Richard Salomon, Francophile and president of the cosmetic and perfume firm Charles of the Ritz. While the haute couture
-              business was in deficit, Pierre Bergé and Yves Saint Laurent benefitted from the profits earned by their fragrances.
+              Four years after investing in the haute couture house, J. Mack Robinson decided to sell his shares to
+              another American :
+              Richard Salomon, Francophile and president of the cosmetic and perfume firm Charles of the Ritz. While the
+              haute couture
+              business was in deficit, Pierre Bergé and Yves Saint Laurent benefitted from the profits earned by their
+              fragrances.
             </p>
           </div>
           <div class="img"></div>
@@ -340,7 +469,8 @@
             <h2 class="c10h2">1960</h2>
             <h1 class="c10h1">The Beginning of a Collection</h1>
             <p class="c10p">
-              In 1960, Yves Saint Laurent and Pierre Bergé bought an Ivorian sculpture from Charles Ratton, an art dealer whose
+              In 1960, Yves Saint Laurent and Pierre Bergé bought an Ivorian sculpture from Charles Ratton, an art
+              dealer whose
               gallery was located on the Rue de Grenelle in Paris...
             </p>
           </div>
@@ -377,7 +507,8 @@
             <h2 class="c10h2">January 29, 1962</h2>
             <h1 class="c10h1">Presentation of the First Collection</h1>
             <p class="c10p">
-              On Monday, January 29, crowds gathered to see the presentation of Yves Saint Laurent’s first collection at 30 bis rue
+              On Monday, January 29, crowds gathered to see the presentation of Yves Saint Laurent’s first collection at
+              30 bis rue
               Spontini...
             </p>
           </div>
@@ -396,7 +527,8 @@
             <h2 class="c10h2">January 29, 1962</h2>
             <h1 class="c10h1">First Trench Coat</h1>
             <p class="c10p">
-              The trench coat was another example of Saint Laurent’s signature style. As with the peacoat, the couturier was borrowing
+              The trench coat was another example of Saint Laurent’s signature style. As with the peacoat, the couturier
+              was borrowing
               from male codes of dress...
             </p>
           </div>
@@ -406,7 +538,8 @@
             <h2 class="c10h2">1964</h2>
             <h1 class="c10h1">First Fragrance: Y</h1>
             <p class="c10p">
-              In the early twentieth century, Paul Poiret was the first to establish a connection between haute couture and perfume
+              In the early twentieth century, Paul Poiret was the first to establish a connection between haute couture
+              and perfume
               when he created his house’s signature fragrance...
             </p>
           </div>
@@ -425,7 +558,8 @@
             <h2 class="c10h2">1965</h2>
             <h1 class="c10h1">Rudolf Nureyev and Margot Fonteyn</h1>
             <p class="c10p">
-              In 1962, Rudolf Nureyev and Margot Fonteyn began their collaboration with Giselle, which received twenty-three curtain
+              In 1962, Rudolf Nureyev and Margot Fonteyn began their collaboration with Giselle, which received
+              twenty-three curtain
               calls when it premiered..
             </p>
           </div>
@@ -444,7 +578,8 @@
             <h2 class="c10h2">1965</h2>
             <h1 class="c10h1">Homage to Piet Mondrian</h1>
             <p class="c10p">
-              Yves Saint Laurent’s passion for painting led him and Pierre Bergé to assemble a truly incredible art collection...
+              Yves Saint Laurent’s passion for painting led him and Pierre Bergé to assemble a truly incredible art
+              collection...
             </p>
           </div>
         </div>
@@ -453,7 +588,8 @@
             <h2 class="c10h2">1965</h2>
             <h1 class="c10h1">The Knit Bridal Gown</h1>
             <p class="c10p">
-              Presented in the same collection as the Homage to Mondrian dresses, the knit bridal gown closed that season’s runway
+              Presented in the same collection as the Homage to Mondrian dresses, the knit bridal gown closed that
+              season’s runway
               show...
             </p>
           </div>
@@ -481,7 +617,8 @@
             <h2 class="c10h2">1965</h2>
             <h1 class="c10h1">Moment to Moment</h1>
             <p class="c10p">
-              Moment to Moment, which was the American director Mervin Leroy’s last film, was a thriller starring Jean Seberg as Kay
+              Moment to Moment, which was the American director Mervin Leroy’s last film, was a thriller starring Jean
+              Seberg as Kay
               Stanton, a young woman married to an important psychiatrist...
             </p>
           </div>
@@ -500,7 +637,8 @@
             <h2 class="c10h2">1966</h2>
             <h1 class="c10h1">SAINT LAURENT rive gauche</h1>
             <p class="c10p">
-              In the 1960s, society had evolved in such a way that the norms imposed by haute couture had become obsolete...
+              In the 1960s, society had evolved in such a way that the norms imposed by haute couture had become
+              obsolete...
             </p>
           </div>
         </div>
@@ -545,7 +683,8 @@
             <h2 class="c10h2">1966</h2>
             <h1 class="c10h1">Arabesque</h1>
             <p class="c10p">
-              Yves Saint Laurent designed the costumes for Arabesque, an American spy film starring Gregory Peck and Sophia Loren...
+              Yves Saint Laurent designed the costumes for Arabesque, an American spy film starring Gregory Peck and
+              Sophia Loren...
             </p>
           </div>
         </div>
@@ -581,7 +720,8 @@
             <h2 class="c10h2">1967</h2>
             <h1 class="c10h1">First Pantsuit</h1>
             <p class="c10p">
-              A year after the tuxedo, Yves Saint Laurent proposed his first pantsuit in his Spring-Summer 1967 collection...
+              A year after the tuxedo, Yves Saint Laurent proposed his first pantsuit in his Spring-Summer 1967
+              collection...
             </p>
           </div>
         </div>
@@ -590,8 +730,10 @@
             <h2 class="c10h2">1967</h2>
             <h1 class="c10h1">Belle de Jour</h1>
             <p class="c10p">
-              For Luis Buñuel’s 1967 film Belle de Jour, Yves Saint Laurent created an entire wardrobe for Catherine Deneuve’s
-              character Séverine Serizy, a young bourgeoise who finds meaning in her extramarital encounters in a brothel...
+              For Luis Buñuel’s 1967 film Belle de Jour, Yves Saint Laurent created an entire wardrobe for Catherine
+              Deneuve’s
+              character Séverine Serizy, a young bourgeoise who finds meaning in her extramarital encounters in a
+              brothel...
             </p>
           </div>
         </div>
@@ -636,7 +778,8 @@
             <h2 class="c10h2">1968</h2>
             <h1 class="c10h1">La Chamade (Heartbeat)</h1>
             <p class="c10p">
-              After Belle de Jour, Yves Saint Laurent dressed Catherine Deneuve for Alain Cavalier’s La Chamade (Heartbeat)...
+              After Belle de Jour, Yves Saint Laurent dressed Catherine Deneuve for Alain Cavalier’s La Chamade
+              (Heartbeat)...
             </p>
           </div>
         </div>
@@ -683,12 +826,15 @@
             <h2>1970</h2>
             <h1>The First LOVE cards</h1>
             <p>
-              In 1970, Yves Saint Laurent designed the first in a series of greeting cards in poster form that he would send his
+              In 1970, Yves Saint Laurent designed the first in a series of greeting cards in poster form that he would
+              send his
               friends, collaborators, and clients annually until 2007.
             </p>
             <p>
-              Every year, Saint Laurent adopted a new color palette and created an image using collage, drawings, and gouache. The
-              leitmotif of every card was the word “LOVE.” Many of the cards were inspired by Morocco, where Saint Laurent frequently
+              Every year, Saint Laurent adopted a new color palette and created an image using collage, drawings, and
+              gouache. The
+              leitmotif of every card was the word “LOVE.” Many of the cards were inspired by Morocco, where Saint
+              Laurent frequently
               created them, but also by Georges Braque, Jean Cocteau, Andy Warhol, and Henri Matisse.
             </p>
           </div>
@@ -700,12 +846,15 @@
             <h2>1971</h2>
             <h1>The Scandal Collection</h1>
             <p>
-              On January 29, 1971, Yves Saint Laurent presented his “Libération” or “Quarante” collection inspired by 1940s wartime
+              On January 29, 1971, Yves Saint Laurent presented his “Libération” or “Quarante” collection inspired by
+              1940s wartime
               fashion. The couturier was inspired by Paloma Picasso, who dressed in fleamarket finds.
             </p>
             <p>
-              The short dresses, platform shoes, padded shoulders, and heavy makeup evoking Paris during the Occupation caused a
-              scandal. The collection, which was severely criticized by the press, gave full sway to the retro trend that quickly
+              The short dresses, platform shoes, padded shoulders, and heavy makeup evoking Paris during the Occupation
+              caused a
+              scandal. The collection, which was severely criticized by the press, gave full sway to the retro trend
+              that quickly
               ended up conquering popular fashion.
             </p>
           </div>
@@ -717,8 +866,10 @@
             <h2>1971</h2>
             <h1>Costumes for the Bal Proust</h1>
             <p>
-              On December 2, 1971, Marie-Hélène de Rothschild organized a costume ball at the Château de Ferrières to celebrate the
-              centenary of Marcel Proust’s birth. Yves Saint Laurent created costumes inspired by the Belle Époque for Nan Kempner,
+              On December 2, 1971, Marie-Hélène de Rothschild organized a costume ball at the Château de Ferrières to
+              celebrate the
+              centenary of Marcel Proust’s birth. Yves Saint Laurent created costumes inspired by the Belle Époque for
+              Nan Kempner,
               Hélène Rochas, Jane Birkin, and Marie-Hélène de Rothschild herself.
             </p>
           </div>
@@ -734,8 +885,10 @@
             <h2>1971</h2>
             <h1>Stage Costumes for Johnny Hallyday</h1>
             <p>
-              After designing stage costumes for Sylvie Vartan in 1970, Yves Saint Laurent created costumes for her companion, the
-              singer Johnny Hallyday. His designs for Hallyday’s concert at the Palais des Sports were particularly spectacular.
+              After designing stage costumes for Sylvie Vartan in 1970, Yves Saint Laurent created costumes for her
+              companion, the
+              singer Johnny Hallyday. His designs for Hallyday’s concert at the Palais des Sports were particularly
+              spectacular.
             </p>
           </div>
           <div class="img"></div>
@@ -760,8 +913,10 @@
             <h2>1972</h2>
             <h1>From Charles of the Ritz to E.R. Squibb</h1>
             <p>
-              The haute couture house and the fragrances had been owned by the American group Charles of the Ritz since 1965. In 1972,
-              Richard Salomon, the firm’s president, decided to sell to the pharmaceutical company E.R. Squibb. He convinced the
+              The haute couture house and the fragrances had been owned by the American group Charles of the Ritz since
+              1965. In 1972,
+              Richard Salomon, the firm’s president, decided to sell to the pharmaceutical company E.R. Squibb. He
+              convinced the
               company to sell the haute couture house to Yves Saint Laurent and Pierre Bergé.
             </p>
           </div>
@@ -777,7 +932,8 @@
             <h2 class="c17h2">1973</h2>
             <h1 class="c17h1">Stavisky</h1>
             <p class="c17p">
-              Alain Resnais’s psychological film about power evoked the financial scandals of the Third Republic through the murder of
+              Alain Resnais’s psychological film about power evoked the financial scandals of the Third Republic through
+              the murder of
               a crook who issued fake treasury bonds...
             </p>
           </div>
@@ -787,7 +943,8 @@
             <h2 class="c17h2">1974</h2>
             <h1 class="c17h1">Acquisition of Dar Es Saada</h1>
             <p class="c17p">
-              In 1974, Yves Saint Laurent and Pierre Bergé bought Dar Es Saada, “the House of Happiness in Serenity,” in Marrakech...
+              In 1974, Yves Saint Laurent and Pierre Bergé bought Dar Es Saada, “the House of Happiness in Serenity,” in
+              Marrakech...
             </p>
           </div>
         </div>
@@ -805,7 +962,8 @@
             <h2 class="c17h2">1977</h2>
             <h1 class="c17h1">Opium</h1>
             <p class="c17p">
-              In 1977, Yves Saint Laurent launched a new fragrance to coincide with his Autumn-Winter 1977 collection inspired by
+              In 1977, Yves Saint Laurent launched a new fragrance to coincide with his Autumn-Winter 1977 collection
+              inspired by
               China...
             </p>
           </div>
@@ -815,7 +973,8 @@
             <h2 class="c17h2">1977</h2>
             <h1 class="c17h1">“Les Chinoises” Collection</h1>
             <p class="c17p">
-              The “Spanish” collection was followed by the “Chinoises” collection, which corresponded with the launch of Yves Saint
+              The “Spanish” collection was followed by the “Chinoises” collection, which corresponded with the launch of
+              Yves Saint
               Laurent’s new fragrance Opium...
             </p>
           </div>
@@ -825,7 +984,8 @@
             <h2 class="c17h2">1978</h2>
             <h1 class="c17h1">“Broadway Suit” Collection</h1>
             <p class="c17p">
-              The “Broadway Suit” collection was inspired by George Gershwin’s Porgy and Bess, the first American opera and source of
+              The “Broadway Suit” collection was inspired by George Gershwin’s Porgy and Bess, the first American opera
+              and source of
               the well-known song “Summertime” (which led to numerous jazz covers)...
             </p>
           </div>
@@ -835,7 +995,8 @@
             <h2 class="c17h2">1979</h2>
             <h1 class="c17h1">Homage to Sergei Diaghilev and His Collaboration...</h1>
             <p class="c17p">
-              In 1979, the couturier was inspired by Sergei Diaghilev’s collaboration with Pablo Picasso for the ballet Parade, which
+              In 1979, the couturier was inspired by Sergei Diaghilev’s collaboration with Pablo Picasso for the ballet
+              Parade, which
               was...
             </p>
           </div>
@@ -845,7 +1006,8 @@
             <h2 class="c17h2">1979</h2>
             <h1 class="c17h1">Stage Costumes for Ingrid Caven</h1>
             <p class="c17p">
-              In the 1970s, Yves Saint Laurent first noticed Ingrid Caven, a German actress filming in Paris, and they quickly became
+              In the 1970s, Yves Saint Laurent first noticed Ingrid Caven, a German actress filming in Paris, and they
+              quickly became
               friends...
             </p>
           </div>
@@ -866,10 +1028,14 @@
             <h2>1980</h2>
             <h1>Acquisition of the Villa Oasis and the Jardin Majorelle</h1>
             <p>
-              In 1974, Pierre Bergé and Yves Saint Laurent acquired Dar Es Saada. In 1980, they learned that the nearby Jardin
-              Majorelle was threatened by a real-estate development project and decided to acquire the garden and adjoining villa,
-              which had belonged to the painter Jacques Majorelle. Together, they restored the garden and created a museum of Islamic
-              art designed by Bill Willis in Majorelle’s former studio. In 2011, the museum was converted into a museum of Berber art.
+              In 1974, Pierre Bergé and Yves Saint Laurent acquired Dar Es Saada. In 1980, they learned that the nearby
+              Jardin
+              Majorelle was threatened by a real-estate development project and decided to acquire the garden and
+              adjoining villa,
+              which had belonged to the painter Jacques Majorelle. Together, they restored the garden and created a
+              museum of Islamic
+              art designed by Bill Willis in Majorelle’s former studio. In 2011, the museum was converted into a museum
+              of Berber art.
             </p>
           </div>
           <div class="img"></div>
@@ -880,7 +1046,8 @@
             <h2>1981 - 1982</h2>
             <h1>Inspired by Matisse and Léger</h1>
             <p>
-              Throughout his Autumn-Winter 1981 collection, Yves Saint Laurent was inspired by the artists he loved—especially Henri
+              Throughout his Autumn-Winter 1981 collection, Yves Saint Laurent was inspired by the artists he
+              loved—especially Henri
               Matisse and Fernand Léger, whose patterns and colors deeply influenced him.
             </p>
           </div>
@@ -896,7 +1063,8 @@
             </p>
             <p>
               <i>
-                Saint Laurent (Yves), Oran, 1936, French couturier. He made his mark with his original interpretations of everyday
+                Saint Laurent (Yves), Oran, 1936, French couturier. He made his mark with his original interpretations
+                of everyday
                 garments (pea coat, pantsuit, etc.,), his rigorous style, and his talented use of color.
               </i>
             </p>
@@ -913,8 +1081,10 @@
             <h2>1984</h2>
             <h1>Yves Saint Laurent Awarded</h1>
             <p>
-              Yves Saint Laurent was made Chevalier de la Légion d’Honneur by François Mitterrand on March 12, 1985. He was later made
-              Officier and then Commandeur before being named Grand Officier de la Légion d’Honneur by President Nicolas Sarkozy in
+              Yves Saint Laurent was made Chevalier de la Légion d’Honneur by François Mitterrand on March 12, 1985. He
+              was later made
+              Officier and then Commandeur before being named Grand Officier de la Légion d’Honneur by President Nicolas
+              Sarkozy in
               2007.
             </p>
           </div>
@@ -945,8 +1115,10 @@
             <h2>1986</h2>
             <h1>Creation of the Institut Français de la Mode</h1>
             <p>
-              In 1973, Pierre Bergé created the Chambre Syndicale du prêt-à-porter, des couturiers et des créateurs de mode. In 1986,
-              he continued to modernize the world of fashion by establishing the Institut Français de la Mode, which provides
+              In 1973, Pierre Bergé created the Chambre Syndicale du prêt-à-porter, des couturiers et des créateurs de
+              mode. In 1986,
+              he continued to modernize the world of fashion by establishing the Institut Français de la Mode, which
+              provides
               high-level training in fashion design, research, industry, and trade.
             </p>
           </div>
@@ -971,7 +1143,8 @@
             <h2 class="c24h2">December 14, 1983</h2>
             <h1 class="c24h1">Exhibition at the Met</h1>
             <p class="c24p">
-              In 1983, an exhibition devoted to Yves Saint Laurent opened at the Costume Institute of the Metropolitan Museum of Art...
+              In 1983, an exhibition devoted to Yves Saint Laurent opened at the Costume Institute of the Metropolitan
+              Museum of Art...
             </p>
           </div>
         </div>
@@ -980,7 +1153,8 @@
             <h2 class="c24h2">1988</h2>
             <h1 class="c24h1">A Collection Paying Tribute to Artists</h1>
             <p class="c24p">
-              For his Spring-Summer 1988 collection, Yves Saint Laurent paid tribute to Vincent Van Gogh by recreating his paintings...
+              For his Spring-Summer 1988 collection, Yves Saint Laurent paid tribute to Vincent Van Gogh by recreating
+              his paintings...
             </p>
           </div>
         </div>
@@ -989,7 +1163,8 @@
             <h2 class="c24h2">1989</h2>
             <h1 class="c24h1">The Groupe YSL Enters the Stock Market</h1>
             <p class="c24p">
-              On July 12, 1989, the Groupe Yves Saint Laurent entered the stock market with 420,000 shares each worth 854 francs, ...
+              On July 12, 1989, the Groupe Yves Saint Laurent entered the stock market with 420,000 shares each worth
+              854 francs, ...
             </p>
           </div>
         </div>
@@ -1009,7 +1184,8 @@
             <h2>1990</h2>
             <h1>Homage to the Figures He Admired</h1>
             <p>
-              For his Spring-Summer 1990 collection, Yves Saint Laurent paid tribute to the figures he admired, including Marilyn
+              For his Spring-Summer 1990 collection, Yves Saint Laurent paid tribute to the figures he admired,
+              including Marilyn
               Monroe, Catherine Deneuve, Zizi Jeanmaire, Marcel Proust, Bernard Buffet, and Christian Dior.
             </p>
             <p>
@@ -1024,7 +1200,8 @@
             <h2>February 3, 1992</h2>
             <h1>Thirty-Year Anniversary of the Haute Couture House</h1>
             <p>
-              On March 3, 1992, the haute couture house celebrated its thirty-year anniversary by holding a gala event for three
+              On March 3, 1992, the haute couture house celebrated its thirty-year anniversary by holding a gala event
+              for three
               thousand guests at the Opéra de Bastille.
             </p>
           </div>
@@ -1039,8 +1216,10 @@
               In 1993, Yves Saint Laurent launched a new fragrance: Champagne, “for light, happy, and bubbly women.”
             </p>
             <p>
-              However, a lawsuit filed by the Comité interprofessionnel du vin de Champagne forced Saint Laurent to change the name in
-              France. The fragrance was renamed Yves Saint Laurent and later Yvresse in 1996. In less than three months, Champagne
+              However, a lawsuit filed by the Comité interprofessionnel du vin de Champagne forced Saint Laurent to
+              change the name in
+              France. The fragrance was renamed Yves Saint Laurent and later Yvresse in 1996. In less than three months,
+              Champagne
               became the third best-selling fragrance in Europe.
             </p>
           </div>
@@ -1056,7 +1235,8 @@
             <h2 class="c29h2">1990</h2>
             <h1 class="c29h1">Acquisition of the Villa Mabrouka in Tangier</h1>
             <p class="c29p">
-              In 1990, Yves Saint Laurent and Pierre Bergé bought the Villa Mabrouka, “the House of Luck,” and asked Jacques Grange to
+              In 1990, Yves Saint Laurent and Pierre Bergé bought the Villa Mabrouka, “the House of Luck,” and asked
+              Jacques Grange to
               decorate the interior...
             </p>
           </div>
@@ -1066,8 +1246,10 @@
             <h2 class="c29h2">1997</h2>
             <h1 class="c29h1">Creation of A.R.O.Y.S.L.</h1>
             <p class="c29p">
-              Early on, Yves Saint Laurent and Pierre Bergé were careful to keep the most important prototypes from each collection,
-              along with all of the sketches, ateliers’ specification sheets, collection boards, press articles, and so on...
+              Early on, Yves Saint Laurent and Pierre Bergé were careful to keep the most important prototypes from each
+              collection,
+              along with all of the sketches, ateliers’ specification sheets, collection boards, press articles, and so
+              on...
             </p>
           </div>
         </div>
@@ -1076,7 +1258,8 @@
             <h2 class="c29h2">July 12, 1998</h2>
             <h1 class="c29h1">Fashion Show at the Stade de France</h1>
             <p class="c29p">
-              On July 12, 1998, Yves Saint Laurent staged a monumental fashion show featuring three hundred designs at the Stade de
+              On July 12, 1998, Yves Saint Laurent staged a monumental fashion show featuring three hundred designs at
+              the Stade de
               France for the FIFA World Cup...
             </p>
           </div>
@@ -1086,7 +1269,8 @@
             <h2 class="c29h2">1999</h2>
             <h1 class="c29h1">Elf-Sanofi Sells Yves Saint Laurent to the Groupe...</h1>
             <p class="c29p">
-              Just five years after buying the Groupe Yves Saint Laurent, Sanofi sold it to Gucci, a subsidiary of the Groupe
+              Just five years after buying the Groupe Yves Saint Laurent, Sanofi sold it to Gucci, a subsidiary of the
+              Groupe
               Pinault-Printemps-Redoute (now Kering)...
             </p>
           </div>
@@ -1107,9 +1291,12 @@
             <h2>2000</h2>
             <h1>Acquisition of the Maison Prunier</h1>
             <p>
-              In 2000, Pierre Bergé bought the restaurant Prunier. This Art Deco treasure, located on the Avenue Victor Hugo, was
-              renowned for its seafood and the quality of its caviar. Bergé once again asked Jacques Grange to design the interior. He
-              also acquired a fish farm in the Dordogne region, allowing the house to produce 100 % of its caviar. In 2004, Prunier
+              In 2000, Pierre Bergé bought the restaurant Prunier. This Art Deco treasure, located on the Avenue Victor
+              Hugo, was
+              renowned for its seafood and the quality of its caviar. Bergé once again asked Jacques Grange to design
+              the interior. He
+              also acquired a fish farm in the Dordogne region, allowing the house to produce 100 % of its caviar. In
+              2004, Prunier
               joined Caviar House, becoming the Groupe Caviar House & Prunier.
             </p>
           </div>
@@ -1121,8 +1308,10 @@
             <h2>2002</h2>
             <h1>Creation of Pierre Bergé & Associés</h1>
             <p>
-              In 2002, Pierre Bergé opened Pierre Bergé & Associés, his own auction house in Paris. All kinds of art objects are sold
-              there, including paintings, orfevrerie, and wines. It was so successeful that it opened a branch in Brussels in 2006. In
+              In 2002, Pierre Bergé opened Pierre Bergé & Associés, his own auction house in Paris. All kinds of art
+              objects are sold
+              there, including paintings, orfevrerie, and wines. It was so successeful that it opened a branch in
+              Brussels in 2006. In
               2016, Pierre Bergé & Associés ranked fourth among the top ten auction houses.
             </p>
           </div>
@@ -1134,9 +1323,12 @@
             <h2>2010</h2>
             <h1>Opening of the Maison Cocteau</h1>
             <p>
-              In 2002, Pierre Bergé funded the purchase of Jean Cocteau’s property in Milly-la-Forêt, which had lain abandoned for
-              many years. He also funded the transformation of the site into a place commemorating Cocteau. It was Bergé’s way of
-              honoring the man over whose work he has moral rights. The house underwent an extensive renovation before it opened its
+              In 2002, Pierre Bergé funded the purchase of Jean Cocteau’s property in Milly-la-Forêt, which had lain
+              abandoned for
+              many years. He also funded the transformation of the site into a place commemorating Cocteau. It was
+              Bergé’s way of
+              honoring the man over whose work he has moral rights. The house underwent an extensive renovation before
+              it opened its
               doors to the public in summer 2010.
             </p>
           </div>
@@ -1152,9 +1344,12 @@
             <h2>2010</h2>
             <h1>President of Le Monde’s Supervisory Board</h1>
             <p>
-              At the end of the 2000s, the Groupe Le Monde was in serious debt and had to establish a recapitalization plan. Pierre
-              Bergé joined Xavier Niel, founder of the French telecom company Free, and the investment banker Matthieu Pigasse in
-              becoming majority shareholders in the group. He was named president of the supervisory board in December 2010.
+              At the end of the 2000s, the Groupe Le Monde was in serious debt and had to establish a recapitalization
+              plan. Pierre
+              Bergé joined Xavier Niel, founder of the French telecom company Free, and the investment banker Matthieu
+              Pigasse in
+              becoming majority shareholders in the group. He was named president of the supervisory board in December
+              2010.
             </p>
           </div>
           <div class="img"></div>
@@ -1165,11 +1360,16 @@
             <h2>2010</h2>
             <h1>Acquisition of the Librairie des Colonnes</h1>
             <p>
-              The Librairie des Colonnes in Tangier has been a symbolic place for literature in Morocco since 1949. Established by the
-              Gerofi family, it was frequented by many great authors, including Samuel Beckett, Jean Genet, Juan Goytisolo, Tennessee
-              Williams, and Truman Capote. The bookstore, which is also now a publishing house, continues to provide a window on
-              literature and the world. The Librairie des Colonnes, which is currently managed by the writer Simon-Pierre Hamelin, was
-              rescued by Pierre Bergé in 2009. Bergé, who loves Tangier and is passionate about literature, believes in the
+              The Librairie des Colonnes in Tangier has been a symbolic place for literature in Morocco since 1949.
+              Established by the
+              Gerofi family, it was frequented by many great authors, including Samuel Beckett, Jean Genet, Juan
+              Goytisolo, Tennessee
+              Williams, and Truman Capote. The bookstore, which is also now a publishing house, continues to provide a
+              window on
+              literature and the world. The Librairie des Colonnes, which is currently managed by the writer
+              Simon-Pierre Hamelin, was
+              rescued by Pierre Bergé in 2009. Bergé, who loves Tangier and is passionate about literature, believes in
+              the
               bookstore’s humanist project.
             </p>
           </div>
@@ -1185,10 +1385,14 @@
             </p>
             <p>
               <i>
-                Pierre Bergé was a man who spent his time devoted to making beauty and excellence emerge wherever possible. A friend to
-                artists, he was the hidden force providing them with the confidence and support they needed to create ... With the
-                passing of Pierre Bergé, a whole portion of our literary and artistic memory has vanished. It is up to his friends and
-                those he guided to keep this memory alive, to convey to the French people his important place in French culture, and to
+                Pierre Bergé was a man who spent his time devoted to making beauty and excellence emerge wherever
+                possible. A friend to
+                artists, he was the hidden force providing them with the confidence and support they needed to create
+                ... With the
+                passing of Pierre Bergé, a whole portion of our literary and artistic memory has vanished. It is up to
+                his friends and
+                those he guided to keep this memory alive, to convey to the French people his important place in French
+                culture, and to
                 continue his work.
               </i>
             </p>
@@ -1203,8 +1407,14 @@
         <div class="line"></div>
       </div>
     </div>
-    <div class="footer">footer</div>
+    <div class="topBtn">
+      <i class="fa-solid fa-arrow-up"></i>
+    </div>
   </div>
+
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="JS/Interactive_Biographies.JS"></script>
 </body>
+
 </html>

@@ -3,17 +3,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Noto Serif KR', serif;
+
 }
 html {font-size: 10px;}
 .container {
-  height: 100vh;
   display: grid;
   grid-gap: 10px;
   grid-template-rows: 100px 1fr 100px;
 }
 
 .main {
+      font-family: 'Noto Serif KR', serif;
   display: grid;
   grid-gap: 10px;
   height: 100%;
