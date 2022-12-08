@@ -1,4 +1,5 @@
-* {
+@media screen and (max-width: 1600px) {
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -18,7 +19,7 @@ html {font-size: 10px;}
   height: 100%;
   margin: 0 7%;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 500px 50px 2fr 50px 500px 1000px 50px 1000px 50px 3600px 50px 500px 1000px 50px 1000px 50px 800px 50px 500px 1000px 50px 1000px 50px 400px 50px 500px 1000px 50px 400px 50px 500px 1000px 50px 1000px 50px;
+  grid-template-rows: 500px 50px 2fr 50px 500px 1000px 50px 1000px 50px 3150px 50px 500px 1000px 50px 1000px 50px 700px 50px 500px 1000px 50px 1000px 50px 350px 50px 500px 1000px 50px 350px 50px 500px 1000px 50px 1000px 50px;
   grid-template-areas: 'content1 content1 content1'
                        'content2 content2 content2'
                        'content3 content3 content3'
@@ -92,7 +93,7 @@ html {font-size: 10px;}
 .main>.content3 {
   grid-area: content3;
   display: grid;
-  height: 250vh;
+  height: 200vh;
   grid-gap: 10px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
@@ -111,9 +112,9 @@ html {font-size: 10px;}
   transition: 1.5s;
   cursor:pointer;
 }
-.c3h2 {font-size: 2.0rem; padding: 10px;}
-.c3h1 {font-size: 3.5rem; padding: 0 10px 15px 10px;}
-.c3p {font-size: 1.6rem; padding: 10px}
+.c3h2 {font-size: 1.8rem; padding: 8px;}
+.c3h1 {font-size: 3.3rem; padding: 0 8px 12px 8px;}
+.c3p {font-size: 1.6rem; padding: 8px}
 .main>.content3>.content1 {
   grid-area: content1;
   background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_2/D18_00407.jpg);
@@ -325,8 +326,12 @@ html {font-size: 10px;}
   background-color: rgba(10, 10, 10, .2);
   background-blend-mode: multiply;
 }
-.main>.content5>h1 {font-size: 5.0rem;}
-.main>.content5>h2 {font-size: 2.5rem;}
+.main>.content5>h1 {
+  font-size: 5.0rem;
+}
+.main>.content5>h2 {
+  font-size: 2.5rem;
+}
 
 .main>.content6 {
   grid-area: content6;
@@ -541,9 +546,9 @@ html {font-size: 10px;}
   cursor:pointer;
   border-radius: 10px / 10px;
 }
-.c10h2 {font-size: 2.0rem; padding: 10px;}
-.c10h1 {font-size: 3.5rem; padding: 0 10px 15px 10px;}
-.c10p {font-size: 1.6rem; padding: 10px}
+.c10h2 {font-size: 1.8rem; padding: 8px;}
+.c10h1 {font-size: 3.3rem; padding: 0 8px 12px 8px;}
+.c10p {font-size: 1.6rem; padding: 8px}
 .main>.content10>div {
   border-radius: 10px / 10px;
 }
@@ -902,8 +907,6 @@ html {font-size: 10px;}
   background-blend-mode: multiply;
   background-image: url(../image/1971-b.png);
 }
-.main>.content12>h1 {font-size: 5.0rem;}
-.main>.content12>h2 {font-size: 2.5rem;}
 
 .main>.content13 {
   grid-area: content13;
@@ -1096,7 +1099,7 @@ html {font-size: 10px;}
   display: grid;
   grid-gap: 10px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 400px 400px;
+  grid-template-rows: 350px 350px;
   grid-template-areas: 
   'content1 content2 content3 content4'
   'content5 content6 content7 content8';
@@ -1111,9 +1114,9 @@ html {font-size: 10px;}
   cursor:pointer;
   border-radius: 10px / 10px;
 }
-.c17h2 {font-size: 2.0rem; padding: 10px;}
-.c17h1 {font-size: 3.5rem; padding: 0 10px 15px 10px;}
-.c17p {font-size: 1.6rem; padding: 10px}
+.c17h2 {font-size: 1.8rem; padding: 8px;}
+.c17h1 {font-size: 3.3rem; padding: 0 8px 12px 8px;}
+.c17p {font-size: 1.6rem; padding: 8px}
 .main>.content17>div {
   border-radius: 10px / 10px;
   background: yellowgreen;
@@ -1221,8 +1224,6 @@ html {font-size: 10px;}
   background-blend-mode: multiply;
   background-image: url(../image/c19b.png);
 }
-.main>.content19>h1 {font-size: 5.0rem;}
-.main>.content19>h2 {font-size: 2.5rem;}
 
 .main>.content20 {
   grid-area: content20;
@@ -1429,9 +1430,9 @@ html {font-size: 10px;}
   cursor:pointer;
   border-radius: 10px / 10px;
 }
-.c24h2 {font-size: 2.0rem; padding: 10px;}
-.c24h1 {font-size: 3.5rem; padding: 0 10px 15px 10px;}
-.c24p {font-size: 1.6rem; padding: 10px}
+.c24h2 {font-size: 1.8rem; padding: 8px;}
+.c24h1 {font-size: 3.3rem; padding: 0 8px 12px 8px;}
+.c24p {font-size: 1.6rem; padding: 8px}
 .main>.content24>div {
   border-radius: 10px / 10px;
   background: yellowgreen;
@@ -1503,8 +1504,6 @@ html {font-size: 10px;}
   background-blend-mode: multiply;
   background-image: url(../image/c26b.png);
 }
-.main>.content26>h1 {font-size: 5.0rem;}
-.main>.content26>h2 {font-size: 2.5rem;}
 
 .main>.content27 {
   grid-area: content27;
@@ -1604,7 +1603,7 @@ html {font-size: 10px;}
   display: grid;
   grid-gap: 10px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 400px;
+  grid-template-rows: 350px;
   grid-template-areas: 
   'content1 content2 content3 content4';
 }
@@ -1618,9 +1617,9 @@ html {font-size: 10px;}
   cursor:pointer;
   border-radius: 10px / 10px;
 }
-.c29h2 {font-size: 2.0rem; padding: 10px;}
-.c29h1 {font-size: 3.5rem; padding: 0 10px 15px 10px;}
-.c29p {font-size: 1.6rem; padding: 10px}
+.c29h2 {font-size: 1.8rem; padding: 8px;}
+.c29h1 {font-size: 3.3rem; padding: 0 8px 12px 8px;}
+.c29p {font-size: 1.6rem; padding: 8px}
 .main>.content29>div {
   border-radius: 10px / 10px;
   background: yellowgreen;
@@ -1692,8 +1691,6 @@ html {font-size: 10px;}
   background-blend-mode: multiply;
   background-image: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_4/LUC1805BD115.jpg);
 }
-.main>.content31>h1 {font-size: 5.0rem;}
-.main>.content31>h2 {font-size: 2.5rem;}
 
 .main>.content32 {
   grid-area: content32;
@@ -1879,4 +1876,5 @@ html {font-size: 10px;}
   background: url(https://batenka.ru/static/built/assets/images/design/splitter-hor.0b9e33b9d8a2.png);
   width: 100%;
   height: 3px;
+}
 }

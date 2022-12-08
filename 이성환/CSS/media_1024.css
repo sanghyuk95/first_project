@@ -1,4 +1,5 @@
-* {
+@media screen and (max-width: 1124px) {
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -16,9 +17,9 @@ html {font-size: 10px;}
   display: grid;
   grid-gap: 10px;
   height: 100%;
-  margin: 0 7%;
+  margin: 0 5%;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 500px 50px 2fr 50px 500px 1000px 50px 1000px 50px 3600px 50px 500px 1000px 50px 1000px 50px 800px 50px 500px 1000px 50px 1000px 50px 400px 50px 500px 1000px 50px 400px 50px 500px 1000px 50px 1000px 50px;
+  grid-template-rows: 500px 50px 2fr 50px 500px 1.5fr 10px 1.5fr 50px 3710px 50px 500px 1.5fr 10px 1.5fr 50px 1830px 50px 500px 1.5fr 10px 1.5fr 50px 910px 50px 500px 1.5fr 50px 810px 50px 500px 1.5fr 50px 1.5fr 50px;
   grid-template-areas: 'content1 content1 content1'
                        'content2 content2 content2'
                        'content3 content3 content3'
@@ -65,12 +66,12 @@ html {font-size: 10px;}
   color: white;
   background-size: cover;
   background-position: center;
+  background-image: url(../image/c1c1b.png);
   background-color: rgba(10, 10, 10, .2);
   background-blend-mode: multiply;
-  background-image: url(../image/c1c1b.png);
 }
-.main>.content1>.title {font-size: 7.0rem;}
-.main>.content1>.content {font-size: 2.0rem;}
+.main>.content1>.title {font-size: 5.5rem;}
+.main>.content1>.content {font-size: 1.6rem;}
 
 .main>.content2 {
   grid-area: content2;
@@ -85,7 +86,7 @@ html {font-size: 10px;}
   height: 3px;
 }
 .main>.content2>h1 {
-  font-size: 3.0rem;
+  font-size: 2.5rem;
   padding-bottom: 6px;
 }
 
@@ -94,13 +95,15 @@ html {font-size: 10px;}
   display: grid;
   height: 250vh;
   grid-gap: 10px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas: 'content1 content2 content3 content4'
-                       'content5 content6 content7 content8'
-                       'content9 content10 content11 content12'
-                       'content13 content14 content15 content16'
-                       'content17 content18 content19 content20';
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: 'content1 content2 content3'
+                       'content4 content5 content6'
+                       'content7 content8 content9'
+                       'content10 content11 content12'
+                       'content13 content14 content15'
+                       'content16 content17 content18'
+                       'content19 content20 content ';
 }
 .c3hover {
   width: 100%;
@@ -111,9 +114,9 @@ html {font-size: 10px;}
   transition: 1.5s;
   cursor:pointer;
 }
-.c3h2 {font-size: 2.0rem; padding: 10px;}
-.c3h1 {font-size: 3.5rem; padding: 0 10px 15px 10px;}
-.c3p {font-size: 1.6rem; padding: 10px}
+.c3h2 {font-size: 1.5rem; padding: 5px;}
+.c3h1 {font-size: 2.8rem; padding: 0 5px 10px 5px;}
+.c3p {font-size: 1.5rem; padding: 5px}
 .main>.content3>.content1 {
   grid-area: content1;
   background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_2/D18_00407.jpg);
@@ -308,7 +311,7 @@ html {font-size: 10px;}
   height: 3px;
 }
 .main>.content4>h1 {
-  font-size: 3.0rem;
+  font-size: 2.5rem;
   padding-bottom: 6px;
 }
 
@@ -325,62 +328,81 @@ html {font-size: 10px;}
   background-color: rgba(10, 10, 10, .2);
   background-blend-mode: multiply;
 }
-.main>.content5>h1 {font-size: 5.0rem;}
-.main>.content5>h2 {font-size: 2.5rem;}
 
 .main>.content6 {
   grid-area: content6;
+  height: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
 }
 .main>.content6>.line {
-  background: url(https://batenka.ru/static/built/assets/images/design/splitter-vert.a8696b335bbd.png);
-  width: 1px;
-  height: 100%;
+  background: url(https://batenka.ru/static/built/assets/images/design/splitter-hor.0b9e33b9d8a2.png);
+  width: 100%;
+  height: 3px;
 }
 .main>.content6>.content1,
-.main>.content6>.content2,
 .main>.content6>.content3 {
-  width: 520px;
+  width: 100%;
   height: 100%;
-  padding: 0 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+.main>.content6>.content1 {
+  padding: 0 0 10px 0;
+}
+.main>.content6>.content2 {
+  width: 100%;
+  height: 100%;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.main>.content6>.content3 {
+  padding: 10px 0 0 0;
+}
 .main>.content6>.content1>.text,
-.main>.content6>.content2>.text,
 .main>.content6>.content3>.text {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
+.main>.content6>.content2>.text {
+  width: 100%;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .main>.content6>.content1>.text {
-  height: 40%;
+  height: 30%;
 }
 .main>.content6>.content2>.text {
-  height: 50%;
+  height: 100%;
 }
 .main>.content6>.content3>.text {
-  height: 60%;
+  height: 40%;
 }
 .main>.content6>.content1>.text>h2,
 .main>.content6>.content2>.text>h2,
 .main>.content6>.content3>.text>h2 {
-  font-size: 2.5rem;
+  font-size: 2.0rem;
   padding-bottom: 10px;
 }
 .main>.content6>.content1>.text>h1,
 .main>.content6>.content2>.text>h1,
 .main>.content6>.content3>.text>h1 {
-  font-size: 3.5rem;
+  font-size: 3.0rem;
   padding-bottom: 20px;
 }
 .main>.content6>.content1>.text>p,
 .main>.content6>.content2>.text>p,
 .main>.content6>.content3>.text>p {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   padding-bottom: 15px;
 }
 .main>.content6>.content1>.text>p>i,
@@ -390,24 +412,24 @@ html {font-size: 10px;}
 }
 .main>.content6>.content1>.img {
   width: 100%;
-  height: 60%;
+  height: 70%;
   background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_3/DP1961_002_RS57.jpg);
   background-size: cover;
   background-position: center;
 }
 .main>.content6>.content2>.img {
   width: 100%;
-  height: 50%;
+  height: 100%;
   background: url(../image/1961.png);
   background-size: cover;
   background-position: center;
 }
 .main>.content6>.content3>.img {
   width: 100%;
-  height: 40%;
+  height: 60%;
   background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_4/137_1982-ysl-Loulou-am-MunozDP1982_003_2STBIS_Boulat197.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: top;
 }
 
 .main>.content7 {
@@ -418,62 +440,83 @@ html {font-size: 10px;}
 .main>.content7>.line {
   background: url(https://batenka.ru/static/built/assets/images/design/splitter-hor.0b9e33b9d8a2.png);
   width: 100%;
-  height: 3px;
+  height: 1px;
 }
 
 .main>.content8 {
   grid-area: content8;
+  height: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
 }
 .main>.content8>.line {
-  background: url(https://batenka.ru/static/built/assets/images/design/splitter-vert.a8696b335bbd.png);
-  width: 1px;
-  height: 100%;
+  background: url(https://batenka.ru/static/built/assets/images/design/splitter-hor.0b9e33b9d8a2.png);
+  width: 100%;
+  height: 3px;
 }
 .main>.content8>.content1,
-.main>.content8>.content2,
 .main>.content8>.content3 {
-  width: 520px;
+  width: 100%;
   height: 100%;
-  padding: 0 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.main>.content8>.content1 {
+  padding: 0 0 10px 0;
+}
+.main>.content8>.content2 {
+  width: 100%;
+  height: 100%;
+  padding: 10px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+.main>.content8>.content3 {
+  padding: 10px 0 0 0; 
+}
 .main>.content8>.content1>.text,
-.main>.content8>.content2>.text,
 .main>.content8>.content3>.text {
+  width: 100%;
+  display: flex;
+  padding-right: 10px;
+  flex-direction: column;
+  justify-content: center;
+}
+.main>.content8>.content2>.text {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 .main>.content8>.content1>.text {
-  height: 40%;
+  height: 100%;
 }
 .main>.content8>.content2>.text {
-  height: 50%;
+  height: 40%;
 }
 .main>.content8>.content3>.text {
-  height: 40%;
+  height: 100%;
 }
 .main>.content8>.content1>.text>h2,
 .main>.content8>.content2>.text>h2,
 .main>.content8>.content3>.text>h2 {
-  font-size: 2.5rem;
+  font-size: 2.0rem;
   padding-bottom: 10px;
 }
 .main>.content8>.content1>.text>h1,
 .main>.content8>.content2>.text>h1,
 .main>.content8>.content3>.text>h1 {
-  font-size: 3.5rem;
+  font-size: 3.0rem;
   padding-bottom: 20px;
 }
 .main>.content8>.content1>.text>p,
 .main>.content8>.content2>.text>p,
 .main>.content8>.content3>.text>p {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   padding-bottom: 15px;
 }
 .main>.content8>.content1>.text>p>i,
@@ -483,21 +526,21 @@ html {font-size: 10px;}
 }
 .main>.content8>.content1>.img {
   width: 100%;
-  height: 60%;
+  height: 100%;
   background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_3/DP1963_005_5AC69.jpg);
   background-size: cover;
   background-position: center;
 }
 .main>.content8>.content2>.img {
   width: 100%;
-  height: 50%;
+  height: 60%;
   background: url(../image/c8c2i.png);
   background-size: cover;
-  background-position: center;
+  background-position: top;
 }
 .main>.content8>.content3>.img {
   width: 100%;
-  height: 60%;
+  height: 100%;
   background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_3/DP1961_004_2PM04.jpg);
   background-size: cover;
   background-position: center;
@@ -518,18 +561,22 @@ html {font-size: 10px;}
   grid-area: content10;
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px;
   grid-template-areas: 
-  'content1 content2 content3 content4'
-  'content5 content6 content7 content8'
-  'content9 content10 content11 content12'
-  'content13 content14 content15 content16'
-  'content17 content18 content19 content20'
-  'content21 content22 content23 content24'
-  'content25 content26 content27 content28'
-  'content29 content30 content31 content32'
-  'content33 content34 content35 content36';
+  'content1 content2 content3'
+  'content4 content5 content6'
+  'content7 content8 content9'
+  'content10 content11 content12'
+  'content13 content14 content15'
+  'content16 content17 content18'
+  'content19 content20 content21'
+  'content22 content23 content24'
+  'content25 content26 content27'
+  'content28 content29 content30'
+  'content31 content32 content33'
+  'content34 content35 content36'
+  ;
 }
 .c10hover {
   width: 100%;
@@ -541,9 +588,9 @@ html {font-size: 10px;}
   cursor:pointer;
   border-radius: 10px / 10px;
 }
-.c10h2 {font-size: 2.0rem; padding: 10px;}
-.c10h1 {font-size: 3.5rem; padding: 0 10px 15px 10px;}
-.c10p {font-size: 1.6rem; padding: 10px}
+.c10h2 {font-size: 1.5rem; padding: 5px;}
+.c10h1 {font-size: 2.8rem; padding: 0 5px 10px 5px;}
+.c10p {font-size: 1.5rem; padding: 5px}
 .main>.content10>div {
   border-radius: 10px / 10px;
 }
@@ -885,7 +932,7 @@ html {font-size: 10px;}
   height: 3px;
 }
 .main>.content11>h1 {
-  font-size: 3.0rem;
+  font-size: 2.5rem;
   padding-bottom: 6px;
 }
 
@@ -902,27 +949,34 @@ html {font-size: 10px;}
   background-blend-mode: multiply;
   background-image: url(../image/1971-b.png);
 }
-.main>.content12>h1 {font-size: 5.0rem;}
-.main>.content12>h2 {font-size: 2.5rem;}
 
 .main>.content13 {
   grid-area: content13;
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
 }
 .main>.content13>.line {
-  background: url(https://batenka.ru/static/built/assets/images/design/splitter-vert.a8696b335bbd.png);
-  width: 1px;
-  height: 100%;
+  background: url(https://batenka.ru/static/built/assets/images/design/splitter-hor.0b9e33b9d8a2.png);
+  width: 100%;
+  height: 3px;
 }
 .main>.content13>.content1,
-.main>.content13>.content2,
-.main>.content13>.content3 {
-  width: 520px;
+.main>.content13>.content2 {
+  width: 100%;
   height: 100%;
-  padding: 0 10px;
+  padding: 10px 0;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main>.content13>.content3 {
+  width: 100%;
+  height: 100%;
+  padding: 10px 0 0 0;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -934,30 +988,32 @@ html {font-size: 10px;}
   flex-direction: column;
 }
 .main>.content13>.content1>.text {
-  height: 50%;
+  height: 40%;
 }
 .main>.content13>.content2>.text {
-  height: 50%;
+  height: 40%;
 }
 .main>.content13>.content3>.text {
-  height: 40%;
+  height: 100%;
+  padding-right: 10px;
+  justify-content: center;
 }
 .main>.content13>.content1>.text>h2,
 .main>.content13>.content2>.text>h2,
 .main>.content13>.content3>.text>h2 {
-  font-size: 2.5rem;
+  font-size: 2.0rem;
   padding-bottom: 10px;
 }
 .main>.content13>.content1>.text>h1,
 .main>.content13>.content2>.text>h1,
 .main>.content13>.content3>.text>h1 {
-  font-size: 3.5rem;
+  font-size: 3.0rem;
   padding-bottom: 20px;
 }
 .main>.content13>.content1>.text>p,
 .main>.content13>.content2>.text>p,
 .main>.content13>.content3>.text>p {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   padding-bottom: 15px;
 }
 .main>.content13>.content1>.text>p>i,
@@ -967,21 +1023,21 @@ html {font-size: 10px;}
 }
 .main>.content13>.content1>.img {
   width: 100%;
-  height: 50%;
+  height: 60%;
   background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_4/Love70_2012_01_1564337.jpg);
   background-size: cover;
   background-position: top;
 }
 .main>.content13>.content2>.img {
   width: 100%;
-  height: 50%;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_4/HC1971EPLA0246359.jpg);
+  height: 60%;
+  background: url(../image/1971-3.png);
   background-size: cover;
   background-position: center;
 }
 .main>.content13>.content3>.img {
   width: 100%;
-  height: 60%;
+  height: 100%;
   background: url(../image/1971.png);
   background-size: cover;
   background-position: top;
@@ -995,62 +1051,73 @@ html {font-size: 10px;}
 .main>.content14>.line {
   background: url(https://batenka.ru/static/built/assets/images/design/splitter-hor.0b9e33b9d8a2.png);
   width: 100%;
-  height: 3px;
+  height: 1px;
 }
 
 .main>.content15 {
   grid-area: content15;
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
 }
 .main>.content15>.line {
-  background: url(https://batenka.ru/static/built/assets/images/design/splitter-vert.a8696b335bbd.png);
-  width: 1px;
-  height: 100%;
+  background: url(https://batenka.ru/static/built/assets/images/design/splitter-hor.0b9e33b9d8a2.png);
+  width: 100%;
+  height: 3px;
 }
 .main>.content15>.content1,
 .main>.content15>.content2,
 .main>.content15>.content3 {
-  width: 520px;
+  width: 100%;
   height: 100%;
-  padding: 0 10px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+.main>.content15>.content1 {
+  padding: 0 0 10px 0;
+}
+.main>.content15>.content2 {
+  padding: 10px 0;
+}
+.main>.content15>.content3 {
+  padding: 10px 0 0 0;
 }
 .main>.content15>.content1>.text,
 .main>.content15>.content2>.text,
 .main>.content15>.content3>.text {
   width: 100%;
+  padding-right: 10px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 .main>.content15>.content1>.text {
-  height: 40%;
+  height: 100%;
 }
 .main>.content15>.content2>.text {
-  height: 40%;
+  height: 100%;
 }
 .main>.content15>.content3>.text {
-  height: 40%;
+  height: 100%;
 }
 .main>.content15>.content1>.text>h2,
 .main>.content15>.content2>.text>h2,
 .main>.content15>.content3>.text>h2 {
-  font-size: 2.5rem;
+  font-size: 2.0rem;
   padding-bottom: 10px;
 }
 .main>.content15>.content1>.text>h1,
 .main>.content15>.content2>.text>h1,
 .main>.content15>.content3>.text>h1 {
-  font-size: 3.5rem;
+  font-size: 3.0rem;
   padding-bottom: 20px;
 }
 .main>.content15>.content1>.text>p,
 .main>.content15>.content2>.text>p,
 .main>.content15>.content3>.text>p {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   padding-bottom: 15px;
 }
 .main>.content15>.content1>.text>p>i,
@@ -1060,21 +1127,21 @@ html {font-size: 10px;}
 }
 .main>.content15>.content1>.img {
   width: 100%;
-  height: 60%;
+  height: 100%;
   background: url(../image/1971-2.png);
   background-size: cover;
   background-position: top;
 }
 .main>.content15>.content2>.img {
   width: 100%;
-  height: 60%;
+  height: 100%;
   background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_3/XRD-1725597114.jpg);
   background-size: cover;
   background-position: center;
 }
 .main>.content15>.content3>.img {
   width: 100%;
-  height: 60%;
+  height: 100%;
   background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_3/53406.jpg);
   background-size: cover;
   background-position: center;
@@ -1095,11 +1162,13 @@ html {font-size: 10px;}
   grid-area: content17;
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 400px 400px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-areas: 
-  'content1 content2 content3 content4'
-  'content5 content6 content7 content8';
+  'content1 content2'
+  'content3 content4'
+  'content5 content6'
+  'content7 content8';
 }
 .c17hover {
   width: 100%;
@@ -1111,9 +1180,9 @@ html {font-size: 10px;}
   cursor:pointer;
   border-radius: 10px / 10px;
 }
-.c17h2 {font-size: 2.0rem; padding: 10px;}
-.c17h1 {font-size: 3.5rem; padding: 0 10px 15px 10px;}
-.c17p {font-size: 1.6rem; padding: 10px}
+.c17h2 {font-size: 2.0rem; padding: 5px;}
+.c17h1 {font-size: 3.5rem; padding: 0 5px 10px 5px;}
+.c17p {font-size: 1.6rem; padding: 5px}
 .main>.content17>div {
   border-radius: 10px / 10px;
   background: yellowgreen;
@@ -1204,7 +1273,7 @@ html {font-size: 10px;}
   height: 3px;
 }
 .main>.content18>h1 {
-  font-size: 3.0rem;
+  font-size: 2.5rem;
   padding-bottom: 6px;
 }
 
@@ -1221,29 +1290,41 @@ html {font-size: 10px;}
   background-blend-mode: multiply;
   background-image: url(../image/c19b.png);
 }
-.main>.content19>h1 {font-size: 5.0rem;}
-.main>.content19>h2 {font-size: 2.5rem;}
 
 .main>.content20 {
   grid-area: content20;
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
 }
 .main>.content20>.line {
-  background: url(https://batenka.ru/static/built/assets/images/design/splitter-vert.a8696b335bbd.png);
-  width: 1px;
-  height: 100%;
+  background: url(https://batenka.ru/static/built/assets/images/design/splitter-hor.0b9e33b9d8a2.png);
+  width: 100%;
+  height: 3px;
 }
-.main>.content20>.content1,
-.main>.content20>.content2,
-.main>.content20>.content3 {
-  width: 520px;
+.main>.content20>.content1 {
+  width: 100%;
   height: 100%;
-  padding: 0 10px;
+  padding: 0 0 10px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.main>.content20>.content2,
+.main>.content20>.content3 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.main>.content20>.content2 {
+  padding: 10px 0;
+}
+.main>.content20>.content3 {
+  padding: 10px 0 0 0;
 }
 .main>.content20>.content1>.text,
 .main>.content20>.content2>.text,
@@ -1253,30 +1334,34 @@ html {font-size: 10px;}
   flex-direction: column;
 }
 .main>.content20>.content1>.text {
-  height: 50%;
+  height: 40%;
 }
 .main>.content20>.content2>.text {
-  height: 40%;
+  height: 100%;
+  padding-right: 10px;
+  justify-content: center;
 }
 .main>.content20>.content3>.text {
-  height: 40%;
+  height: 100%;
+  padding-right: 10px;
+  justify-content: center;
 }
 .main>.content20>.content1>.text>h2,
 .main>.content20>.content2>.text>h2,
 .main>.content20>.content3>.text>h2 {
-  font-size: 2.5rem;
+  font-size: 2.0rem;
   padding-bottom: 10px;
 }
 .main>.content20>.content1>.text>h1,
 .main>.content20>.content2>.text>h1,
 .main>.content20>.content3>.text>h1 {
-  font-size: 3.5rem;
+  font-size: 3.0rem;
   padding-bottom: 20px;
 }
 .main>.content20>.content1>.text>p,
 .main>.content20>.content2>.text>p,
 .main>.content20>.content3>.text>p {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   padding-bottom: 15px;
 }
 .main>.content20>.content1>.text>p>i,
@@ -1286,21 +1371,21 @@ html {font-size: 10px;}
 }
 .main>.content20>.content1>.img {
   width: 100%;
-  height: 50%;
+  height: 60%;
   background: url(../image/c20c1i.png);
   background-size: cover;
   background-position: center;
 }
 .main>.content20>.content2>.img {
   width: 100%;
-  height: 60%;
+  height: 100%;
   background: url(../image/1981\ -\ 1982.png);
   background-size: cover;
   background-position: top;
 }
 .main>.content20>.content3>.img {
   width: 100%;
-  height: 60%;
+  height: 100%;
   background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_3/0001YSL_Paris_Studio_1981_Photo-Guy-Marineau10.jpg);
   background-size: cover;
   background-position: top;
@@ -1314,62 +1399,65 @@ html {font-size: 10px;}
 .main>.content21>.line {
   background: url(https://batenka.ru/static/built/assets/images/design/splitter-hor.0b9e33b9d8a2.png);
   width: 100%;
-  height: 3px;
+  height: 1px;
 }
 
 .main>.content22 {
   grid-area: content22;
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
 }
 .main>.content22>.line {
-  background: url(https://batenka.ru/static/built/assets/images/design/splitter-vert.a8696b335bbd.png);
-  width: 1px;
-  height: 100%;
+  background: url(https://batenka.ru/static/built/assets/images/design/splitter-hor.0b9e33b9d8a2.png);
+  width: 100%;
+  height: 3px;
 }
 .main>.content22>.content1,
 .main>.content22>.content2,
 .main>.content22>.content3 {
-  width: 520px;
+  width: 100%;
   height: 100%;
-  padding: 0 10px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+.main>.content22>.content1 {
+  padding: 0 0 10px 0;
+}
+.main>.content22>.content2 {
+  padding: 10px 0;
+}
+.main>.content22>.content3 {
+  padding: 10px 0 0 0;
 }
 .main>.content22>.content1>.text,
 .main>.content22>.content2>.text,
 .main>.content22>.content3>.text {
   width: 100%;
+  height: 100%;
   display: flex;
+  padding-right: 10px;
   flex-direction: column;
-}
-.main>.content22>.content1>.text {
-  height: 40%;
-}
-.main>.content22>.content2>.text {
-  height: 40%;
-}
-.main>.content22>.content3>.text {
-  height: 40%;
+  justify-content: center;
 }
 .main>.content22>.content1>.text>h2,
 .main>.content22>.content2>.text>h2,
 .main>.content22>.content3>.text>h2 {
-  font-size: 2.5rem;
+  font-size: 2.0rem;
   padding-bottom: 10px;
 }
 .main>.content22>.content1>.text>h1,
 .main>.content22>.content2>.text>h1,
 .main>.content22>.content3>.text>h1 {
-  font-size: 3.5rem;
+  font-size: 3.0rem;
   padding-bottom: 20px;
 }
 .main>.content22>.content1>.text>p,
 .main>.content22>.content2>.text>p,
 .main>.content22>.content3>.text>p {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   padding-bottom: 15px;
 }
 .main>.content22>.content1>.text>p>i,
@@ -1379,21 +1467,21 @@ html {font-size: 10px;}
 }
 .main>.content22>.content1>.img {
   width: 100%;
-  height: 60%;
+  height: 100%;
   background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_3/DP1985_004_RE21.jpg);
   background-size: cover;
   background-position: top;
 }
 .main>.content22>.content2>.img {
   width: 100%;
-  height: 60%;
+  height: 100%;
   background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_3/70961.jpg);
   background-size: cover;
   background-position: bottom;
 }
 .main>.content22>.content3>.img {
   width: 100%;
-  height: 60%;
+  height: 100%;
   background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_3/Docks_%C2%A9JamesEwing200969.jpg);
   background-size: cover;
   background-position: center;
@@ -1414,10 +1502,11 @@ html {font-size: 10px;}
   grid-area: content24;
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-template-areas: 
-  'content1 content2 content3 content4';
+  'content1 content2'
+  'content3 content4';
 }
 .c24hover {
   width: 100%;
@@ -1429,9 +1518,9 @@ html {font-size: 10px;}
   cursor:pointer;
   border-radius: 10px / 10px;
 }
-.c24h2 {font-size: 2.0rem; padding: 10px;}
-.c24h1 {font-size: 3.5rem; padding: 0 10px 15px 10px;}
-.c24p {font-size: 1.6rem; padding: 10px}
+.c24h2 {font-size: 2.0rem; padding: 5px;}
+.c24h1 {font-size: 3.5rem; padding: 0 5px 10px 5px;}
+.c24p {font-size: 1.6rem; padding: 5px}
 .main>.content24>div {
   border-radius: 10px / 10px;
   background: yellowgreen;
@@ -1486,7 +1575,7 @@ html {font-size: 10px;}
   height: 3px;
 }
 .main>.content25>h1 {
-  font-size: 3.0rem;
+  font-size: 2.5rem;
   padding-bottom: 6px;
 }
 
@@ -1503,29 +1592,39 @@ html {font-size: 10px;}
   background-blend-mode: multiply;
   background-image: url(../image/c26b.png);
 }
-.main>.content26>h1 {font-size: 5.0rem;}
-.main>.content26>h2 {font-size: 2.5rem;}
 
 .main>.content27 {
   grid-area: content27;
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
 }
 .main>.content27>.line {
-  background: url(https://batenka.ru/static/built/assets/images/design/splitter-vert.a8696b335bbd.png);
-  width: 1px;
-  height: 100%;
+  background: url(https://batenka.ru/static/built/assets/images/design/splitter-hor.0b9e33b9d8a2.png);
+  width: 100%;
+  height: 3px;
 }
 .main>.content27>.content1,
-.main>.content27>.content2,
 .main>.content27>.content3 {
-  width: 520px;
+  width: 100%;
   height: 100%;
-  padding: 0 10px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+.main>.content27>.content1 {
+  padding: 0 0 10px 0;
+}
+.main>.content27>.content2 {
+  width: 100%;
+  height: 100%;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+.main>.content27>.content3 {
+  padding: 10px 0 0 0;
 }
 .main>.content27>.content1>.text,
 .main>.content27>.content2>.text,
@@ -1533,32 +1632,37 @@ html {font-size: 10px;}
   width: 100%;
   display: flex;
   flex-direction: column;
+  
 }
 .main>.content27>.content1>.text {
-  height: 40%;
+  height: 100%;
+  padding-right: 10px;
+  justify-content: center;
 }
 .main>.content27>.content2>.text {
-  height: 50%;
+  height: 30%;
 }
 .main>.content27>.content3>.text {
-  height: 40%;
+  height: 100%;
+  padding-right: 10px;
+  justify-content: center;
 }
 .main>.content27>.content1>.text>h2,
 .main>.content27>.content2>.text>h2,
 .main>.content27>.content3>.text>h2 {
-  font-size: 2.5rem;
+  font-size: 2.0rem;
   padding-bottom: 10px;
 }
 .main>.content27>.content1>.text>h1,
 .main>.content27>.content2>.text>h1,
 .main>.content27>.content3>.text>h1 {
-  font-size: 3.5rem;
+  font-size: 3.0rem;
   padding-bottom: 20px;
 }
 .main>.content27>.content1>.text>p,
 .main>.content27>.content2>.text>p,
 .main>.content27>.content3>.text>p {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   padding-bottom: 15px;
 }
 .main>.content27>.content1>.text>p>i,
@@ -1568,21 +1672,21 @@ html {font-size: 10px;}
 }
 .main>.content27>.content1>.img {
   width: 100%;
-  height: 60%;
+  height: 100%;
   background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_3/0140YSL-Couture-S-S-1990-Photo-Guy-Marineau87.jpg);
   background-size: cover;
   background-position: top;
 }
 .main>.content27>.content2>.img {
   width: 100%;
-  height: 50%;
+  height: 70%;
   background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_4/NUM_18829.jpg);
   background-size: cover;
   background-position: center;
 }
 .main>.content27>.content3>.img {
   width: 100%;
-  height: 60%;
+  height: 100%;
   background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_3/M1171051_INC_00133.jpg);
   background-size: cover;
   background-position: center;
@@ -1600,13 +1704,13 @@ html {font-size: 10px;}
 }
 .main>.content29 {
   grid-area: content29;
-
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 400px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-template-areas: 
-  'content1 content2 content3 content4';
+  'content1 content2' 
+  'content3 content4';
 }
 .c29hover {
   width: 100%;
@@ -1618,9 +1722,9 @@ html {font-size: 10px;}
   cursor:pointer;
   border-radius: 10px / 10px;
 }
-.c29h2 {font-size: 2.0rem; padding: 10px;}
-.c29h1 {font-size: 3.5rem; padding: 0 10px 15px 10px;}
-.c29p {font-size: 1.6rem; padding: 10px}
+.c29h2 {font-size: 2.0rem; padding: 5px;}
+.c29h1 {font-size: 3.5rem; padding: 0 5px 10px 5px;}
+.c29p {font-size: 1.6rem; padding: 5px}
 .main>.content29>div {
   border-radius: 10px / 10px;
   background: yellowgreen;
@@ -1675,7 +1779,7 @@ html {font-size: 10px;}
   height: 3px;
 }
 .main>.content30>h1 {
-  font-size: 3.0rem;
+  font-size: 2.5rem;
   padding-bottom: 6px;
 }
 
@@ -1692,29 +1796,40 @@ html {font-size: 10px;}
   background-blend-mode: multiply;
   background-image: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_4/LUC1805BD115.jpg);
 }
-.main>.content31>h1 {font-size: 5.0rem;}
-.main>.content31>h2 {font-size: 2.5rem;}
 
 .main>.content32 {
   grid-area: content32;
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
 }
 .main>.content32>.line {
-  background: url(https://batenka.ru/static/built/assets/images/design/splitter-vert.a8696b335bbd.png);
-  width: 1px;
-  height: 100%;
+  background: url(https://batenka.ru/static/built/assets/images/design/splitter-hor.0b9e33b9d8a2.png);
+  width: 100%;
+  height: 3px;
 }
-.main>.content32>.content1,
-.main>.content32>.content2,
-.main>.content32>.content3 {
-  width: 520px;
+.main>.content32>.content1 {
+  width: 100%;
   height: 100%;
-  padding: 0 10px;
+  padding: 0 0 10px 0;
   display: flex;
   flex-direction: column;
+}
+.main>.content32>.content2 {
+  width: 100%;
+  height: 100%;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+.main>.content32>.content3 {
+  width: 100%;
+  height: 100%;
+  padding: 10px 0 0 0;
+  display: flex;
+  flex-direction: column;
 }
 .main>.content32>.content1>.text,
 .main>.content32>.content2>.text,
@@ -1727,27 +1842,29 @@ html {font-size: 10px;}
   height: 40%;
 }
 .main>.content32>.content2>.text {
-  height: 40%;
+  height: 100%;
+  padding-right: 10px;
+  justify-content: center;
 }
 .main>.content32>.content3>.text {
-  height: 50%;
+  height: 40%;
 }
 .main>.content32>.content1>.text>h2,
 .main>.content32>.content2>.text>h2,
 .main>.content32>.content3>.text>h2 {
-  font-size: 2.5rem;
+  font-size: 2.0rem;
   padding-bottom: 10px;
 }
 .main>.content32>.content1>.text>h1,
 .main>.content32>.content2>.text>h1,
 .main>.content32>.content3>.text>h1 {
-  font-size: 3.5rem;
+  font-size: 3.0rem;
   padding-bottom: 20px;
 }
 .main>.content32>.content1>.text>p,
 .main>.content32>.content2>.text>p,
 .main>.content32>.content3>.text>p {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   padding-bottom: 15px;
 }
 .main>.content32>.content1>.text>p>i,
@@ -1764,14 +1881,14 @@ html {font-size: 10px;}
 }
 .main>.content32>.content2>.img {
   width: 100%;
-  height: 60%;
+  height: 100%;
   background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_3/STB0672.jpg);
   background-size: cover;
   background-position: bottom;
 }
 .main>.content32>.content3>.img {
   width: 100%;
-  height: 50%;
+  height: 60%;
   background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_4/SIPA_00601437_00002242.jpg);
   background-size: cover;
   background-position: left;
@@ -1791,56 +1908,59 @@ html {font-size: 10px;}
 .main>.content34 {
   grid-area: content34;
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
 }
 .main>.content34>.line {
-  background: url(https://batenka.ru/static/built/assets/images/design/splitter-vert.a8696b335bbd.png);
-  width: 1px;
-  height: 100%;
+  background: url(https://batenka.ru/static/built/assets/images/design/splitter-hor.0b9e33b9d8a2.png);
+  width: 100%;
+  height: 3px;
 }
 .main>.content34>.content1,
 .main>.content34>.content2,
 .main>.content34>.content3 {
-  width: 520px;
+  width: 100%;
   height: 100%;
-  padding: 0 10px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+.main>.content34>.content1 {
+  padding: 0 0 10px 0;
+}
+.main>.content34>.content2 {
+  padding: 10px 0;
+}
+.main>.content34>.content3 {
+  padding: 10px 0 0 0;
 }
 .main>.content34>.content1>.text,
 .main>.content34>.content2>.text,
 .main>.content34>.content3>.text {
   width: 100%;
+  height: 100%;
+  padding-right: 10px;
   display: flex;
   flex-direction: column;
-}
-.main>.content34>.content1>.text {
-  height: 40%;
-}
-.main>.content34>.content2>.text {
-  height: 50%;
-}
-.main>.content34>.content3>.text {
-  height: 50%;
+  justify-content: center;
 }
 .main>.content34>.content1>.text>h2,
 .main>.content34>.content2>.text>h2,
 .main>.content34>.content3>.text>h2 {
-  font-size: 2.5rem;
+  font-size: 2.0rem;
   padding-bottom: 10px;
 }
 .main>.content34>.content1>.text>h1,
 .main>.content34>.content2>.text>h1,
 .main>.content34>.content3>.text>h1 {
-  font-size: 3.5rem;
+  font-size: 3.0rem;
   padding-bottom: 20px;
 }
 .main>.content34>.content1>.text>p,
 .main>.content34>.content2>.text>p,
 .main>.content34>.content3>.text>p {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   padding-bottom: 15px;
 }
 .main>.content34>.content1>.text>p>i,
@@ -1850,21 +1970,21 @@ html {font-size: 10px;}
 }
 .main>.content34>.content1>.img {
   width: 100%;
-  height: 60%;
+  height: 100%;
   background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_3/000_Par374885703.jpg);
   background-size: cover;
   background-position: center;
 }
 .main>.content34>.content2>.img {
   width: 100%;
-  height: 50%;
+  height: 100%;
   background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_4/Librairie-des-Colonnes-in-Tangier4123.jpg);
   background-size: cover;
   background-position: center;
 }
 .main>.content34>.content3>.img {
   width: 100%;
-  height: 50%;
+  height: 100%;
   background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_3/10.-Pierre-Berge%CC%81-Rue-Bonaparte-Paris-2015-%C2%A9-Eric-Jansen.jpg);
   background-size: cover;
   background-position: center;
@@ -1879,4 +1999,5 @@ html {font-size: 10px;}
   background: url(https://batenka.ru/static/built/assets/images/design/splitter-hor.0b9e33b9d8a2.png);
   width: 100%;
   height: 3px;
+}
 }

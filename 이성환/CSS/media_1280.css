@@ -1,4 +1,5 @@
-* {
+@media screen and (max-width: 1280px) {
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -16,9 +17,9 @@ html {font-size: 10px;}
   display: grid;
   grid-gap: 10px;
   height: 100%;
-  margin: 0 7%;
+  margin: 0 5%;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 500px 50px 2fr 50px 500px 1000px 50px 1000px 50px 3600px 50px 500px 1000px 50px 1000px 50px 800px 50px 500px 1000px 50px 1000px 50px 400px 50px 500px 1000px 50px 400px 50px 500px 1000px 50px 1000px 50px;
+  grid-template-rows: 500px 50px 2fr 50px 500px 1000px 50px 1000px 50px 2780px 50px 500px 1000px 50px 1000px 50px 600px 50px 500px 1000px 50px 1000px 50px 300px 50px 500px 1000px 50px 300px 50px 500px 1000px 50px 1000px 50px;
   grid-template-areas: 'content1 content1 content1'
                        'content2 content2 content2'
                        'content3 content3 content3'
@@ -92,7 +93,7 @@ html {font-size: 10px;}
 .main>.content3 {
   grid-area: content3;
   display: grid;
-  height: 250vh;
+  height: 180vh;
   grid-gap: 10px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
@@ -111,9 +112,9 @@ html {font-size: 10px;}
   transition: 1.5s;
   cursor:pointer;
 }
-.c3h2 {font-size: 2.0rem; padding: 10px;}
-.c3h1 {font-size: 3.5rem; padding: 0 10px 15px 10px;}
-.c3p {font-size: 1.6rem; padding: 10px}
+.c3h2 {font-size: 1.5rem; padding: 5px;}
+.c3h1 {font-size: 2.8rem; padding: 0 5px 10px 5px;}
+.c3p {font-size: 1.5rem; padding: 5px}
 .main>.content3>.content1 {
   grid-area: content1;
   background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_2/D18_00407.jpg);
@@ -325,8 +326,12 @@ html {font-size: 10px;}
   background-color: rgba(10, 10, 10, .2);
   background-blend-mode: multiply;
 }
-.main>.content5>h1 {font-size: 5.0rem;}
-.main>.content5>h2 {font-size: 2.5rem;}
+.main>.content5>h1 {
+  font-size: 5.0rem;
+}
+.main>.content5>h2 {
+  font-size: 2.5rem;
+}
 
 .main>.content6 {
   grid-area: content6;
@@ -368,19 +373,19 @@ html {font-size: 10px;}
 .main>.content6>.content1>.text>h2,
 .main>.content6>.content2>.text>h2,
 .main>.content6>.content3>.text>h2 {
-  font-size: 2.5rem;
+  font-size: 2.0rem;
   padding-bottom: 10px;
 }
 .main>.content6>.content1>.text>h1,
 .main>.content6>.content2>.text>h1,
 .main>.content6>.content3>.text>h1 {
-  font-size: 3.5rem;
+  font-size: 3.0rem;
   padding-bottom: 20px;
 }
 .main>.content6>.content1>.text>p,
 .main>.content6>.content2>.text>p,
 .main>.content6>.content3>.text>p {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   padding-bottom: 15px;
 }
 .main>.content6>.content1>.text>p>i,
@@ -461,19 +466,19 @@ html {font-size: 10px;}
 .main>.content8>.content1>.text>h2,
 .main>.content8>.content2>.text>h2,
 .main>.content8>.content3>.text>h2 {
-  font-size: 2.5rem;
+  font-size: 2.0rem;
   padding-bottom: 10px;
 }
 .main>.content8>.content1>.text>h1,
 .main>.content8>.content2>.text>h1,
 .main>.content8>.content3>.text>h1 {
-  font-size: 3.5rem;
+  font-size: 3.0rem;
   padding-bottom: 20px;
 }
 .main>.content8>.content1>.text>p,
 .main>.content8>.content2>.text>p,
 .main>.content8>.content3>.text>p {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   padding-bottom: 15px;
 }
 .main>.content8>.content1>.text>p>i,
@@ -519,7 +524,7 @@ html {font-size: 10px;}
   display: grid;
   grid-gap: 10px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px 300px;
   grid-template-areas: 
   'content1 content2 content3 content4'
   'content5 content6 content7 content8'
@@ -541,9 +546,9 @@ html {font-size: 10px;}
   cursor:pointer;
   border-radius: 10px / 10px;
 }
-.c10h2 {font-size: 2.0rem; padding: 10px;}
-.c10h1 {font-size: 3.5rem; padding: 0 10px 15px 10px;}
-.c10p {font-size: 1.6rem; padding: 10px}
+.c10h2 {font-size: 1.5rem; padding: 5px;}
+.c10h1 {font-size: 2.8rem; padding: 0 5px 10px 5px;}
+.c10p {font-size: 1.5rem; padding: 5px}
 .main>.content10>div {
   border-radius: 10px / 10px;
 }
@@ -902,8 +907,6 @@ html {font-size: 10px;}
   background-blend-mode: multiply;
   background-image: url(../image/1971-b.png);
 }
-.main>.content12>h1 {font-size: 5.0rem;}
-.main>.content12>h2 {font-size: 2.5rem;}
 
 .main>.content13 {
   grid-area: content13;
@@ -945,19 +948,19 @@ html {font-size: 10px;}
 .main>.content13>.content1>.text>h2,
 .main>.content13>.content2>.text>h2,
 .main>.content13>.content3>.text>h2 {
-  font-size: 2.5rem;
+  font-size: 2.0rem;
   padding-bottom: 10px;
 }
 .main>.content13>.content1>.text>h1,
 .main>.content13>.content2>.text>h1,
 .main>.content13>.content3>.text>h1 {
-  font-size: 3.5rem;
+  font-size: 3.0rem;
   padding-bottom: 20px;
 }
 .main>.content13>.content1>.text>p,
 .main>.content13>.content2>.text>p,
 .main>.content13>.content3>.text>p {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   padding-bottom: 15px;
 }
 .main>.content13>.content1>.text>p>i,
@@ -1038,19 +1041,19 @@ html {font-size: 10px;}
 .main>.content15>.content1>.text>h2,
 .main>.content15>.content2>.text>h2,
 .main>.content15>.content3>.text>h2 {
-  font-size: 2.5rem;
+  font-size: 2.0rem;
   padding-bottom: 10px;
 }
 .main>.content15>.content1>.text>h1,
 .main>.content15>.content2>.text>h1,
 .main>.content15>.content3>.text>h1 {
-  font-size: 3.5rem;
+  font-size: 3.0rem;
   padding-bottom: 20px;
 }
 .main>.content15>.content1>.text>p,
 .main>.content15>.content2>.text>p,
 .main>.content15>.content3>.text>p {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   padding-bottom: 15px;
 }
 .main>.content15>.content1>.text>p>i,
@@ -1096,7 +1099,7 @@ html {font-size: 10px;}
   display: grid;
   grid-gap: 10px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 400px 400px;
+  grid-template-rows: 300px 300px;
   grid-template-areas: 
   'content1 content2 content3 content4'
   'content5 content6 content7 content8';
@@ -1111,9 +1114,9 @@ html {font-size: 10px;}
   cursor:pointer;
   border-radius: 10px / 10px;
 }
-.c17h2 {font-size: 2.0rem; padding: 10px;}
-.c17h1 {font-size: 3.5rem; padding: 0 10px 15px 10px;}
-.c17p {font-size: 1.6rem; padding: 10px}
+.c17h2 {font-size: 1.5rem; padding: 5px;}
+.c17h1 {font-size: 2.8rem; padding: 0 5px 10px 5px;}
+.c17p {font-size: 1.5rem; padding: 5px}
 .main>.content17>div {
   border-radius: 10px / 10px;
   background: yellowgreen;
@@ -1221,8 +1224,6 @@ html {font-size: 10px;}
   background-blend-mode: multiply;
   background-image: url(../image/c19b.png);
 }
-.main>.content19>h1 {font-size: 5.0rem;}
-.main>.content19>h2 {font-size: 2.5rem;}
 
 .main>.content20 {
   grid-area: content20;
@@ -1264,19 +1265,19 @@ html {font-size: 10px;}
 .main>.content20>.content1>.text>h2,
 .main>.content20>.content2>.text>h2,
 .main>.content20>.content3>.text>h2 {
-  font-size: 2.5rem;
+  font-size: 2.0rem;
   padding-bottom: 10px;
 }
 .main>.content20>.content1>.text>h1,
 .main>.content20>.content2>.text>h1,
 .main>.content20>.content3>.text>h1 {
-  font-size: 3.5rem;
+  font-size: 3.0rem;
   padding-bottom: 20px;
 }
 .main>.content20>.content1>.text>p,
 .main>.content20>.content2>.text>p,
 .main>.content20>.content3>.text>p {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   padding-bottom: 15px;
 }
 .main>.content20>.content1>.text>p>i,
@@ -1357,19 +1358,19 @@ html {font-size: 10px;}
 .main>.content22>.content1>.text>h2,
 .main>.content22>.content2>.text>h2,
 .main>.content22>.content3>.text>h2 {
-  font-size: 2.5rem;
+  font-size: 2.0rem;
   padding-bottom: 10px;
 }
 .main>.content22>.content1>.text>h1,
 .main>.content22>.content2>.text>h1,
 .main>.content22>.content3>.text>h1 {
-  font-size: 3.5rem;
+  font-size: 3.0rem;
   padding-bottom: 20px;
 }
 .main>.content22>.content1>.text>p,
 .main>.content22>.content2>.text>p,
 .main>.content22>.content3>.text>p {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   padding-bottom: 15px;
 }
 .main>.content22>.content1>.text>p>i,
@@ -1415,7 +1416,7 @@ html {font-size: 10px;}
   display: grid;
   grid-gap: 10px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
+  grid-template-rows: 300px;
   grid-template-areas: 
   'content1 content2 content3 content4';
 }
@@ -1429,9 +1430,9 @@ html {font-size: 10px;}
   cursor:pointer;
   border-radius: 10px / 10px;
 }
-.c24h2 {font-size: 2.0rem; padding: 10px;}
-.c24h1 {font-size: 3.5rem; padding: 0 10px 15px 10px;}
-.c24p {font-size: 1.6rem; padding: 10px}
+.c24h2 {font-size: 1.5rem; padding: 5px;}
+.c24h1 {font-size: 2.8rem; padding: 0 5px 10px 5px;}
+.c24p {font-size: 1.5rem; padding: 5px}
 .main>.content24>div {
   border-radius: 10px / 10px;
   background: yellowgreen;
@@ -1503,8 +1504,6 @@ html {font-size: 10px;}
   background-blend-mode: multiply;
   background-image: url(../image/c26b.png);
 }
-.main>.content26>h1 {font-size: 5.0rem;}
-.main>.content26>h2 {font-size: 2.5rem;}
 
 .main>.content27 {
   grid-area: content27;
@@ -1546,19 +1545,19 @@ html {font-size: 10px;}
 .main>.content27>.content1>.text>h2,
 .main>.content27>.content2>.text>h2,
 .main>.content27>.content3>.text>h2 {
-  font-size: 2.5rem;
+  font-size: 2.0rem;
   padding-bottom: 10px;
 }
 .main>.content27>.content1>.text>h1,
 .main>.content27>.content2>.text>h1,
 .main>.content27>.content3>.text>h1 {
-  font-size: 3.5rem;
+  font-size: 3.0rem;
   padding-bottom: 20px;
 }
 .main>.content27>.content1>.text>p,
 .main>.content27>.content2>.text>p,
 .main>.content27>.content3>.text>p {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   padding-bottom: 15px;
 }
 .main>.content27>.content1>.text>p>i,
@@ -1604,7 +1603,7 @@ html {font-size: 10px;}
   display: grid;
   grid-gap: 10px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 400px;
+  grid-template-rows: 300px;
   grid-template-areas: 
   'content1 content2 content3 content4';
 }
@@ -1618,9 +1617,9 @@ html {font-size: 10px;}
   cursor:pointer;
   border-radius: 10px / 10px;
 }
-.c29h2 {font-size: 2.0rem; padding: 10px;}
-.c29h1 {font-size: 3.5rem; padding: 0 10px 15px 10px;}
-.c29p {font-size: 1.6rem; padding: 10px}
+.c29h2 {font-size: 1.5rem; padding: 5px;}
+.c29h1 {font-size: 2.8rem; padding: 0 5px 10px 5px;}
+.c29p {font-size: 1.5rem; padding: 5px}
 .main>.content29>div {
   border-radius: 10px / 10px;
   background: yellowgreen;
@@ -1692,8 +1691,6 @@ html {font-size: 10px;}
   background-blend-mode: multiply;
   background-image: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_4/LUC1805BD115.jpg);
 }
-.main>.content31>h1 {font-size: 5.0rem;}
-.main>.content31>h2 {font-size: 2.5rem;}
 
 .main>.content32 {
   grid-area: content32;
@@ -1735,19 +1732,19 @@ html {font-size: 10px;}
 .main>.content32>.content1>.text>h2,
 .main>.content32>.content2>.text>h2,
 .main>.content32>.content3>.text>h2 {
-  font-size: 2.5rem;
+  font-size: 2.0rem;
   padding-bottom: 10px;
 }
 .main>.content32>.content1>.text>h1,
 .main>.content32>.content2>.text>h1,
 .main>.content32>.content3>.text>h1 {
-  font-size: 3.5rem;
+  font-size: 3.0rem;
   padding-bottom: 20px;
 }
 .main>.content32>.content1>.text>p,
 .main>.content32>.content2>.text>p,
 .main>.content32>.content3>.text>p {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   padding-bottom: 15px;
 }
 .main>.content32>.content1>.text>p>i,
@@ -1828,19 +1825,19 @@ html {font-size: 10px;}
 .main>.content34>.content1>.text>h2,
 .main>.content34>.content2>.text>h2,
 .main>.content34>.content3>.text>h2 {
-  font-size: 2.5rem;
+  font-size: 2.0rem;
   padding-bottom: 10px;
 }
 .main>.content34>.content1>.text>h1,
 .main>.content34>.content2>.text>h1,
 .main>.content34>.content3>.text>h1 {
-  font-size: 3.5rem;
+  font-size: 3.0rem;
   padding-bottom: 20px;
 }
 .main>.content34>.content1>.text>p,
 .main>.content34>.content2>.text>p,
 .main>.content34>.content3>.text>p {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   padding-bottom: 15px;
 }
 .main>.content34>.content1>.text>p>i,
@@ -1879,4 +1876,5 @@ html {font-size: 10px;}
   background: url(https://batenka.ru/static/built/assets/images/design/splitter-hor.0b9e33b9d8a2.png);
   width: 100%;
   height: 3px;
+}
 }
