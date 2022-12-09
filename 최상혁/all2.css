@@ -30,6 +30,7 @@ header {
     flex-direction: row;
     align-items: center;
 }
+
 .dummy {
     width: 500px;
     flex-shrink: 2;
@@ -298,6 +299,7 @@ button i {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    z-index: 200;
 }
 .topBtn i {
     font-size: 30px;
@@ -367,9 +369,6 @@ footer a {
     .search form {
         right: 180px;
     }
-    .content {
-        margin: 30px 0;
-    }
     footer {
         height: 200px;
         padding: 0 20px;
@@ -377,8 +376,9 @@ footer a {
     .dummy {
         display: none;
     }
-
-    /* 
-    .ham {display:flex}
-    */
+}
+@media screen and (min-width: 768px) {
+    .ham {
+        display: none;
+    }
 }

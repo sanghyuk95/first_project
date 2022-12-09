@@ -23,10 +23,6 @@ $bar.addEventListener("click", (e) => {
     $ham.classList.toggle("hidden");
 });
 
-const $topBtn = document.querySelector(".topBtn");
-$topBtn.addEventListener("click", (e) => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-});
 
 const $result = document.querySelector(".result");
 const $cateDt = document.querySelectorAll(".cateDt");

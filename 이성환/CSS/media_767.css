@@ -1,340 +1,31 @@
 @media screen and (max-width: 767px) {
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-}
-html {font-size: 10px;}
-.container {
-  display: grid;
-  grid-gap: 10px;
-  grid-template-rows: 100px 1fr 100px;
-}
-
 .main {
-      font-family: 'Noto Serif KR', serif;
-  display: grid;
-  grid-gap: 10px;
-  height: 100%;
   margin: 0 1%;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 400px 50px 2fr 50px 400px 1.5fr 10px 1.5fr 50px 3710px 50px 400px 1.5fr 10px 1.5fr 50px 1590px 50px 400px 1.5fr 10px 1.5fr 50px 750px 50px 400px 1.5fr 50px 750px 50px 400px 1.5fr 50px 1.5fr 50px;
-  grid-template-areas: 'content1 content1 content1'
-                       'content2 content2 content2'
-                       'content3 content3 content3'
-                       'content4 content4 content4'
-                       'content5 content5 content5'
-                       'content6 content6 content6'
-                       'content7 content7 content7'
-                       'content8 content8 content8'
-                       'content9 content9 content9'
-                       'content10 content10 content10'
-                       'content11 content11 content11'
-                       'content12 content12 content12'
-                       'content13 content13 content13'
-                       'content14 content14 content14'
-                       'content15 content15 content15'
-                       'content16 content16 content16'
-                       'content17 content17 content17'
-                       'content18 content18 content18'
-                       'content19 content19 content19'
-                       'content20 content20 content20'
-                       'content21 content21 content21'
-                       'content22 content22 content22'
-                       'content23 content23 content23'
-                       'content24 content24 content24'
-                       'content25 content25 content25'
-                       'content26 content26 content26'
-                       'content27 content27 content27'
-                       'content28 content28 content28'
-                       'content29 content29 content29'
-                       'content30 content30 content30'
-                       'content31 content31 content31'
-                       'content32 content32 content32'
-                       'content33 content33 content33'
-                       'content34 content34 content34'
-                       'content35 content35 content35';
+  grid-template-rows: 480px 50px 2510px 50px 400px 2000px 10px 2000px 50px 3710px 50px 400px 2000px 10px 2000px 50px 1510px 50px 400px 2000px 10px 2000px 50px 750px 50px 400px 2000px 50px 750px 50px 400px 2000px 50px 2000px 50px;
 }
-.main>div {background: white;}
-.main>.content1 {
-  grid-area: content1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  color: white;
-  background-size: cover;
-  background-position: center;
-  background-image: url(../image/c1c1b.png);
-  background-color: rgba(10, 10, 10, .2);
-  background-blend-mode: multiply;
+
+.main>.content1>.title {
+  font-size: 5.5rem;
+  padding: 50px 0 0 0;
 }
-.main>.content1>.title {font-size: 5.5rem;}
 .main>.content1>.content {font-size: 1.6rem;}
 
-.main>.content2 {
-  grid-area: content2;
-  padding: 0px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.main>.content2>.line {
-  background: url(https://batenka.ru/static/built/assets/images/design/splitter-hor.0b9e33b9d8a2.png);
-  width: 40%;
-  height: 3px;
-}
 .main>.content2>h1 {
   font-size: 2.5rem;
   padding-bottom: 6px;
 }
-
-.main>.content3 {
-  grid-area: content3;
-  display: grid;
-  height: 2510px;
-  grid-gap: 10px;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas: 'content1 content2 content3'
-                       'content4 content5 content6'
-                       'content7 content8 content9'
-                       'content10 content11 content12'
-                       'content13 content14 content15'
-                       'content16 content17 content18'
-                       'content19 content20 content ';
-}
-.c3hover {
-  width: 100%;
-  height: 100%;
-  color: white;
-  background: rgba(10, 10, 10, .2);
-  opacity: 0;
-  transition: 1.5s;
-  cursor:pointer;
-}
 .c3h2 {font-size: 1.5rem; padding: 5px;}
 .c3h1 {font-size: 2.8rem; padding: 0 5px 10px 5px;}
 .c3p {font-size: 1.5rem; padding: 5px}
-.main>.content3>.content1 {
-  grid-area: content1;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_2/D18_00407.jpg);
-  background-size: cover;
-  background-position: top;
-}
-.main>.content3>.content1:hover .c3c1 {
-  opacity: 1;
-}
-.main>.content3>.content2 {
-  grid-area: content2;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_2/DP1938-001-1FA147.jpg);
-  background-size: cover;
-  background-position: center;
-}
-.main>.content3>.content2:hover .c3c2 {
-  opacity: 1;
-}
-.main>.content3>.content3 {
-  grid-area: content3;
-  background: url(../image/1948-1950.png);
-  background-size: cover;
-  background-position: top;
-}
-.main>.content3>.content3:hover .c3c3 {
-  opacity: 1;
-}
-.main>.content3>.content4 {
-  grid-area: content4;
-  background: url(../image/1950.png);
-  background-size: cover;
-  background-position: top;
-}
-.main>.content3>.content4:hover .c3c4 {
-  opacity: 1;
-}
-.main>.content3>.content5 {
-  grid-area: content5;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_2/D6_004261.jpg);
-  background-size: cover;
-  background-position: center;
-}
-.main>.content3>.content5:hover .c3c5 {
-  opacity: 1;
-}
-.main>.content3>.content6 {
-  grid-area: content6;
-  background: url(../image/June\,\ 1950.png);
-  background-size: cover;
-  background-position: center;
-}
-.main>.content3>.content6:hover .c3c6 {
-  opacity: 1;
-}
-.main>.content3>.content7 {
-  grid-area: content7;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_3/Pierre-Berge%E2%95%A0%C3%BC-et-Jean-Cocteau352.jpg);
-  background-size: cover;
-  background-position: center;
-}
-.main>.content3>.content7:hover .c3c7 {
-  opacity: 1;
-}
-.main>.content3>.content8 {
-  grid-area: content8;
-  background: url(../image/1953-1954.png);
-  background-size: cover;
-  background-position: top;
-}
-.main>.content3>.content8:hover .c3c8 {
-  opacity: 1;
-}
-.main>.content3>.content9 {
-  grid-area: content9;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_3/DP1954-001-2RE410.jpg);
-  background-size: cover;
-  background-position: center;
-}
-.main>.content3>.content9:hover .c3c9 {
-  opacity: 1;
-}
-.main>.content3>.content10 {
-  grid-area: content10;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_3/document-secr%C3%A9tariat-de-la-laine-Retouche-AL.jpg);
-  background-size: cover;
-  background-position: top;
-}
-.main>.content3>.content10:hover .c3c10 {
-  opacity: 1;
-}
-.main>.content3>.content11 {
-  grid-area: content11;
-  background: url(../image/June\,\ 1955.png);
-  background-size: cover;
-  background-position: top;
-}
-.main>.content3>.content11:hover .c3c11 {
-  opacity: 1;
-}
-.main>.content3>.content12 {
-  grid-area: content12;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_3/77_HD26.jpg);
-  background-size: cover;
-  background-position: top;
-}
-.main>.content3>.content12:hover .c3c12 {
-  opacity: 1;
-}
-.main>.content3>.content13 {
-  grid-area: content13;
-  background: url(../image/1956.png);
-  background-size: cover;
-  background-position: top;
-}
-.main>.content3>.content13:hover .c3c13 {
-  opacity: 1;
-}
-.main>.content3>.content14 {
-  grid-area: content14;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_3/DP1957_001_4DI40.jpg);
-  background-size: cover;
-  background-position: center;
-}
-.main>.content3>.content14:hover .c3c14 {
-  opacity: 1;
-}
-.main>.content3>.content15 {
-  grid-area: content15;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_3/OSTIER-Andre%E2%95%A0%C3%BC-DP1960-001-1DI133.jpg);
-  background-size: cover;
-  background-position: top;
-}
-.main>.content3>.content15:hover .c3c15 {
-  opacity: 1;
-}
-.main>.content3>.content16 {
-  grid-area: content16;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_3/MAYWALD-Willy-P-E-58-3137.jpg);
-  background-size: cover;
-  background-position: center;
-}
-.main>.content3>.content16:hover .c3c16 {
-  opacity: 1;
-}
-.main>.content3>.content17 {
-  grid-area: content17;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_3/37777-101.jpg);
-  background-size: cover;
-  background-position: top;
-}
-.main>.content3>.content17:hover .c3c17 {
-  opacity: 1;
-}
-.main>.content3>.content18 {
-  grid-area: content18;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_3/MAYWALD-Willy-Croco50.jpg);
-  background-size: cover;
-  background-position: center;
-}
-.main>.content3>.content18:hover .c3c18 {
-  opacity: 1;
-}
-.main>.content3>.content19 {
-  grid-area: content19;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_3/c-Yffic-Son-DR_DP1958-010PO02.jpg);
-  background-size: cover;
-  background-position: top;
-}
-.main>.content3>.content19:hover .c3c19 {
-  opacity: 1;
-}
-.main>.content3>.content20 {
-  grid-area: content20;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_2/DP1959_004_SC55.jpg);
-  background-size: cover;
-  background-position: top;
-}
-.main>.content3>.content20:hover .c3c20 {
-  opacity: 1;
-}
 
-.main>.content4 {
-  grid-area: content4;
-  padding: 0px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.main>.content4>.line {
-  background: url(https://batenka.ru/static/built/assets/images/design/splitter-hor.0b9e33b9d8a2.png);
-  width: 40%;
-  height: 3px;
-}
 .main>.content4>h1 {
   font-size: 2.5rem;
   padding-bottom: 6px;
 }
 
-.main>.content5 {
-  grid-area: content5;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: url(../image/1969\ b.png);
-  background-size: cover;
-  background-position: top;
-  background-color: rgba(10, 10, 10, .2);
-  background-blend-mode: multiply;
-}
-
 .main>.content6 {
-  grid-area: content6;
   height: 100%;
-  display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
 }
 .main>.content6>.line {
   background: url(https://batenka.ru/static/built/assets/images/design/splitter-hor.0b9e33b9d8a2.png);
@@ -344,38 +35,20 @@ html {font-size: 10px;}
 .main>.content6>.content1,
 .main>.content6>.content3 {
   width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 .main>.content6>.content1 {
   padding: 0 0 10px 0;
 }
 .main>.content6>.content2 {
   width: 100%;
-  height: 100%;
   padding: 10px 0;
-  display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
 }
 .main>.content6>.content3 {
   padding: 10px 0 0 0;
 }
-.main>.content6>.content1>.text,
-.main>.content6>.content3>.text {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
 .main>.content6>.content2>.text {
-  width: 100%;
   padding-right: 10px;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
 }
 .main>.content6>.content1>.text {
@@ -405,38 +78,17 @@ html {font-size: 10px;}
   font-size: 1.4rem;
   padding-bottom: 15px;
 }
-.main>.content6>.content1>.text>p>i,
-.main>.content6>.content2>.text>p>i,
-.main>.content6>.content3>.text>p>i {
-  font-size: 1.2rem;
-}
 .main>.content6>.content1>.img {
-  width: 100%;
   height: 70%;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_3/DP1961_002_RS57.jpg);
-  background-size: cover;
-  background-position: center;
 }
 .main>.content6>.content2>.img {
-  width: 100%;
   height: 100%;
-  background: url(../image/1961.png);
-  background-size: cover;
-  background-position: center;
 }
 .main>.content6>.content3>.img {
-  width: 100%;
   height: 60%;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_4/137_1982-ysl-Loulou-am-MunozDP1982_003_2STBIS_Boulat197.jpg);
-  background-size: cover;
   background-position: top;
 }
 
-.main>.content7 {
-  grid-area: content7;
-  display: flex;
-  align-items: center;
-}
 .main>.content7>.line {
   background: url(https://batenka.ru/static/built/assets/images/design/splitter-hor.0b9e33b9d8a2.png);
   width: 100%;
@@ -444,11 +96,8 @@ html {font-size: 10px;}
 }
 
 .main>.content8 {
-  grid-area: content8;
   height: 100%;
-  display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
 }
 .main>.content8>.line {
   background: url(https://batenka.ru/static/built/assets/images/design/splitter-hor.0b9e33b9d8a2.png);
@@ -458,39 +107,22 @@ html {font-size: 10px;}
 .main>.content8>.content1,
 .main>.content8>.content3 {
   width: 100%;
-  height: 100%;
-  display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
 }
 .main>.content8>.content1 {
   padding: 0 0 10px 0;
 }
 .main>.content8>.content2 {
   width: 100%;
-  height: 100%;
   padding: 10px 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 .main>.content8>.content3 {
   padding: 10px 0 0 0; 
 }
 .main>.content8>.content1>.text,
 .main>.content8>.content3>.text {
-  width: 100%;
-  display: flex;
   padding-right: 10px;
-  flex-direction: column;
   justify-content: center;
-}
-.main>.content8>.content2>.text {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
 }
 .main>.content8>.content1>.text {
   height: 100%;
@@ -519,50 +151,20 @@ html {font-size: 10px;}
   font-size: 1.4rem;
   padding-bottom: 15px;
 }
-.main>.content8>.content1>.text>p>i,
-.main>.content8>.content2>.text>p>i,
-.main>.content8>.content3>.text>p>i {
-  font-size: 1.2rem;
-}
 .main>.content8>.content1>.img {
-  width: 100%;
   height: 100%;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_3/DP1963_005_5AC69.jpg);
-  background-size: cover;
-  background-position: center;
 }
 .main>.content8>.content2>.img {
-  width: 100%;
   height: 60%;
-  background: url(../image/c8c2i.png);
-  background-size: cover;
   background-position: top;
 }
 .main>.content8>.content3>.img {
-  width: 100%;
   height: 100%;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_3/DP1961_004_2PM04.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.main>.content9 {
-  grid-area: content9;
-  display: flex;
-  align-items: center;
-}
-.main>.content9>.line {
-  background: url(https://batenka.ru/static/built/assets/images/design/splitter-hor.0b9e33b9d8a2.png);
-  width: 100%;
-  height: 3px;
 }
 
 .main>.content10 {
-  grid-area: content10;
-  display: grid;
-  grid-gap: 10px;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas: 
   'content1 content2 content3'
   'content4 content5 content6'
@@ -575,386 +177,19 @@ html {font-size: 10px;}
   'content25 content26 content27'
   'content28 content29 content30'
   'content31 content32 content33'
-  'content34 content35 content36'
-  ;
-}
-.c10hover {
-  width: 100%;
-  height: 100%;
-  color: white;
-  background: rgba(10, 10, 10, .2);
-  opacity: 0;
-  transition: 1.5s;
-  cursor:pointer;
-  border-radius: 10px / 10px;
+  'content34 content35 content36';
 }
 .c10h2 {font-size: 1.5rem; padding: 5px;}
 .c10h1 {font-size: 2.8rem; padding: 0 5px 10px 5px;}
 .c10p {font-size: 1.5rem; padding: 5px}
-.main>.content10>div {
-  border-radius: 10px / 10px;
-}
-.main>.content10>.content1 {
-  grid-area: content1;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_3/BRIDGEMAN-CH438386-Oiseau-Senoufo159.jpg);
-  background-size: cover;
-  background-position: conter;
-}
-.main>.content10>.content1:hover .c10c1 {
-  opacity: 1;
-}
-.main>.content10>.content2 {
-  grid-area: content2;
-  background: url(../image/December\ 4\,\ 1961.png);
-  background-size: cover;
-  background-position: conter;
-}
-.main>.content10>.content2:hover .c10c2 {
-  opacity: 1;
-}
-.main>.content10>.content3 {
-  grid-area: content3;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_4/2012.01.1459167-2.jpg);
-  background-size: cover;
-  background-position: top;
-}
-.main>.content10>.content3:hover .c10c3 {
-  opacity: 1;
-}
-.main>.content10>.content4 {
-  grid-area: content4;
-  background: url(../image/1961-2.png);
-  background-size: cover;
-  background-position: top;
-}
-.main>.content10>.content4:hover .c10c4 {
-  opacity: 1;
-}
-.main>.content10>.content5 {
-  grid-area: content5;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_2/NUM_HC1962E070PH01.0164.jpg);
-  background-size: cover;
-  background-position: bottom;
-}
-.main>.content10>.content5:hover .c10c5 {
-  opacity: 1;
-}
-.main>.content10>.content6 {
-  grid-area: content6;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_3/NUM_SEE.HC1962E082.PH01.0166.jpg);
-  background-size: cover;
-  background-position: top;
-}
-.main>.content10>.content6:hover .c10c6 {
-  opacity: 1;
-}
-.main>.content10>.content7 {
-  grid-area: content7;
-  background: url(../image/January\ 29\,\ 1962.png);
-  background-size: cover;
-  background-position: conter;
-}
-.main>.content10>.content7:hover .c10c7 {
-  opacity: 1;
-}
-.main>.content10>.content8 {
-  grid-area: content8;
-  background: url(../image/1964.png);
-  background-size: cover;
-  background-position: conter;
-}
-.main>.content10>.content8:hover .c10c8 {
-  opacity: 1;
-}
-.main>.content10>.content9 {
-  grid-area: content9;
-  background: url(../image/1964-2.png);
-  background-size: cover;
-  background-position: conter;
-}
-.main>.content10>.content9:hover .c10c9 {
-  opacity: 1;
-}
-.main>.content10>.content10 {
-  grid-area: content10;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_3/XRA-165542073.jpg);
-  background-size: cover;
-  background-position: top;
-}
-.main>.content10>.content10:hover .c10c10 {
-  opacity: 1;
-}
-.main>.content10>.content11 {
-  grid-area: content11;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_3/XRA-164521974.jpg);
-  background-size: cover;
-  background-position: conter;
-}
-.main>.content10>.content11:hover .c10c11 {
-  opacity: 1;
-}
-.main>.content10>.content12 {
-  grid-area: content12;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_2/SIPA_00090430_00000777.jpg);
-  background-size: cover;
-  background-position: conter;
-}
-.main>.content10>.content12:hover .c10c12 {
-  opacity: 1;
-}
-.main>.content10>.content13 {
-  grid-area: content13;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_3/HC1965H-5228.jpg);
-  background-size: cover;
-  background-position: conter;
-}
-.main>.content10>.content13:hover .c10c13 {
-  opacity: 1;
-}
-.main>.content10>.content14 {
-  grid-area: content14;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_4/DP1965_003_SC05.jpg);
-  background-size: cover;
-  background-position: conter;
-}
-.main>.content10>.content14:hover .c10c14 {
-  opacity: 1;
-}
-.main>.content10>.content15 {
-  grid-area: content15;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_3/gamma_ka09834_03009.jpg);
-  background-size: cover;
-  background-position: conter;
-}
-.main>.content10>.content15:hover .c10c15 {
-  opacity: 1;
-}
-.main>.content10>.content16 {
-  grid-area: content16;
-  background: url(../image/1965.png);
-  background-size: cover;
-  background-position: conter;
-}
-.main>.content10>.content16:hover .c10c16 {
-  opacity: 1;
-}
-.main>.content10>.content17 {
-  grid-area: content17;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_4/c-Pierre-Berg%C3%A9-057238.jpg);
-  background-size: cover;
-  background-position: conter;
-}
-.main>.content10>.content17:hover .c10c17 {
-  opacity: 1;
-}
-.main>.content10>.content18 {
-  grid-area: content18;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_3/00899.jpg);
-  background-size: cover;
-  background-position: conter;
-}
-.main>.content10>.content18:hover .c10c18 {
-  opacity: 1;
-}
-.main>.content10>.content19 {
-  grid-area: content19;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_2/NUM_HC1968H074PH02.01251.jpg);
-  background-size: cover;
-  background-position: conter;
-}
-.main>.content10>.content19:hover .c10c19 {
-  opacity: 1;
-}
-.main>.content10>.content20 {
-  grid-area: content20;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_2/G%C3%A9rard-PATAA-NUM_HC1966H105PH01.01-Copier254.jpg);
-  background-size: cover;
-  background-position: conter;
-}
-.main>.content10>.content20:hover .c10c20 {
-  opacity: 1;
-}
-.main>.content10>.content21 {
-  grid-area: content21;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_2/NUM_HC1966H076PH01.01267.jpg);
-  background-size: cover;
-  background-position: conter;
-}
-.main>.content10>.content21:hover .c10c21 {
-  opacity: 1;
-}
-.main>.content10>.content22 {
-  grid-area: content22;
-  background: url(../image/1966.png);
-  background-size: cover;
-  background-position: conter;
-}
-.main>.content10>.content22:hover .c10c22 {
-  opacity: 1;
-}
-.main>.content10>.content23 {
-  grid-area: content23;
-  background: url(../image/1966-2.png);
-  background-size: cover;
-  background-position: conter;
-}
-.main>.content10>.content23:hover .c10c23 {
-  opacity: 1;
-}
-.main>.content10>.content24 {
-  grid-area: content24;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_4/YSLBETTYROCAHS278.jpg);
-  background-size: cover;
-  background-position: conter;
-}
-.main>.content10>.content24:hover .c10c24 {
-  opacity: 1;
-}
-.main>.content10>.content25 {
-  grid-area: content25;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_3/c-DR-097279.jpg);
-  background-size: cover;
-  background-position: conter;
-}
-.main>.content10>.content25:hover .c10c25 {
-  opacity: 1;
-}
-.main>.content10>.content26 {
-  grid-area: content26;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_4/NUM_168105.jpg);
-  background-size: cover;
-  background-position: conter;
-}
-.main>.content10>.content26:hover .c10c26 {
-  opacity: 1;
-}
-.main>.content10>.content27 {
-  grid-area: content27;
-  background: url(../image/1967.png);
-  background-size: cover;
-  background-position: conter;
-}
-.main>.content10>.content27:hover .c10c27 {
-  opacity: 1;
-}
-.main>.content10>.content28 {
-  grid-area: content28;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_2/29_YSL-6042293.jpg);
-  background-size: cover;
-  background-position: bottom;
-}
-.main>.content10>.content28:hover .c10c28 {
-  opacity: 1;
-}
-.main>.content10>.content29 {
-  grid-area: content29;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_3/DP1972-002-5PO299.jpg);
-  background-size: cover;
-  background-position: conter;
-}
-.main>.content10>.content29:hover .c10c29 {
-  opacity: 1;
-}
-.main>.content10>.content30 {
-  grid-area: content30;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_2/DP1977_002_3EV302.jpg);
-  background-size: cover;
-  background-position: conter;
-}
-.main>.content10>.content30:hover .c10c30 {
-  opacity: 1;
-}
-.main>.content10>.content31 {
-  grid-area: content31;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_3/NUM_HC1969E054PH01.01-Copier310.jpg);
-  background-size: cover;
-  background-position: conter;
-}
-.main>.content10>.content31:hover .c10c31 {
-  opacity: 1;
-}
-.main>.content10>.content32 {
-  grid-area: content32;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_3/NUM_HC1968E028PH01.01314.jpg);
-  background-size: cover;
-  background-position: conter;
-}
-.main>.content10>.content32:hover .c10c32 {
-  opacity: 1;
-}
-.main>.content10>.content33 {
-  grid-area: content33;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_4/CSF-1804562108.jpg);
-  background-size: cover;
-  background-position: conter;
-}
-.main>.content10>.content33:hover .c10c33 {
-  opacity: 1;
-}
-.main>.content10>.content34 {
-  grid-area: content34;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_3/gamma_k015742_a4109.jpg);
-  background-size: cover;
-  background-position: conter;
-}
-.main>.content10>.content34:hover .c10c34 {
-  opacity: 1;
-}
-.main>.content10>.content35 {
-  grid-area: content35;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_4/72hHD110.jpg);
-  background-size: cover;
-  background-position: center;
-}
-.main>.content10>.content35:hover .c10c35 {
-  opacity: 1;
-}
-.main>.content10>.content36 {
-  grid-area: content36;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_4/Alain-Dejean-DP1969-003-9AC328.jpg);
-  background-size: cover;
-  background-position: right;
-}
-.main>.content10>.content36:hover .c10c36 {
-  opacity: 1;
-}
 
-.main>.content11 {
-  grid-area: content11;
-  padding: 0px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.main>.content11>.line {
-  background: url(https://batenka.ru/static/built/assets/images/design/splitter-hor.0b9e33b9d8a2.png);
-  width: 40%;
-  height: 3px;
-}
 .main>.content11>h1 {
   font-size: 2.5rem;
   padding-bottom: 6px;
 }
 
-.main>.content12 {
-  grid-area: content12;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  background-size: cover;
-  background-position: center;
-  background-color: rgba(10, 10, 10, .2);
-  background-blend-mode: multiply;
-  background-image: url(../image/1971-b.png);
-}
-
 .main>.content13 {
-  grid-area: content13;
-  display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
 }
 .main>.content13>.line {
   background: url(https://batenka.ru/static/built/assets/images/design/splitter-hor.0b9e33b9d8a2.png);
@@ -964,28 +199,12 @@ html {font-size: 10px;}
 .main>.content13>.content1,
 .main>.content13>.content2 {
   width: 100%;
-  height: 100%;
   padding: 10px 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 .main>.content13>.content3 {
   width: 100%;
-  height: 100%;
   padding: 10px 0 0 0;
-  display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.main>.content13>.content1>.text,
-.main>.content13>.content2>.text,
-.main>.content13>.content3>.text {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
 }
 .main>.content13>.content1>.text {
   height: 40%;
@@ -1016,38 +235,16 @@ html {font-size: 10px;}
   font-size: 1.4rem;
   padding-bottom: 15px;
 }
-.main>.content13>.content1>.text>p>i,
-.main>.content13>.content2>.text>p>i,
-.main>.content13>.content3>.text>p>i {
-  font-size: 1.2rem;
-}
 .main>.content13>.content1>.img {
-  width: 100%;
   height: 60%;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_4/Love70_2012_01_1564337.jpg);
-  background-size: cover;
-  background-position: top;
 }
 .main>.content13>.content2>.img {
-  width: 100%;
   height: 60%;
-  background: url(../image/1971-3.png);
-  background-size: cover;
-  background-position: center;
 }
 .main>.content13>.content3>.img {
-  width: 100%;
   height: 100%;
-  background: url(../image/1971.png);
-  background-size: cover;
-  background-position: top;
 }
 
-.main>.content14 {
-  grid-area: content14;
-  display: flex;
-  align-items: center;
-}
 .main>.content14>.line {
   background: url(https://batenka.ru/static/built/assets/images/design/splitter-hor.0b9e33b9d8a2.png);
   width: 100%;
@@ -1055,10 +252,7 @@ html {font-size: 10px;}
 }
 
 .main>.content15 {
-  grid-area: content15;
-  display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
 }
 .main>.content15>.line {
   background: url(https://batenka.ru/static/built/assets/images/design/splitter-hor.0b9e33b9d8a2.png);
@@ -1069,11 +263,7 @@ html {font-size: 10px;}
 .main>.content15>.content2,
 .main>.content15>.content3 {
   width: 100%;
-  height: 100%;
-  display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
 }
 .main>.content15>.content1 {
   padding: 0 0 10px 0;
@@ -1087,10 +277,7 @@ html {font-size: 10px;}
 .main>.content15>.content1>.text,
 .main>.content15>.content2>.text,
 .main>.content15>.content3>.text {
-  width: 100%;
   padding-right: 10px;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
 }
 .main>.content15>.content1>.text {
@@ -1120,48 +307,17 @@ html {font-size: 10px;}
   font-size: 1.4rem;
   padding-bottom: 15px;
 }
-.main>.content15>.content1>.text>p>i,
-.main>.content15>.content2>.text>p>i,
-.main>.content15>.content3>.text>p>i {
-  font-size: 1.2rem;
-}
 .main>.content15>.content1>.img {
-  width: 100%;
   height: 100%;
-  background: url(../image/1971-2.png);
-  background-size: cover;
-  background-position: top;
 }
 .main>.content15>.content2>.img {
-  width: 100%;
   height: 100%;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_3/XRD-1725597114.jpg);
-  background-size: cover;
-  background-position: center;
 }
 .main>.content15>.content3>.img {
-  width: 100%;
   height: 100%;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_3/53406.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.main>.content16 {
-  grid-area: content16;
-  display: flex;
-  align-items: center;
-}
-.main>.content16>.line {
-  background: url(https://batenka.ru/static/built/assets/images/design/splitter-hor.0b9e33b9d8a2.png);
-  width: 100%;
-  height: 3px;
 }
 
 .main>.content17 {
-  grid-area: content17;
-  display: grid;
-  grid-gap: 10px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-areas: 
@@ -1170,132 +326,17 @@ html {font-size: 10px;}
   'content5 content6'
   'content7 content8';
 }
-.c17hover {
-  width: 100%;
-  height: 100%;
-  color: white;
-  background: rgba(10, 10, 10, .2);
-  opacity: 0;
-  transition: 1.5s;
-  cursor:pointer;
-  border-radius: 10px / 10px;
-}
-.c17h2 {font-size: 2.0rem; padding: 5px;}
-.c17h1 {font-size: 3.5rem; padding: 0 5px 10px 5px;}
-.c17p {font-size: 1.6rem; padding: 5px}
-.main>.content17>div {
-  border-radius: 10px / 10px;
-  background: yellowgreen;
-}
-.main>.content17>.content1 {
-  grid-area: content1;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_2/DP1974-001-1AC389.jpg);
-  background-size: cover;
-  background-position: conter;
-}
-.main>.content17>.content1:hover .c17c1 {
-  opacity: 1;
-}
-.main>.content17>.content2 {
-  grid-area: content2;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_4/0001YSL_Marrakech_1977_Photo-Guy-Marineau397.jpg);
-  background-size: cover;
-  background-position: top;
-}
-.main>.content17>.content2:hover .c17c2 {
-  opacity: 1;
-}
-.main>.content17>.content3 {
-  grid-area: content3;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_3/Ath%C3%A9n%C3%A9e_Gilles-BENSIMON-NUM_149126.jpg);
-  background-size: cover;
-  background-position: top;
-}
-.main>.content17>.content3:hover .c17c3 {
-  opacity: 1;
-}
-.main>.content17>.content4 {
-  grid-area: content4;
-  background: url(../image/1977.png);
-  background-size: cover;
-  background-position: top;
-}
-.main>.content17>.content4:hover .c17c4 {
-  opacity: 1;
-}
-.main>.content17>.content5 {
-  grid-area: content5;
-  background: url(../image/1977-1.png);
-  background-size: cover;
-  background-position: top;
-}
-.main>.content17>.content5:hover .c17c5 {
-  opacity: 1;
-}
-.main>.content17>.content6 {
-  grid-area: content6;
-  background: url(../image/1978.png);
-  background-size: cover;
-  background-position: top;
-}
-.main>.content17>.content6:hover .c17c6 {
-  opacity: 1;
-}
-.main>.content17>.content7 {
-  grid-area: content7;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_3/NUM_OHM.HC1979H137PH01.01442-2.jpg);
-  background-size: cover;
-  background-position: conter;
-}
-.main>.content17>.content7:hover .c17c7 {
-  opacity: 1;
-}
-.main>.content17>.content8 {
-  grid-area: content8;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_4/gamma_gan117869_00107.jpg);
-  background-size: cover;
-  background-position: conter;
-}
-.main>.content17>.content8:hover .c17c8 {
-  opacity: 1;
-}
+.c17h2 {font-size: 2.0rem; padding: 10px;}
+.c17h1 {font-size: 3.5rem; padding: 0 10px 15px 10px;}
+.c17p {font-size: 1.6rem; padding: 10px}
 
-.main>.content18 {
-  grid-area: content18;
-  padding: 0px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.main>.content18>.line {
-  background: url(https://batenka.ru/static/built/assets/images/design/splitter-hor.0b9e33b9d8a2.png);
-  width: 40%;
-  height: 3px;
-}
 .main>.content18>h1 {
   font-size: 2.5rem;
   padding-bottom: 6px;
 }
 
-.main>.content19 {
-  grid-area: content19;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  background-size: cover;
-  background-position: center;
-  background-color: rgba(10, 10, 10, .2);
-  background-blend-mode: multiply;
-  background-image: url(../image/c19b.png);
-}
-
 .main>.content20 {
-  grid-area: content20;
-  display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
 }
 .main>.content20>.line {
   background: url(https://batenka.ru/static/built/assets/images/design/splitter-hor.0b9e33b9d8a2.png);
@@ -1304,34 +345,18 @@ html {font-size: 10px;}
 }
 .main>.content20>.content1 {
   width: 100%;
-  height: 100%;
   padding: 0 0 10px 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 .main>.content20>.content2,
 .main>.content20>.content3 {
   width: 100%;
-  height: 100%;
-  display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
 }
 .main>.content20>.content2 {
   padding: 10px 0;
 }
 .main>.content20>.content3 {
   padding: 10px 0 0 0;
-}
-.main>.content20>.content1>.text,
-.main>.content20>.content2>.text,
-.main>.content20>.content3>.text {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
 }
 .main>.content20>.content1>.text {
   height: 40%;
@@ -1364,38 +389,16 @@ html {font-size: 10px;}
   font-size: 1.4rem;
   padding-bottom: 15px;
 }
-.main>.content20>.content1>.text>p>i,
-.main>.content20>.content2>.text>p>i,
-.main>.content20>.content3>.text>p>i {
-  font-size: 1.2rem;
-}
 .main>.content20>.content1>.img {
-  width: 100%;
   height: 60%;
-  background: url(../image/c20c1i.png);
-  background-size: cover;
-  background-position: center;
 }
 .main>.content20>.content2>.img {
-  width: 100%;
   height: 100%;
-  background: url(../image/1981\ -\ 1982.png);
-  background-size: cover;
-  background-position: top;
 }
 .main>.content20>.content3>.img {
-  width: 100%;
   height: 100%;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_3/0001YSL_Paris_Studio_1981_Photo-Guy-Marineau10.jpg);
-  background-size: cover;
-  background-position: top;
 }
 
-.main>.content21 {
-  grid-area: content21;
-  display: flex;
-  align-items: center;
-}
 .main>.content21>.line {
   background: url(https://batenka.ru/static/built/assets/images/design/splitter-hor.0b9e33b9d8a2.png);
   width: 100%;
@@ -1403,10 +406,7 @@ html {font-size: 10px;}
 }
 
 .main>.content22 {
-  grid-area: content22;
-  display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
 }
 .main>.content22>.line {
   background: url(https://batenka.ru/static/built/assets/images/design/splitter-hor.0b9e33b9d8a2.png);
@@ -1417,11 +417,7 @@ html {font-size: 10px;}
 .main>.content22>.content2,
 .main>.content22>.content3 {
   width: 100%;
-  height: 100%;
-  display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
 }
 .main>.content22>.content1 {
   padding: 0 0 10px 0;
@@ -1435,11 +431,7 @@ html {font-size: 10px;}
 .main>.content22>.content1>.text,
 .main>.content22>.content2>.text,
 .main>.content22>.content3>.text {
-  width: 100%;
-  height: 100%;
-  display: flex;
   padding-right: 10px;
-  flex-direction: column;
   justify-content: center;
 }
 .main>.content22>.content1>.text>h2,
@@ -1460,144 +452,34 @@ html {font-size: 10px;}
   font-size: 1.4rem;
   padding-bottom: 15px;
 }
-.main>.content22>.content1>.text>p>i,
-.main>.content22>.content2>.text>p>i,
-.main>.content22>.content3>.text>p>i {
-  font-size: 1.2rem;
-}
 .main>.content22>.content1>.img {
-  width: 100%;
   height: 100%;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_3/DP1985_004_RE21.jpg);
-  background-size: cover;
-  background-position: top;
 }
 .main>.content22>.content2>.img {
-  width: 100%;
   height: 100%;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_3/70961.jpg);
-  background-size: cover;
-  background-position: bottom;
 }
 .main>.content22>.content3>.img {
-  width: 100%;
   height: 100%;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_3/Docks_%C2%A9JamesEwing200969.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.main>.content23 {
-  grid-area: content23;
-  display: flex;
-  align-items: center;
-}
-.main>.content23>.line {
-  background: url(https://batenka.ru/static/built/assets/images/design/splitter-hor.0b9e33b9d8a2.png);
-  width: 100%;
-  height: 3px;
 }
 
 .main>.content24 {
-  grid-area: content24;
-  display: grid;
-  grid-gap: 10px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: 
   'content1 content2'
   'content3 content4';
 }
-.c24hover {
-  width: 100%;
-  height: 100%;
-  color: white;
-  background: rgba(10, 10, 10, .2);
-  opacity: 0;
-  transition: 1.5s;
-  cursor:pointer;
-  border-radius: 10px / 10px;
-}
-.c24h2 {font-size: 2.0rem; padding: 5px;}
-.c24h1 {font-size: 3.5rem; padding: 0 5px 10px 5px;}
-.c24p {font-size: 1.6rem; padding: 5px}
-.main>.content24>div {
-  border-radius: 10px / 10px;
-  background: yellowgreen;
-}
-.main>.content24>.content1 {
-  grid-area: content1;
-  background: url(../image/1982.png);
-  background-size: cover;
-  background-position: conter;
-}
-.main>.content24>.content1:hover .c24c1 {
-  opacity: 1;
-}
-.main>.content24>.content2 {
-  grid-area: content2;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_4/NUM_11337.jpg);
-  background-size: cover;
-  background-position: conter;
-}
-.main>.content24>.content2:hover .c24c2 {
-  opacity: 1;
-}
-.main>.content24>.content3 {
-  grid-area: content3;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_3/NUM_09682.jpg);
-  background-size: cover;
-  background-position: top;
-}
-.main>.content24>.content3:hover .c24c3 {
-  opacity: 1;
-}
-.main>.content24>.content4 {
-  grid-area: content4;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_3/DP1986-007-5DHC11.jpg);
-  background-size: cover;
-  background-position: top;
-}
-.main>.content24>.content4:hover .c24c4 {
-  opacity: 1;
-}
+.c24h2 {font-size: 2.0rem; padding: 10px;}
+.c24h1 {font-size: 3.5rem; padding: 0 10px 15px 10px;}
+.c24p {font-size: 1.6rem; padding: 10px}
 
-.main>.content25 {
-  grid-area: content25;
-  padding: 0px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.main>.content25>.line {
-  background: url(https://batenka.ru/static/built/assets/images/design/splitter-hor.0b9e33b9d8a2.png);
-  width: 40%;
-  height: 3px;
-}
 .main>.content25>h1 {
   font-size: 2.5rem;
   padding-bottom: 6px;
 }
 
-.main>.content26 {
-  grid-area: content26;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  background-size: cover;
-  background-position: top;
-  background-color: rgba(10, 10, 10, .2);
-  background-blend-mode: multiply;
-  background-image: url(../image/c26b.png);
-}
-
 .main>.content27 {
-  grid-area: content27;
-  display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
 }
 .main>.content27>.line {
   background: url(https://batenka.ru/static/built/assets/images/design/splitter-hor.0b9e33b9d8a2.png);
@@ -1607,32 +489,17 @@ html {font-size: 10px;}
 .main>.content27>.content1,
 .main>.content27>.content3 {
   width: 100%;
-  height: 100%;
-  display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
 }
 .main>.content27>.content1 {
   padding: 0 0 10px 0;
 }
 .main>.content27>.content2 {
   width: 100%;
-  height: 100%;
   padding: 10px 0;
-  display: flex;
-  flex-direction: column;
 }
 .main>.content27>.content3 {
   padding: 10px 0 0 0;
-}
-.main>.content27>.content1>.text,
-.main>.content27>.content2>.text,
-.main>.content27>.content3>.text {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  
 }
 .main>.content27>.content1>.text {
   height: 100%;
@@ -1665,143 +532,40 @@ html {font-size: 10px;}
   font-size: 1.4rem;
   padding-bottom: 15px;
 }
-.main>.content27>.content1>.text>p>i,
-.main>.content27>.content2>.text>p>i,
-.main>.content27>.content3>.text>p>i {
-  font-size: 1.2rem;
-}
 .main>.content27>.content1>.img {
-  width: 100%;
   height: 100%;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_3/0140YSL-Couture-S-S-1990-Photo-Guy-Marineau87.jpg);
-  background-size: cover;
-  background-position: top;
 }
 .main>.content27>.content2>.img {
-  width: 100%;
   height: 70%;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_4/NUM_18829.jpg);
-  background-size: cover;
-  background-position: center;
 }
 .main>.content27>.content3>.img {
-  width: 100%;
   height: 100%;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_3/M1171051_INC_00133.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
-.main>.content28 {
-  grid-area: content28;
-  display: flex;
-  align-items: center;
-}
 .main>.content28>.line {
   background: url(https://batenka.ru/static/built/assets/images/design/splitter-hor.0b9e33b9d8a2.png);
   width: 100%;
   height: 3px;
 }
+
 .main>.content29 {
-  grid-area: content29;
-  display: grid;
-  grid-gap: 10px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: 
   'content1 content2' 
   'content3 content4';
 }
-.c29hover {
-  width: 100%;
-  height: 100%;
-  color: white;
-  background: rgba(10, 10, 10, .2);
-  opacity: 0;
-  transition: 1.5s;
-  cursor:pointer;
-  border-radius: 10px / 10px;
-}
-.c29h2 {font-size: 2.0rem; padding: 5px;}
-.c29h1 {font-size: 3.5rem; padding: 0 5px 10px 5px;}
-.c29p {font-size: 1.6rem; padding: 5px}
-.main>.content29>div {
-  border-radius: 10px / 10px;
-  background: yellowgreen;
-}
-.main>.content29>.content1 {
-  grid-area: content1;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_3/C-DR-00185.jpg);
-  background-size: cover;
-  background-position: center;
-}
-.main>.content29>.content1:hover .c29c1 {
-  opacity: 1;
-}
-.main>.content29>.content2 {
-  grid-area: content2;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_4/gamma_555250434.jpg);
-  background-size: cover;
-  background-position: conter;
-}
-.main>.content29>.content2:hover .c29c2 {
-  opacity: 1;
-}
-.main>.content29>.content3 {
-  grid-area: content3;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_3/DP1998_003_3EV105.jpg);
-  background-size: cover;
-  background-position: conter;
-}
-.main>.content29>.content3:hover .c29c3 {
-  opacity: 1;
-}
-.main>.content29>.content4 {
-  grid-area: content4;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_4/gamma_ga683652_1306.jpg);
-  background-size: cover;
-  background-position: center;
-}
-.main>.content29>.content4:hover .c29c4 {
-  opacity: 1;
-}
+.c29h2 {font-size: 2.0rem; padding: 10px;}
+.c29h1 {font-size: 3.5rem; padding: 0 10px 15px 10px;}
+.c29p {font-size: 1.6rem; padding: 10px}
 
-.main>.content30 {
-  grid-area: content30;
-  padding: 0px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.main>.content30>.line {
-  background: url(https://batenka.ru/static/built/assets/images/design/splitter-hor.0b9e33b9d8a2.png);
-  width: 40%;
-  height: 3px;
-}
 .main>.content30>h1 {
   font-size: 2.5rem;
   padding-bottom: 6px;
 }
 
-.main>.content31 {
-  grid-area: content31;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  background-size: cover;
-  background-position: center;
-  background-color: rgba(10, 10, 10, .2);
-  background-blend-mode: multiply;
-  background-image: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_4/LUC1805BD115.jpg);
-}
-
 .main>.content32 {
-  grid-area: content32;
-  display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
 }
 .main>.content32>.line {
   background: url(https://batenka.ru/static/built/assets/images/design/splitter-hor.0b9e33b9d8a2.png);
@@ -1810,33 +574,16 @@ html {font-size: 10px;}
 }
 .main>.content32>.content1 {
   width: 100%;
-  height: 100%;
   padding: 0 0 10px 0;
-  display: flex;
-  flex-direction: column;
 }
 .main>.content32>.content2 {
   width: 100%;
-  height: 100%;
   padding: 10px 0;
-  display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
 }
 .main>.content32>.content3 {
   width: 100%;
-  height: 100%;
   padding: 10px 0 0 0;
-  display: flex;
-  flex-direction: column;
-}
-.main>.content32>.content1>.text,
-.main>.content32>.content2>.text,
-.main>.content32>.content3>.text {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
 }
 .main>.content32>.content1>.text {
   height: 40%;
@@ -1867,38 +614,13 @@ html {font-size: 10px;}
   font-size: 1.4rem;
   padding-bottom: 15px;
 }
-.main>.content32>.content1>.text>p>i,
-.main>.content32>.content2>.text>p>i,
-.main>.content32>.content3>.text>p>i {
-  font-size: 1.2rem;
-}
-.main>.content32>.content1>.img {
-  width: 100%;
-  height: 60%;
-  background: url();
-  background-size: cover;
-  background-position: center;
-}
 .main>.content32>.content2>.img {
-  width: 100%;
   height: 100%;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_3/STB0672.jpg);
-  background-size: cover;
-  background-position: bottom;
 }
 .main>.content32>.content3>.img {
-  width: 100%;
   height: 60%;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_4/SIPA_00601437_00002242.jpg);
-  background-size: cover;
-  background-position: left;
 }
 
-.main>.content33 {
-  grid-area: content33;
-  display: flex;
-  align-items: center;
-}
 .main>.content33>.line {
   background: url(https://batenka.ru/static/built/assets/images/design/splitter-hor.0b9e33b9d8a2.png);
   width: 100%;
@@ -1906,10 +628,7 @@ html {font-size: 10px;}
 }
 
 .main>.content34 {
-  grid-area: content34;
-  display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
 }
 .main>.content34>.line {
   background: url(https://batenka.ru/static/built/assets/images/design/splitter-hor.0b9e33b9d8a2.png);
@@ -1920,11 +639,7 @@ html {font-size: 10px;}
 .main>.content34>.content2,
 .main>.content34>.content3 {
   width: 100%;
-  height: 100%;
-  display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
 }
 .main>.content34>.content1 {
   padding: 0 0 10px 0;
@@ -1938,11 +653,8 @@ html {font-size: 10px;}
 .main>.content34>.content1>.text,
 .main>.content34>.content2>.text,
 .main>.content34>.content3>.text {
-  width: 100%;
   height: 100%;
   padding-right: 10px;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
 }
 .main>.content34>.content1>.text>h2,
@@ -1963,41 +675,13 @@ html {font-size: 10px;}
   font-size: 1.4rem;
   padding-bottom: 15px;
 }
-.main>.content34>.content1>.text>p>i,
-.main>.content34>.content2>.text>p>i,
-.main>.content34>.content3>.text>p>i {
-  font-size: 1.2rem;
-}
 .main>.content34>.content1>.img {
-  width: 100%;
   height: 100%;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_3/000_Par374885703.jpg);
-  background-size: cover;
-  background-position: center;
 }
 .main>.content34>.content2>.img {
-  width: 100%;
   height: 100%;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_4/Librairie-des-Colonnes-in-Tangier4123.jpg);
-  background-size: cover;
-  background-position: center;
 }
 .main>.content34>.content3>.img {
-  width: 100%;
   height: 100%;
-  background: url(https://s3-eu-west-1.amazonaws.com/musee-ysl-paris/images/_gallery_3/10.-Pierre-Berge%CC%81-Rue-Bonaparte-Paris-2015-%C2%A9-Eric-Jansen.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.main>.content35 {
-  grid-area: content35;
-  display: flex;
-  align-items: center;
-}
-.main>.content35>.line {
-  background: url(https://batenka.ru/static/built/assets/images/design/splitter-hor.0b9e33b9d8a2.png);
-  width: 100%;
-  height: 3px;
 }
 }

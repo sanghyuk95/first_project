@@ -22,7 +22,9 @@ const $bar = document.querySelector(".fa-bars");
 $bar.addEventListener("click", (e) => {
     $ham.classList.toggle("hidden");
 });
+
 const $topBtn = document.querySelector(".topBtn");
 $topBtn.addEventListener("click", (e) => {
     window.scrollTo({ top: 0, behavior: "smooth" });
+    console.log(1)
 });

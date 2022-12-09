@@ -23,6 +23,11 @@ $bar.addEventListener("click", (e) => {
     $ham.classList.toggle("hidden");
 });
 
+const $topBtn = document.querySelector(".topBtn");
+$topBtn.addEventListener("click", (e) => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
 window.onload = function () {
     $(".box").each(function () {
         // 개별적으로 Wheel 이벤트 적용

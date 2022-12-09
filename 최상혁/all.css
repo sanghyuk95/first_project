@@ -31,6 +31,7 @@ header {
     flex-direction: row;
     align-items: center;
 }
+
 .dummy {
     width: 500px;
     flex-shrink: 2;
@@ -57,7 +58,7 @@ header {
     text-align: center;
 }
 .menuList:hover {
-    padding-top: 140px;
+    padding-top: 160px;
 }
 .menuList:hover > a,
 .menuListMap:hover > a {
@@ -73,7 +74,7 @@ header {
     justify-content: space-evenly;
     align-items: center;
     margin-top: 20px;
-    height: 120px;
+    height: 140px;
     display: none;
     padding-top: 20px;
 }
@@ -298,6 +299,7 @@ button i {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    z-index: 10;
 }
 .topBtn i {
     font-size: 30px;
@@ -367,9 +369,6 @@ footer a {
     .search form {
         right: 180px;
     }
-    .content {
-        margin: 30px 0;
-    }
     footer {
         height: 200px;
         padding: 0 20px;
@@ -377,8 +376,10 @@ footer a {
     .dummy {
         display: none;
     }
+}
 
-    /* 
-    .ham {display:flex}
-    */
+@media screen and (min-width: 768px) {
+    .ham {
+        display: none;
+    }
 }

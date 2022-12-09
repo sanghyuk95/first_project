@@ -83,6 +83,10 @@
     height: 100px;
     box-shadow: 2px 2px 5px #ccc;
 }
+.answer:hover {
+    background-color: black;
+    color: white;
+}
 .now {
     background-color: black;
     color: white;
@@ -106,6 +110,7 @@
 .serviceList > h3 {
     margin-bottom: 20px;
 }
+
 /* FAQ모달시작 */
 .modal {
     position: fixed;
