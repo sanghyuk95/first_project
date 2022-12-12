@@ -143,3 +143,10 @@
     margin-bottom: 40px;
 }
 /* FAQ모달끝 */
+
+@media screen and (max-width: 767px) {
+    .modal {
+        width: 100%;
+        height: 80vh;
+    }
+}

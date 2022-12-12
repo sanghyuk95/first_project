@@ -422,9 +422,9 @@ button i {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    font-size: 30px;
 }
 .topBtn i {
-    font-size: 30px;
     color: white;
 }
 /* ------탑버튼 끝--------------- */
@@ -465,8 +465,15 @@ footer a {
 /*  ---------------푸터 끝--------------------------*/
 
 @media screen and (max-width: 767px) {
+    .swiper {
+        height: 50vh;
+    }
+    .cc div {
+        font-size: 50px;
+    }
     .ccc {
         padding: 0;
+        grid-template-columns: 0 7fr 0.5fr 7fr 0;
     }
     .ddd {
         height: 100vh;
@@ -480,9 +487,20 @@ footer a {
     }
     .title {
         margin-bottom: 10px;
+        font-size: 20px;
     }
     footer {
         height: 200px;
         padding: 0 20px;
+    }
+    .topBtn {
+        width: 35px;
+        height: 35px;
+        font-size: 20px;
+        bottom: 20px;
+        right: 20px;
+    }
+    .animate__slideInDown {
+        display: none;
     }
 }

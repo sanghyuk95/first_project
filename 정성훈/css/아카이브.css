@@ -1,0 +1,685 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+#element_to_pop_up {
+    background-color: #fff;
+    border-radius: 15px;
+    color: #000;
+    display: none;
+    padding: 20px;
+    min-width: 400px;
+    min-height: 180px;
+}
+.b-close {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+h3 {
+    font-size: 3rem;
+    color: black;
+    width: 60%;
+    height: 100%;
+    font-family: sans-serif;
+    position: relative;
+    top: 30%;
+
+    background-color: none;
+
+    display: block;
+}
+
+.main .main__title {
+    background-image: url("https://cdn.eyesmag.com/content/uploads/posts/2021/10/22/00-f7ae86da-d4a1-44e1-bacc-1323d52c6137.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+}
+
+.main-body {
+    max-width: 2000vw;
+    height: auto;
+
+    border: 1px solid white;
+}
+
+.main .listing-card__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr 1fr));
+    background-position: center;
+}
+
+.snow {
+    position: absolute;
+    bottom: -200px;
+    left: 300px;
+    z-index: 2;
+}
+
+.listing-card {
+    max-width: 1600px;
+    margin: 100px;
+    padding: 0 20px;
+}
+
+.listing-card__item {
+    width: 100%;
+    height: auto;
+}
+
+.listing-card__item #my-button .img1 {
+    width: auto;
+    height: 400px;
+    background-size: cover;
+    position: relative;
+
+    left: 700px;
+
+    margin-top: 20px;
+    bottom: -50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.snow1 {
+    position: absolute;
+    bottom: -550px;
+    left: 1100px;
+    width: 30%;
+    height: auto;
+    z-index: 2;
+}
+
+.listing-card__item #my-button .img2 {
+    position: relative;
+    width: auto;
+    height: 400px;
+    object-fit: cover;
+
+    left: 200px;
+    margin-bottom: 200px;
+    bottom: -90px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.listing-card {
+    max-width: 1600px;
+    margin: 100px;
+    padding: 0 20px;
+}
+
+.listing-card__item {
+    background-color: #f5f5f5;
+    width: 100%;
+    height: auto;
+}
+
+.listing-card__item #my-button .img3 {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+
+    left: 200px;
+    bottom: -70px;
+    margin-bottom: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.listing-card__item #my-button .img4 {
+    position: relative;
+    width: 400px;
+    height: auto;
+    object-fit: cover;
+
+    left: 700px;
+    bottom: 450px;
+    margin-bottom: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.summer {
+    position: absolute;
+    left: 900px;
+    bottom: -1600px;
+    display: fixed;
+    z-index: 2;
+}
+.summer1 {
+    position: absolute;
+    bottom: -1700px;
+    left: 1100px;
+    z-index: 2;
+    display: flex;
+    width: 30%;
+    height: auto;
+}
+
+.listing-card__item #my-button .img5 {
+    position: relative;
+    width: auto;
+    height: 400px;
+    object-fit: cover;
+
+    left: 200px;
+    margin-bottom: 100px;
+    top: -100px;
+}
+
+.listing-card__item #my-button .img6 {
+    position: relative;
+    width: 500px;
+    height: auto;
+    object-fit: cover;
+    display: flex;
+    left: 500px;
+    bottom: 100px;
+    margin-bottom: 50px;
+}
+
+.listing-card {
+    max-width: 1600px;
+    margin: 100px;
+    padding: 0 20px;
+}
+
+.listing-card__item {
+    background-color: #f5f5f5;
+    width: 100%;
+    height: auto;
+}
+
+.listing-card__item #my-button .img7 {
+    position: relative;
+    width: auto;
+    height: 400px;
+    object-fit: cover;
+    display: flex;
+    left: 200px;
+    margin-bottom: 100px;
+    bottom: -50px;
+}
+
+.listing-card__item #my-button .img8 {
+    position: relative;
+    width: 500px;
+    height: auto;
+    object-fit: cover;
+    display: flex;
+    left: 900px;
+    bottom: -10px;
+}
+
+.listing-card__item #my-button .img9 {
+    position: relative;
+    width: auto;
+    height: 400px;
+    object-fit: cover;
+    display: flex;
+    left: 200px;
+    margin-bottom: 100px;
+    top: 100px;
+}
+
+.listing-card__item #my-button .img10 {
+    position: relative;
+    width: 500px;
+    height: auto;
+    object-fit: cover;
+    display: flex;
+    left: 600px;
+    bottom: 100px;
+    margin-bottom: 50px;
+}
+
+.sun {
+    position: relative;
+    top: 800px;
+    z-index: 2;
+    width: 80%;
+    left: 300px;
+}
+
+.sun1 {
+    position: relative;
+    bottom: -1000px;
+
+    z-index: 2;
+    width: 30%;
+    left: 1000px;
+}
+
+h1 {
+    font-family: Helvetica Neue, Helvetica, Afrail, sans-serif;
+    font-size: 3rem;
+    color: black;
+    position: fixed;
+    text-shadow: 4px 2px 2px gray;
+}
+
+h2 {
+    font-family: Helvetica Neue, Helvetica, Afrail, sans-serif;
+    font-size: 2rem;
+    color: #808080;
+    position: fixed;
+    text-shadow: 4px 7px 10px gray;
+    width: 50px;
+}
+
+.main__title .main-body {
+    width: 100vw;
+}
+
+@media screen and (max-width: 1000px) {
+    h3 {
+        z-index: 2;
+        position: absolute;
+
+        font-size: 3rem;
+        color: black;
+        font-family: sans-serif;
+        top: 30%;
+    }
+
+    h1 {
+        font-family: Helvetica Neue, Helvetica, Afrail, sans-serif;
+        font-size: 3rem;
+        color: white;
+        position: fixed;
+        text-shadow: 4px 2px 2px gray;
+    }
+
+    h2 {
+        font-family: Helvetica Neue, Helvetica, Afrail, sans-serif;
+        font-size: 2rem;
+        color: #808080;
+        position: fixed;
+        text-shadow: 4px 7px 10px gray;
+        width: 50px;
+    }
+
+    .snow {
+        position: absolute;
+        bottom: -200px;
+        left: 40px;
+        z-index: 2;
+    }
+    .snow1 {
+        position: absolute;
+        bottom: -420px;
+        left: 100px;
+        width: 30%;
+        height: auto;
+        z-index: 2;
+    }
+    .listing-card__item #my-button .img1 {
+        width: auto;
+        height: 400px;
+        background-size: cover;
+        position: relative;
+
+        left: 200px;
+
+        margin-top: 20px;
+        bottom: -50px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .listing-card__item #my-button .img2 {
+        position: relative;
+        width: auto;
+        height: 400px;
+        object-fit: cover;
+
+        left: 5px;
+        margin-bottom: 200px;
+        bottom: -90px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .summer {
+        position: absolute;
+        left: 500px;
+        bottom: -1500px;
+        display: fixed;
+        z-index: 2;
+    }
+    .summer1 {
+        position: absolute;
+        bottom: -1700px;
+        left: 500px;
+        z-index: 2;
+        display: flex;
+        width: 30%;
+        height: auto;
+    }
+
+    .listing-card__item #my-button .img3 {
+        position: relative;
+        width: 300px;
+        height: 400px;
+
+        left: 20px;
+        bottom: -70px;
+        margin-bottom: 100px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .listing-card__item #my-button .img4 {
+        position: relative;
+        width: 400px;
+        height: auto;
+
+        left: 400px;
+        bottom: 450px;
+        margin-bottom: 50px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .listing-card__item #my-button .img5 {
+        position: relative;
+        width: auto;
+        height: 400px;
+
+        left: 1px;
+        margin-bottom: 100px;
+        top: -100px;
+    }
+
+    .listing-card__item #my-button .img6 {
+        position: relative;
+        width: 500px;
+        height: auto;
+
+        display: flex;
+        left: 300px;
+        bottom: 100px;
+        margin-bottom: 50px;
+    }
+
+    .sun {
+        position: relative;
+        top: 900px;
+        z-index: 2;
+        width: 80%;
+        left: 50px;
+    }
+
+    .sun1 {
+        position: relative;
+        bottom: -1000px;
+        color: white;
+        z-index: 2;
+        width: 100%;
+        left: 200px;
+    }
+
+    .listing-card__item #my-button .img7 {
+        position: relative;
+        width: auto;
+        height: 400px;
+        object-fit: cover;
+        display: flex;
+        left: 10px;
+    }
+
+    .listing-card__item #my-button .img8 {
+        position: relative;
+        width: 500px;
+        height: auto;
+
+        display: flex;
+        left: 300px;
+        bottom: -10px;
+    }
+
+    .listing-card__item #my-button .img9 {
+        position: relative;
+        width: auto;
+        height: 400px;
+        object-fit: cover;
+        display: flex;
+        left: 10px;
+        margin-bottom: 100px;
+        top: 100px;
+    }
+
+    .listing-card__item #my-button .img10 {
+        position: relative;
+        width: 500px;
+        height: auto;
+        object-fit: cover;
+        display: flex;
+        left: 350px;
+        bottom: 100px;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    h3 {
+        font-size: 2rem;
+        color: black;
+        width: auto;
+        height: 100%;
+        font-family: sans-serif;
+        position: relative;
+        top: 30%;
+    }
+
+    h1 {
+        font-family: Helvetica Neue, Helvetica, Afrail, sans-serif;
+        font-size: 3rem;
+        color: white;
+        position: fixed;
+        text-shadow: 4px 2px 2px gray;
+    }
+
+    h2 {
+        font-family: Helvetica Neue, Helvetica, Afrail, sans-serif;
+        font-size: 2rem;
+        color: white;
+        position: fixed;
+        text-shadow: 4px 7px 10px gray;
+        width: 50px;
+    }
+
+    .snow {
+        position: absolute;
+        bottom: -200px;
+        left: 40px;
+        z-index: 2;
+    }
+    .snow1 {
+        position: absolute;
+        bottom: -420px;
+        left: 100px;
+        width: 30%;
+        height: auto;
+        z-index: 2;
+    }
+    .listing-card__item #my-button .img1 {
+        width: auto;
+        height: 400px;
+        background-size: cover;
+        position: relative;
+
+        left: 10px;
+
+        margin-top: 20px;
+        bottom: -50px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .listing-card__item #my-button .img2 {
+        position: relative;
+        width: auto;
+        height: 400px;
+        object-fit: cover;
+
+        left: -100px;
+        margin-bottom: 200px;
+        bottom: -90px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .summer {
+        position: absolute;
+        left: 300px;
+        bottom: -1500px;
+        display: fixed;
+        z-index: 2;
+    }
+    .summer1 {
+        position: absolute;
+        bottom: -1720px;
+        left: 340px;
+        z-index: 2;
+        display: flex;
+        width: 30%;
+        height: auto;
+        color: #808080;
+    }
+
+    .listing-card__item #my-button .img3 {
+        position: relative;
+        width: 300px;
+        height: 400px;
+
+        left: -100px;
+        bottom: -70px;
+        margin-bottom: 100px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .listing-card__item #my-button .img4 {
+        position: relative;
+        width: 400px;
+        height: auto;
+
+        left: 220px;
+        bottom: 450px;
+        margin-bottom: 50px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .listing-card__item #my-button .img5 {
+        position: relative;
+        width: auto;
+        height: 400px;
+
+        left: -100px;
+        margin-bottom: 100px;
+        top: -100px;
+    }
+
+    .listing-card__item #my-button .img6 {
+        position: relative;
+        width: 500px;
+        height: auto;
+
+        display: flex;
+        left: 100px;
+        bottom: 100px;
+        margin-bottom: 50px;
+    }
+
+    .sun {
+        position: relative;
+        top: 900px;
+        z-index: 2;
+        width: 80%;
+        left: -100px;
+    }
+
+    .sun1 {
+        position: relative;
+        bottom: -950px;
+        color: white;
+        z-index: 2;
+        width: 90.3%;
+        left: -90px;
+    }
+
+    .listing-card__item #my-button .img7 {
+        position: relative;
+        width: auto;
+        height: 400px;
+        object-fit: cover;
+        display: flex;
+        left: -100px;
+    }
+
+    .listing-card__item #my-button .img8 {
+        position: relative;
+        width: 500px;
+        height: auto;
+
+        display: flex;
+        left: -90px;
+        bottom: -10px;
+    }
+
+    .listing-card__item #my-button .img9 {
+        position: relative;
+        width: auto;
+        height: 400px;
+
+        display: flex;
+        left: -110px;
+        margin-bottom: 100px;
+        top: 100px;
+    }
+
+    .listing-card__item #my-button .img10 {
+        position: relative;
+        width: 500px;
+        height: auto;
+        object-fit: cover;
+        display: flex;
+        left: 95px;
+        bottom: 100px;
+        margin-bottom: 50px;
+    }
+}

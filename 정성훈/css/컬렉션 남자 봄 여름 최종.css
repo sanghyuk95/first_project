@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+body {
+    background-color: #f5f5f5;
+    margin: 0;
+}
+
+.main .main__header {
+    width: 100%;
+    aspect-ratio: auto 810 / 455;
+    height: 85vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://saint-laurent.dam.kering.com/m/6e36abad38da0d3c/original/mss23_thumbnail-06_16x9.jpg");
+}
+.main .main__title {
+    font-size: 2rem;
+    color: white;
+    width: 60%;
+    height: 100%;
+    font-family: sans-serif;
+    position: relative;
+    top: 30%;
+    left: 40%;
+
+    background-color: none;
+
+    display: block;
+}
+
+.main .listing-card {
+    max-width: 1600px;
+    margin: 20px auto 20px;
+    padding: 150px;
+}
+.main .listing-card__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 5px;
+}
+.main .listing-card__item {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border: 1px solid #f0f0f0;
+    padding-bottom: -40px;
+}
+.main .listing-card__image {
+    padding-bottom: 160%;
+    padding-top: -10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.wrap .main .listing-card .listing-card__image {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 100%;
+    padding-top: -20px;
+    cursor: pointer;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center top;
+
+    -webkit-transition: transform 0.3s ease-out;
+    -moz-transition: transform 0.3s ease-out;
+    -ms-transition: transform 0.3s ease-out;
+    -o-transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+}
+.listing-card__image:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2); /* IE 9 */
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=1.5, M12=0, M21=0, M22=1.5, SizingMethod='auto expand')"; /* IE8 */
+    filter: progid:DXImageTransform.Microsoft.Matrix(M11=1.1, M12=0, M21=0, M22=1.1, SizingMethod='auto expand'); /* IE6 and 7 */
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-top: 50%;
+}
+
+iframe {
+    z-index: 1;
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+    .main .main__header {
+        width: 100%;
+        height: 50vh;
+        top: 5px;
+        background-size: center;
+        position: relative;
+        background-image: url("https://cdn.eyesmag.com/content/uploads/posts/2021/07/20/doug-aitken-green-lens-saint-laurent-main-5bb4e840-d31f-422b-adc5-b7bc5c78e93c.jpg");
+    }
+
+    .main .main__title {
+        font-size: 2rem;
+        color: white;
+        width: 60%;
+        height: 100%;
+        font-family: sans-serif;
+        position: absolute;
+        bottom: 100px;
+
+        background-color: none;
+
+        display: block;
+    }
+
+    .wrap .main .listing-card .listing-card__image {
+        width: 100%;
+        height: 100%;
+        padding-bottom: 100%;
+        padding-top: -20px;
+        cursor: pointer;
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position: center top;
+
+        -webkit-transition: transform 0.3s ease-out;
+        -moz-transition: transform 0.3s ease-out;
+        -ms-transition: transform 0.3s ease-out;
+        -o-transition: transform 0.3s ease-out;
+        transition: transform 0.3s ease-out;
+    }
+    .listing-card__image:hover {
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -ms-transform: scale(1.2); /* IE 9 */
+        -o-transform: scale(1.2);
+        transform: scale(1.2);
+        -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=1.5, M12=0, M21=0, M22=1.5, SizingMethod='auto expand')"; /* IE8 */
+        filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.7, M12=0, M21=0, M22=0.7, SizingMethod='auto expand'); /* IE6 and 7 */
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .main .main__header {
+        width: 100%;
+        height: 40vh;
+        bottom: -10px;
+        background-size: cover;
+        position: relative;
+        background-image: url("https://cdn.eyesmag.com/content/uploads/posts/2021/07/20/doug-aitken-green-lens-saint-laurent-main-5bb4e840-d31f-422b-adc5-b7bc5c78e93c.jpg");
+    }
+
+    .main .main__title {
+        font-size: 2rem;
+        color: white;
+        width: 60%;
+        height: 100%;
+        font-family: sans-serif;
+        position: relative;
+        top: 60px;
+        left: 30%;
+
+        background-color: none;
+
+        display: block;
+    }
+
+    .wrap .main .listing-card .listing-card__image {
+        width: 100%;
+        height: 100%;
+        padding-bottom: 100%;
+        padding-top: -20px;
+        cursor: pointer;
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position: center top;
+
+        -webkit-transition: transform 0.3s ease-out;
+        -moz-transition: transform 0.3s ease-out;
+        -ms-transition: transform 0.3s ease-out;
+        -o-transition: transform 0.3s ease-out;
+        transition: transform 0.3s ease-out;
+    }
+    .listing-card__image:hover {
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -ms-transform: scale(1.2); /* IE 9 */
+        -o-transform: scale(1.2);
+        transform: scale(1.2);
+        -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=1.5, M12=0, M21=0, M22=1.5, SizingMethod='auto expand')"; /* IE8 */
+        filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.4, M12=0, M21=0, M22=0.4, SizingMethod='auto expand'); /* IE6 and 7 */
+    }
+}
