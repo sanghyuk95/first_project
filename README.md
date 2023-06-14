@@ -22,3 +22,7 @@
 ## 사용기술
 
 - html, css, js, Ps
+
+## 자세히 알아보기
+
+- 노션 : https://berry-fall-ac7.notion.site/bcc0318c5d064bf1aaf115ffd78b333a?p=446451a1f7f04796b3730ac32cc023bd&pm=c
